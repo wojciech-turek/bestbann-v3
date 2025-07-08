@@ -1,9 +1,66 @@
 {
   "home": {
     "hero": {
-      "slogan": "Create the perfect bread with our",
-      "slogan_deco": "proofing baskets!",
+      "slogan": "Create the perfect bread <br/> with our <deco>proofing baskets!</deco>",
       "description": "Experienced bakers choose us to achieve the perfect bread texture and shape"
+    },
+    "weMakeBannetons": {
+      "title": "We make bannetons <br/> by hand from <deco>natural materials</deco>",
+      "description": "Our exclusive technology makes them ideal for bread proofing. Each product is made with the utmost care so that you can have the best baked goods possible"
+    },
+    "ourProducts": {
+      "title": "Our products",
+      "products": {
+        "rattan": {
+          "title": "Rattan bread proofing baskets",
+          "description": "Excellent rattan baskets for proofing bread, handmade from the best natural materials"
+        },
+        "cork": {
+          "title": "Cork bread proofing baskets",
+          "description": "Rising in a basket, thanks to absorbing some of the moisture and keeping warm, also ensures better..."
+        },
+        "bamboo": {
+          "title": "Bamboo fiber plastic baskets",
+          "description": "A unique product that combines good air ventilation and a great, artisanal look"
+        },
+        "platic": {
+          "title": "Polypropylene baskets",
+          "description": "Baskets made combine the main advantages of rattan baskets, which are good ventilation and..."
+        },
+        "engraved": {
+          "title": "Baskets with engraved bottom",
+          "description": "We offer baskets with an engraved base - you can order one of our many designs or place your own"
+        },
+        "liners": {
+          "title": "Liners for baskets",
+          "description": "Liners help to keep the basket clean for longer time and are very helpful with very hydrated..."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Benefits of <deco>bannetons</deco>",
+      "sections": {
+        "eco": {
+          "title": "Ecological materials",
+          "description": "Our products are made of natural materials, which are safe for your health"
+        },
+        "easy": {
+          "title": "Ease of use",
+          "description": "Our products are easy to clean and will last you a long time"
+        },
+        "shape": {
+          "title": "Perfect shape",
+          "description": "Bannetons maintain the perfect dough shape for professional breads"
+        },
+        "handmade": {
+          "title": "Handmade",
+          "description": "All products are handmade with love and attention to detail"
+        }
+      }
     }
+  },
+  "buttons": {
+    "viewCatalog": "View catalog",
+    "leaveRequest": "Leave request"
   }
 }

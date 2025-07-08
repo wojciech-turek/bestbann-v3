@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.variable} ${libreBaskerville.variable} font-sans antialiased`}
+        className={`${plusJakartaSans.variable} ${libreBaskerville.variable} font-sans antialiased bg-beige-1`}
       >
         <Header />
         {children}

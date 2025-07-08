@@ -16,32 +16,32 @@ import { MenuIcon } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "./ui/button";
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Product 1",
-    href: "/products/1",
-    description: "This is a description for product 1.",
-  },
-  {
-    title: "Product 2",
-    href: "/products/2",
-    description: "This is a description for product 2.",
-  },
-  {
-    title: "Product 3",
-    href: "/products/3",
-    description: "This is a description for product 3.",
-  },
-  {
-    title: "Product 4",
-    href: "/products/4",
-    description: "This is a description for product 4.",
-  },
-];
+// const components: { title: string; href: string; description: string }[] = [
+//   {
+//     title: "Product 1",
+//     href: "/products/1",
+//     description: "This is a description for product 1.",
+//   },
+//   {
+//     title: "Product 2",
+//     href: "/products/2",
+//     description: "This is a description for product 2.",
+//   },
+//   {
+//     title: "Product 3",
+//     href: "/products/3",
+//     description: "This is a description for product 3.",
+//   },
+//   {
+//     title: "Product 4",
+//     href: "/products/4",
+//     description: "This is a description for product 4.",
+//   },
+// ];
 
 const Header = () => {
   return (
-    <header className="fixed top-3 z-50 w-full backdrop-blur px-4">
+    <header className="fixed py-3 z-50 w-full  backdrop-blur-sm px-4">
       <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
         <NavigationMenu>
           <NavigationMenuList className="space-x-2">

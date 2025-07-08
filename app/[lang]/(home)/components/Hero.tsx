@@ -1,3 +1,4 @@
+import RichText from "@/components/RichText";
 import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/dictionaries";
 import { ArrowRightIcon } from "lucide-react";
@@ -9,10 +10,7 @@ const Hero = async ({ lang }: { lang: string }) => {
       <div className="absolute z-20 inset-0 bg-[#552D1733]" />
       <main className="flex z-30 flex-col basis-1/2 ">
         <h1 className="text-white text-5xl 2xl:text-6xl tracking-tight font-medium leading-[50px] 2xl:leading-[70px]">
-          {dict.home.hero.slogan}{" "}
-          <span className="font-deco font-normal">
-            {dict.home.hero.slogan_deco}
-          </span>
+          <RichText>{dict.home.hero.slogan}</RichText>
         </h1>
         <p className="text-white text-xl max-w-[30ch] mt-7">
           {dict.home.hero.description}
