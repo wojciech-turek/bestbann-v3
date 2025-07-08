@@ -58,6 +58,10 @@ export type Dictionary = {
         };
       };
     };
+    uniqueBasket: {
+      title: string;
+      description: string;
+    };
     bestSellers: {
       title: string;
       bestSellerBadge: string;
@@ -67,5 +71,6 @@ export type Dictionary = {
     viewCatalog: string;
     leaveRequest: string;
     priceButton: string;
+    orderUniqueBasket: string;
   };
 };

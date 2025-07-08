@@ -58,6 +58,10 @@
         }
       }
     },
+    "uniqueBasket": {
+      "title": "Order a unique bread proofing <deco>basket</deco>",
+      "description": "You can order a bread proofing basket from our wide range of shapes and sizes or create your own unique basket. We can customize dimensions, shapes or add an engraving. <br/>  <br/> We are open for your ideas and suggestions!"
+    },
     "bestSellers": {
       "title": "Best sellers",
       "bestSellerBadge": "Bestseller"
@@ -66,6 +70,7 @@
   "buttons": {
     "viewCatalog": "View catalog",
     "leaveRequest": "Leave request",
-    "priceButton": "Find out the price"
+    "priceButton": "Find out the price",
+    "orderUniqueBasket": "Order a Unique Product"
   }
 }

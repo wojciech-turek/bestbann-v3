@@ -29,6 +29,11 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
+  // Skip locale handling for specific paths
+  if (pathname.startsWith("/videos")) {
+    return NextResponse.next();
+  }
+
   // if users try to enter an invalid locale, we redirect to the home page
 
   if (pathnameHasLocale) return;

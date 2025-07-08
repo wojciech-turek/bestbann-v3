@@ -133,7 +133,7 @@ export const BestSellersCarousel = ({
                         </Badge>
                       </div>
                       <TypographyH5>{item.title}</TypographyH5>
-                      <Button className="w-full">
+                      <Button size="lg" className="w-full">
                         {dict.buttons.priceButton}
                       </Button>
                     </div>

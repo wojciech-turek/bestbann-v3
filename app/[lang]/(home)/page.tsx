@@ -2,6 +2,7 @@ import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import Hero from "./components/Hero";
 import OurProducts from "./components/OurProducts";
+import UniqueBasket from "./components/UniqueBasket";
 import WeMakeBannetons from "./components/WeMakeBannetons";
 
 export default async function Home({
@@ -16,7 +17,7 @@ export default async function Home({
       <OurProducts lang={lang} />
       <BenefitsBannetons lang={lang} />
       <BestSellers lang={lang} />
-      <div>test</div>
+      <UniqueBasket lang={lang} />
     </div>
   );
 }
