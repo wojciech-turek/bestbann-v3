@@ -111,7 +111,7 @@ export const BestSellersCarousel = ({
       </div>
       <div className="border-y border-beige-2 py-6">
         <div className="container mx-auto">
-          <Carousel setApi={setApi}>
+          <Carousel setApi={setApi} opts={{ align: "start" }}>
             <CarouselContent>
               {bestSellersData.map((item, index) => (
                 <CarouselItem
