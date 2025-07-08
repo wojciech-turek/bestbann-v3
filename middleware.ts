@@ -9,16 +9,11 @@ const getLocale = (request: NextRequest) => {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  console.log(negotiatorHeaders);
-
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-
-  console.log(languages);
 
   try {
     return match(languages, locales, defaultLocale);
-  } catch (error) {
-    console.error(error);
+  } catch {
     console.warn(
       `Failed to match locale for languages "${languages.join(
         ", "

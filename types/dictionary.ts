@@ -1,6 +1,9 @@
 export type Dictionary = {
-  products: {
-    cart: string;
-    add: string;
+  home: {
+    hero: {
+      slogan: string;
+      slogan_deco: string;
+      description: string;
+    };
   };
 };

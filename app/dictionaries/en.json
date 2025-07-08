@@ -1,6 +1,9 @@
 {
-  "products": {
-    "cart": "Add to Cart",
-    "add": "Add"
+  "home": {
+    "hero": {
+      "slogan": "Create the perfect bread with our",
+      "slogan_deco": "proofing baskets!",
+      "description": "Experienced bakers choose us to achieve the perfect bread texture and shape"
+    }
   }
 }
