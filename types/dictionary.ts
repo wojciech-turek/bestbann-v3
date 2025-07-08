@@ -58,9 +58,14 @@ export type Dictionary = {
         };
       };
     };
+    bestSellers: {
+      title: string;
+      bestSellerBadge: string;
+    };
   };
   buttons: {
     viewCatalog: string;
     leaveRequest: string;
+    priceButton: string;
   };
 };

@@ -57,10 +57,15 @@
           "description": "All products are handmade with love and attention to detail"
         }
       }
+    },
+    "bestSellers": {
+      "title": "Best sellers",
+      "bestSellerBadge": "Bestseller"
     }
   },
   "buttons": {
     "viewCatalog": "View catalog",
-    "leaveRequest": "Leave request"
+    "leaveRequest": "Leave request",
+    "priceButton": "Find out the price"
   }
 }

@@ -41,7 +41,7 @@ import { Button } from "./ui/button";
 
 const Header = () => {
   return (
-    <header className="fixed py-3 z-50 w-full  backdrop-blur-sm px-4">
+    <header className="fixed py-3 z-50 w-full  backdrop-blur-sm px-9">
       <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
         <NavigationMenu>
           <NavigationMenuList className="space-x-2">

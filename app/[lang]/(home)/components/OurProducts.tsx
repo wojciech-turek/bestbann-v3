@@ -45,7 +45,7 @@ const OurProducts = async ({ lang }: { lang: string }) => {
   ];
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex container mx-auto items-center justify-between gap-4">
+      <div className="flex container mx-auto items-center justify-between gap-4 px-9">
         <TypographyH2>{dict.home.ourProducts.title}</TypographyH2>
         <Button size="lg">
           {dict.buttons.viewCatalog} <ArrowRight className="w-4 h-4" />

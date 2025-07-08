@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export function TypographyH2({
+export function TypographyH5({
   children,
   className,
 }: {
@@ -8,13 +8,13 @@ export function TypographyH2({
   className?: string;
 }) {
   return (
-    <h2
+    <h5
       className={cn(
-        "scroll-m-20 pb-2 text-[56px] font-medium leading-14 tracking-tight first:mt-0 text-brown-100 text-center",
+        "scroll-m-20 text-lg text-brown-100 font-medium tracking-tight",
         className
       )}
     >
       {children}
-    </h2>
+    </h5>
   );
 }

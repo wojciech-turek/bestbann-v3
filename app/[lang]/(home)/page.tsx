@@ -16,6 +16,7 @@ export default async function Home({
       <OurProducts lang={lang} />
       <BenefitsBannetons lang={lang} />
       <BestSellers lang={lang} />
+      <div>test</div>
     </div>
   );
 }
