@@ -82,6 +82,13 @@
           "description": "We use only natural rattan material for the bread proofing baskets production. <br/> <br/> No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
         }
       }
+    },
+    "corkBaskets": {
+      "title": "Baskets made of cork granules <br/> are our own <deco>invention</deco>",
+      "description": "They can be washed under the water from the remains of flour and dough, which is a significant simplification in terms of keeping the baskets clean!"
+    },
+    "customerFeedback": {
+      "title": "Customer feedback"
     }
   },
   "buttons": {
@@ -90,6 +97,9 @@
     "priceButton": "Find out the price",
     "orderUniqueBasket": "Order a Unique Product",
     "buyRattanBaskets": "Buy Rattan Baskets",
-    "downloadCertificate": "Download Certificate"
+    "buyCorkBaskets": "Buy Cork Baskets",
+    "downloadCertificate": "Download Certificate",
+    "viewMore": "View More",
+    "viewLess": "View Less"
   }
 }

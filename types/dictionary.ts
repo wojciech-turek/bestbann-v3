@@ -83,6 +83,13 @@ export type Dictionary = {
         };
       };
     };
+    corkBaskets: {
+      title: string;
+      description: string;
+    };
+    customerFeedback: {
+      title: string;
+    };
   };
   buttons: {
     viewCatalog: string;
@@ -90,6 +97,9 @@ export type Dictionary = {
     priceButton: string;
     orderUniqueBasket: string;
     buyRattanBaskets: string;
+    buyCorkBaskets: string;
     downloadCertificate: string;
+    viewMore: string;
+    viewLess: string;
   };
 };
