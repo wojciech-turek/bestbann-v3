@@ -90,6 +90,11 @@ export type Dictionary = {
     customerFeedback: {
       title: string;
     };
+    familyCompany: {
+      title: string;
+      description: string;
+      imageCaption: string;
+    };
   };
   buttons: {
     viewCatalog: string;
@@ -101,5 +106,6 @@ export type Dictionary = {
     downloadCertificate: string;
     viewMore: string;
     viewLess: string;
+    moreAboutUs: string;
   };
 };

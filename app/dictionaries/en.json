@@ -89,6 +89,11 @@
     },
     "customerFeedback": {
       "title": "Customer feedback"
+    },
+    "familyCompany": {
+      "title": "We're a family <deco>company</deco>",
+      "description": "We are a family owned company with over 14-years’ of experience in the food industry.<br /><br />Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
+      "imageCaption": "Weronika and Michal"
     }
   },
   "buttons": {
@@ -100,6 +105,7 @@
     "buyCorkBaskets": "Buy Cork Baskets",
     "downloadCertificate": "Download Certificate",
     "viewMore": "View More",
-    "viewLess": "View Less"
+    "viewLess": "View Less",
+    "moreAboutUs": "More About Us"
   }
 }
