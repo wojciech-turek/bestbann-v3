@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
 import { getDictionary } from "@/dictionaries";
+import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -152,7 +153,12 @@ export const CustomerFeedbackCarousel = ({
                       </div>
                       <div>
                         <TypographyP
-                          className={!expanded[item.id] ? "line-clamp-3" : ""}
+                          className={cn(
+                            "overflow-hidden transition-[max-height] duration-200 ease-in-out ",
+                            !expanded[item.id]
+                              ? "max-h-18 line-clamp-3"
+                              : "max-h-96"
+                          )}
                         >
                           {item.review}
                         </TypographyP>
