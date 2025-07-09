@@ -66,11 +66,30 @@ export type Dictionary = {
       title: string;
       bestSellerBadge: string;
     };
+    materials: {
+      title: string;
+      sections: {
+        sgh: {
+          title: string;
+          description: string;
+          regulations: {
+            0: string;
+            1: string;
+          };
+        };
+        natural: {
+          title: string;
+          description: string;
+        };
+      };
+    };
   };
   buttons: {
     viewCatalog: string;
     leaveRequest: string;
     priceButton: string;
     orderUniqueBasket: string;
+    buyRattanBaskets: string;
+    downloadCertificate: string;
   };
 };

@@ -65,12 +65,31 @@
     "bestSellers": {
       "title": "Best sellers",
       "bestSellerBadge": "Bestseller"
+    },
+    "materials": {
+      "title": "Taking care of the high quality <br/> of our <deco>products</deco>",
+      "sections": {
+        "sgh": {
+          "title": "SGS Test Reports and PZH Certificate",
+          "description": "Our baskets can safely have contact with food, in accordance with:",
+          "regulations": [
+            "Regulation (EC) No 1935/2004 of the European Parliament and of the Council of 27 October 2004 on materials and articles intended to come into contact with food",
+            "Germany LFGB (LMBG) Food and Feed Law Art. 30, 31"
+          ]
+        },
+        "natural": {
+          "title": "Natural rattan material",
+          "description": "We use only natural rattan material for the bread proofing baskets production. <br/> <br/> No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
+        }
+      }
     }
   },
   "buttons": {
     "viewCatalog": "View catalog",
     "leaveRequest": "Leave request",
     "priceButton": "Find out the price",
-    "orderUniqueBasket": "Order a Unique Product"
+    "orderUniqueBasket": "Order a Unique Product",
+    "buyRattanBaskets": "Buy Rattan Baskets",
+    "downloadCertificate": "Download Certificate"
   }
 }

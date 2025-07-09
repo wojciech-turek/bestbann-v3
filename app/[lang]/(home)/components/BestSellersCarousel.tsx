@@ -116,9 +116,9 @@ export const BestSellersCarousel = ({
               {bestSellersData.map((item, index) => (
                 <CarouselItem
                   key={item.id}
-                  className="md:basis-1/2 lg:basis-1/4"
+                  className="md:basis-1/3  2xl:basis-1/4"
                 >
-                  <div className="flex gap-6">
+                  <div className="flex gap-4">
                     <div className="group relative flex flex-col gap-4">
                       <div className="relative">
                         <Image
@@ -140,7 +140,7 @@ export const BestSellersCarousel = ({
                     {index < bestSellersData.length - 1 && (
                       <Separator
                         orientation="vertical"
-                        className="bg-brown-10"
+                        className="bg-brown-10/50 "
                       />
                     )}
                   </div>
