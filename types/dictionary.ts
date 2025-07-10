@@ -133,4 +133,67 @@ export type Dictionary = {
     viewLess: string;
     moreAboutUs: string;
   };
+  footer: {
+    headings: {
+      shop: string;
+      info: string;
+      office: string;
+    };
+    links: {
+      shop: {
+        0: {
+          text: string;
+          href: string;
+        };
+        1: {
+          text: string;
+          href: string;
+        };
+        2: {
+          text: string;
+          href: string;
+        };
+        3: {
+          text: string;
+          href: string;
+        };
+        4: {
+          text: string;
+          href: string;
+        };
+        5: {
+          text: string;
+          href: string;
+        };
+      };
+      info: {
+        0: {
+          text: string;
+          href: string;
+        };
+        1: {
+          text: string;
+          href: string;
+        };
+      };
+    };
+    office: {
+      line1: string;
+      line2: string;
+      line3: string;
+      line4: string;
+      line5: string;
+    };
+    bottom: {
+      copyright: string;
+      privacy: {
+        text: string;
+        href: string;
+      };
+      legal: {
+        text: string;
+        href: string;
+      };
+    };
+  };
 };

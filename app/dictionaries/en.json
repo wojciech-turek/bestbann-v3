@@ -132,5 +132,56 @@
     "viewMore": "View More",
     "viewLess": "View Less",
     "moreAboutUs": "More About Us"
+  },
+  "footer": {
+    "headings": {
+      "shop": "Shop",
+      "info": "Info",
+      "office": "Office"
+    },
+    "links": {
+      "shop": [
+        {
+          "text": "Rattan bread proofing baskets",
+          "href": "/products/rattan"
+        },
+        { "text": "Cork bread proofing baskets", "href": "/products/cork" },
+        {
+          "text": "Bamboo fiber plastic baskets",
+          "href": "/products/bamboo"
+        },
+        {
+          "text": "Polypropylene baskets",
+          "href": "/products/plastic"
+        },
+        {
+          "text": "Baskets with engraved bottom",
+          "href": "/products/engraved"
+        },
+        { "text": "Liners for baskets", "href": "/products/liners" }
+      ],
+      "info": [
+        { "text": "About Us", "href": "/about" },
+        { "text": "Contacts", "href": "/contact" }
+      ]
+    },
+    "office": {
+      "line1": "BESTBANN",
+      "line2": "Weronika Pozłutko",
+      "line3": "Street: Sapiehy 21",
+      "line4": "City: Kraków 31-644",
+      "line5": "Poland"
+    },
+    "bottom": {
+      "copyright": "Copyright®2025",
+      "privacy": {
+        "text": "Privacy policy",
+        "href": "/privacy-policy"
+      },
+      "legal": {
+        "text": "Legal notice",
+        "href": "/legal-notice"
+      }
+    }
   }
 }
