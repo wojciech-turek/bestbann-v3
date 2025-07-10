@@ -117,6 +117,10 @@ export type Dictionary = {
       };
     };
   };
+  questionsBox: {
+    title: string;
+    description: string;
+  };
   buttons: {
     viewCatalog: string;
     leaveRequest: string;

@@ -117,9 +117,13 @@
       ]
     }
   },
+  "questionsBox": {
+    "title": "Any questions? <deco>Contact us!</deco>",
+    "description": "We're here to help with any inquiries you may have. Reach out to us for assistance, detailed information, or support regarding our bread proofing baskets."
+  },
   "buttons": {
     "viewCatalog": "View catalog",
-    "leaveRequest": "Leave request",
+    "leaveRequest": "Leave a request",
     "priceButton": "Find out the price",
     "orderUniqueBasket": "Order a Unique Product",
     "buyRattanBaskets": "Buy Rattan Baskets",

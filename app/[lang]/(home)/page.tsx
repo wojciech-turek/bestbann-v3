@@ -1,3 +1,5 @@
+import QuestionsBox from "@/components/QuestionsBox";
+import BannetonsLargeText from "./components/BannetonsLargeText";
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
@@ -28,6 +30,8 @@ export default async function Home({
       <CustomerFeedback lang={lang} />
       <FamilyCompany lang={lang} />
       <FAQ lang={lang} />
+      <QuestionsBox lang={lang} />
+      <BannetonsLargeText />
     </div>
   );
 }
