@@ -3,6 +3,7 @@ import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
 import CustomerFeedback from "./components/CustomerFeedback";
 import FamilyCompany from "./components/FamilyCompany";
+import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
 import Materials from "./components/Materials";
 import OurProducts from "./components/OurProducts";
@@ -26,6 +27,7 @@ export default async function Home({
       <CorkBaskets lang={lang} />
       <CustomerFeedback lang={lang} />
       <FamilyCompany lang={lang} />
+      <FAQ lang={lang} />
     </div>
   );
 }

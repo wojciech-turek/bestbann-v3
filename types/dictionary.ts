@@ -95,6 +95,27 @@ export type Dictionary = {
       description: string;
       imageCaption: string;
     };
+    faq: {
+      title: string;
+      questions: {
+        0: {
+          question: string;
+          answer: string;
+        };
+        1: {
+          question: string;
+          answer: string;
+        };
+        2: {
+          question: string;
+          answer: string;
+        };
+        3: {
+          question: string;
+          answer: string;
+        };
+      };
+    };
   };
   buttons: {
     viewCatalog: string;

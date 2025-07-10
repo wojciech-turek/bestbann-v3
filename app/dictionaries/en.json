@@ -94,6 +94,27 @@
       "title": "We're a family <deco>company</deco>",
       "description": "We are a family owned company with over 14-years’ of experience in the food industry.<br /><br />Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
       "imageCaption": "Weronika and Michal"
+    },
+    "faq": {
+      "title": "Answers to frequently asked <deco>questions</deco>",
+      "questions": [
+        {
+          "question": "How do I use a bread proofing basket?",
+          "answer": "Lightly flour the basket to prevent sticking, then place the shaped dough inside, seam side up. Allow the dough to rise until ready, then gently turn the basket over onto a baking surface. The basket helps maintain the dough’s shape for a beautifully formed loaf."
+        },
+        {
+          "question": "What are bread proofing baskets made of?",
+          "answer": "Yes, they are. For rattan baskets, you can tap out the excess flour and use a stiff brush to clean them. Cork baskets can even be washed under water. Liners also help keep them clean."
+        },
+        {
+          "question": "Can I wash my bread proofing basket?",
+          "answer": "Absolutely! We can create a custom basket with your desired dimensions and shape. You can also add a custom engraving to the bottom. Just contact us to discuss your requirements."
+        },
+        {
+          "question": "What size bread proofing basket should I choose?",
+          "answer": "Yes, all our products are certified to be food-safe according to European Parliament regulations (EC) No 1935/2004 and German LFGB standards."
+        }
+      ]
     }
   },
   "buttons": {
