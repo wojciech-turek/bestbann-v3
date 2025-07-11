@@ -1,4 +1,10 @@
 {
+  "about": {
+    "welcome": {
+      "title": "Thank you for visiting <deco>our page!</deco>",
+      "description": "We're very pleased to be able to introduce ourselves and tell you about us and what we do. We will gladly share more details and have a chat so please do not hesitate to contact us!"
+    }
+  },
   "home": {
     "hero": {
       "slogan": "Create the perfect bread <br/> with our <deco>proofing baskets!</deco>",

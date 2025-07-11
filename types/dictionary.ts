@@ -1,4 +1,10 @@
 export type Dictionary = {
+  about: {
+    welcome: {
+      title: string;
+      description: string;
+    };
+  };
   home: {
     hero: {
       slogan: string;

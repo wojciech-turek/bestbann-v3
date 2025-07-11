@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
+import { useEffect, useState } from "react";
 
 import {
   NavigationMenu,
@@ -40,8 +41,30 @@ import { Button } from "./ui/button";
 // ];
 
 const Header = () => {
+  const [scrollOpacity, setScrollOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSectionHeight = window.innerHeight; // Or a specific element's height
+      const currentScroll = window.scrollY;
+      const opacity = Math.min(currentScroll / (heroSectionHeight * 0.5), 0.6);
+      setScrollOpacity(opacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed py-3 z-20 w-full backdrop-blur-sm px-9">
+    <header
+      className="fixed py-3 z-20 w-full backdrop-blur-sm px-9"
+      style={{
+        backgroundColor: `oklch(0.3443 0.0678 48.07 / ${scrollOpacity})`,
+      }}
+    >
       <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
         <NavigationMenu>
           <NavigationMenuList className="space-x-2">
@@ -88,14 +111,14 @@ const Header = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild className="rounded-full px-4 py-2">
-                <Link href="/about" className="text-white font-medium">
+                <Link href="/about" className="text-white font-semibold">
                   About Us
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild className="rounded-full px-4 py-2">
-                <Link href="/contact" className="text-white font-medium">
+                <Link href="/contact" className="text-white font-semibold">
                   Contact
                 </Link>
               </NavigationMenuLink>
