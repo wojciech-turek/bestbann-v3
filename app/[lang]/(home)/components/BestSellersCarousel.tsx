@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
 import { getDictionary } from "@/dictionaries";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Dot } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -30,26 +30,31 @@ export const BestSellersCarousel = ({
     {
       id: 1,
       title: "Best Seller Product 1",
+      tags: ["Cork", "Grooved sides", "Natural"],
       imageSrc: "/imgs/baskets/cork/cork-rectangular.png",
     },
     {
       id: 2,
       title: "Best Seller Product 2",
+      tags: ["tag1", "tag2", "tag3"],
       imageSrc: "/imgs/baskets/cork/cork-rectangular.png",
     },
     {
       id: 3,
       title: "Best Seller Product 3",
+      tags: ["tag1", "tag2", "tag3"],
       imageSrc: "/imgs/baskets/cork/cork-rectangular.png",
     },
     {
       id: 4,
       title: "Best Seller Product 4",
+      tags: ["tag1", "tag2", "tag3"],
       imageSrc: "/imgs/baskets/cork/cork-rectangular.png",
     },
     {
       id: 5,
       title: "Best Seller Product 5",
+      tags: ["tag1", "tag2", "tag3"],
       imageSrc: "/imgs/baskets/cork/cork-rectangular.png",
     },
   ];
@@ -110,13 +115,13 @@ export const BestSellersCarousel = ({
         </div>
       </div>
       <div className="border-y border-beige-2 py-6">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <Carousel setApi={setApi} opts={{ align: "start" }}>
             <CarouselContent>
               {bestSellersData.map((item, index) => (
                 <CarouselItem
                   key={item.id}
-                  className="md:basis-1/3 2xl:basis-1/4"
+                  className="basis-11/12 md:basis-1/3 2xl:basis-1/4"
                 >
                   <div className="flex gap-4">
                     <div className="group relative flex flex-col gap-4">
@@ -132,7 +137,18 @@ export const BestSellersCarousel = ({
                           {dict.home.bestSellers.bestSellerBadge}
                         </Badge>
                       </div>
+
                       <TypographyH5>{item.title}</TypographyH5>
+                      <div className="flex items-center">
+                        {item.tags.map((tag, index) => (
+                          <span key={tag} className="text-brown-100 text-sm">
+                            {tag}
+                            {index < item.tags.length - 1 && (
+                              <Dot className="w-4 h-4 inline-block" />
+                            )}
+                          </span>
+                        ))}
+                      </div>
                       <Button size="lg" className="w-full">
                         {dict.buttons.priceButton}
                       </Button>
@@ -140,7 +156,7 @@ export const BestSellersCarousel = ({
                     {index < bestSellersData.length - 1 && (
                       <Separator
                         orientation="vertical"
-                        className="bg-brown-10/50 "
+                        className="bg-brown-10/50 hidden md:block"
                       />
                     )}
                   </div>
