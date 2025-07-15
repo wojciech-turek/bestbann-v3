@@ -6,8 +6,6 @@ import "server-only";
 const dictionaries: Record<string, () => Promise<Dictionary>> = {
   en: () =>
     import("./app/dictionaries/en.json").then((module) => module.default),
-  nl: () =>
-    import("./app/dictionaries/nl.json").then((module) => module.default),
   fr: () =>
     import("./app/dictionaries/fr.json").then((module) => module.default),
 };

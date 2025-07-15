@@ -4,9 +4,17 @@ import path from "path";
 const dictionariesDir = path.join(process.cwd(), "app", "dictionaries");
 const outputFile = path.join(process.cwd(), "types", "dictionary.ts");
 
-function generateTypeFromJson(obj: object, indent: string = "  "): string {
+function generateTypeFromJson(obj: any, indent: string = "  "): string {
   if (typeof obj !== "object" || obj === null) {
     return "string";
+  }
+
+  if (Array.isArray(obj)) {
+    if (obj.length === 0) {
+      return "any[]";
+    }
+    const itemType = generateTypeFromJson(obj[0], indent);
+    return `(${itemType})[]`;
   }
 
   const entries = Object.entries(obj);

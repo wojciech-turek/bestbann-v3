@@ -78,10 +78,7 @@ export type Dictionary = {
         sgh: {
           title: string;
           description: string;
-          regulations: {
-            0: string;
-            1: string;
-          };
+          regulations: (string)[];
         };
         natural: {
           title: string;
@@ -103,24 +100,10 @@ export type Dictionary = {
     };
     faq: {
       title: string;
-      questions: {
-        0: {
-          question: string;
-          answer: string;
-        };
-        1: {
-          question: string;
-          answer: string;
-        };
-        2: {
-          question: string;
-          answer: string;
-        };
-        3: {
-          question: string;
-          answer: string;
-        };
-      };
+      questions: ({
+        question: string;
+        answer: string;
+      })[];
     };
   };
   questionsBox: {
@@ -146,42 +129,14 @@ export type Dictionary = {
       office: string;
     };
     links: {
-      shop: {
-        0: {
-          text: string;
-          href: string;
-        };
-        1: {
-          text: string;
-          href: string;
-        };
-        2: {
-          text: string;
-          href: string;
-        };
-        3: {
-          text: string;
-          href: string;
-        };
-        4: {
-          text: string;
-          href: string;
-        };
-        5: {
-          text: string;
-          href: string;
-        };
-      };
-      info: {
-        0: {
-          text: string;
-          href: string;
-        };
-        1: {
-          text: string;
-          href: string;
-        };
-      };
+      shop: ({
+        text: string;
+        href: string;
+      })[];
+      info: ({
+        text: string;
+        href: string;
+      })[];
     };
     office: {
       line1: string;
@@ -189,6 +144,12 @@ export type Dictionary = {
       line3: string;
       line4: string;
       line5: string;
+    };
+    contacts: {
+      phone1: string;
+      phone2: string;
+      email1: string;
+      email2: string;
     };
     bottom: {
       copyright: string;

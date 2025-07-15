@@ -7,11 +7,11 @@
   },
   "home": {
     "hero": {
-      "slogan": "Create the perfect bread <br/> with our <deco>proofing baskets!</deco>",
+      "slogan": "Create the perfect bread with our <deco>proofing baskets!</deco>",
       "description": "Experienced bakers choose us to achieve the perfect bread texture and shape"
     },
     "weMakeBannetons": {
-      "title": "We make bannetons <br/> by hand from <deco>natural materials</deco>",
+      "title": "We make bannetons by hand from <deco>natural materials</deco>",
       "description": "Our exclusive technology makes them ideal for bread proofing. Each product is made with the utmost care so that you can have the best baked goods possible"
     },
     "ourProducts": {
@@ -66,14 +66,14 @@
     },
     "uniqueBasket": {
       "title": "Order a unique bread proofing <deco>basket</deco>",
-      "description": "You can order a bread proofing basket from our wide range of shapes and sizes or create your own unique basket. We can customize dimensions, shapes or add an engraving. <br/>  <br/> We are open for your ideas and suggestions!"
+      "description": "You can order a bread proofing basket from our wide range of shapes and sizes or create your own unique basket. We can customize dimensions, shapes or add an engraving. We are open for your ideas and suggestions!"
     },
     "bestSellers": {
       "title": "Best sellers",
       "bestSellerBadge": "Bestseller"
     },
     "materials": {
-      "title": "Taking care of the high quality <br/> of our <deco>products</deco>",
+      "title": "Taking care of the high quality of our <deco>products</deco>",
       "sections": {
         "sgh": {
           "title": "SGS Test Reports and PZH Certificate",
@@ -85,12 +85,12 @@
         },
         "natural": {
           "title": "Natural rattan material",
-          "description": "We use only natural rattan material for the bread proofing baskets production. <br/> <br/> No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
+          "description": "We use only natural rattan material for the bread proofing baskets production. No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
         }
       }
     },
     "corkBaskets": {
-      "title": "Baskets made of cork granules <br/> are our own <deco>invention</deco>",
+      "title": "Baskets made of cork granules are our own <deco>invention</deco>",
       "description": "They can be washed under the water from the remains of flour and dough, which is a significant simplification in terms of keeping the baskets clean!"
     },
     "customerFeedback": {
@@ -98,7 +98,7 @@
     },
     "familyCompany": {
       "title": "We're a family <deco>company</deco>",
-      "description": "We are a family owned company with over 14-years’ of experience in the food industry.<br /><br />Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
+      "description": "We are a family owned company with over 14-years’ of experience in the food industry.Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
       "imageCaption": "Weronika and Michal"
     },
     "faq": {

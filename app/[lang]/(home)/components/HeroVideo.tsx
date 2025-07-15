@@ -4,9 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { XIcon } from "lucide-react";
 import { useRef, useState } from "react";
 
+import { useIsMobile } from "@/hooks/use-is-mobile";
+import { cn } from "@/lib/utils";
+
 const HeroVideo = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const isMobile = useIsMobile();
 
   const handleExpand = () => {
     setIsExpanded(true);
@@ -33,12 +37,16 @@ const HeroVideo = () => {
 
       <motion.div
         layout
-        className={` ${
+        className={cn(
+          "z-20",
           isExpanded
-            ? "w-[90vw] h-[80vh] z-80 absolute inset-0 m-auto flex items-center justify-center"
-            : "w-[488px] h-[288px] cursor-pointer z-20"
-        }`}
-        onClick={!isExpanded ? handleExpand : undefined}
+            ? "w-[70vw] 2xl:w-[80vw] h-fit z-80 absolute inset-0 m-auto flex items-center justify-center"
+            : "w-full sm:w-[488px] h-auto sm:h-[288px]",
+          {
+            "cursor-pointer": !isMobile && !isExpanded,
+          }
+        )}
+        onClick={!isExpanded && !isMobile ? handleExpand : undefined}
       >
         <video
           ref={videoRef}
@@ -48,14 +56,14 @@ const HeroVideo = () => {
           muted
           playsInline
           autoPlay
-          className={`rounded-2xl ${
+          className={`rounded-2xl w-full ${
             isExpanded ? "object-contain" : "object-cover"
           }`}
         />
         {isExpanded && (
           <button
             onClick={handleCollapse}
-            className="absolute top-12 -right-4 bg-white rounded-full p-2 text-black shadow-lg hover:bg-gray-200 transition-colors z-50 cursor-pointer"
+            className="absolute -top-4 -right-4 bg-white rounded-full p-2 text-black shadow-lg hover:bg-gray-200 transition-colors z-50 cursor-pointer"
           >
             <XIcon className="w-6 h-6" />
           </button>

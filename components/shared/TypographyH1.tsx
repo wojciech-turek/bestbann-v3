@@ -10,7 +10,7 @@ export function TypographyH1({
   return (
     <h2
       className={cn(
-        "scroll-m-20 pb-2 text-6xl font-medium leading-14 tracking-tight first:mt-0 text-brown-100 text-center",
+        "scroll-m-20 pb-2 text-4xl xl:text-5xl 2xl:text-6xl xl:leading-13 tracking-tight first:mt-0 text-brown-100 text-center font-medium  2xl:leading-[70px]",
         className
       )}
     >

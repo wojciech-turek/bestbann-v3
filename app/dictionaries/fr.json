@@ -2,5 +2,74 @@
   "products": {
     "cart": "Ajouter au panier",
     "add": "Ajouter"
+  },
+  "buttons": {
+    "viewCatalog": "View catalog",
+    "leaveRequest": "Leave a request",
+    "priceButton": "Find out the price",
+    "orderUniqueBasket": "Order a Unique Product",
+    "buyRattanBaskets": "Buy Rattan Baskets",
+    "buyCorkBaskets": "Buy Cork Baskets",
+    "downloadCertificate": "Download Certificate",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "moreAboutUs": "More About Us"
+  },
+  "footer": {
+    "headings": {
+      "shop": "Shop",
+      "info": "Info",
+      "office": "Office"
+    },
+    "links": {
+      "shop": [
+        {
+          "text": "Rattan bread proofing baskets",
+          "href": "/products/rattan"
+        },
+        { "text": "Cork bread proofing baskets", "href": "/products/cork" },
+        {
+          "text": "Bamboo fiber plastic baskets",
+          "href": "/products/bamboo"
+        },
+        {
+          "text": "Polypropylene baskets",
+          "href": "/products/plastic"
+        },
+        {
+          "text": "Baskets with engraved bottom",
+          "href": "/products/engraved"
+        },
+        { "text": "Liners for baskets", "href": "/products/liners" }
+      ],
+      "info": [
+        { "text": "About Us", "href": "/about" },
+        { "text": "Contacts", "href": "/contact" }
+      ]
+    },
+    "office": {
+      "line1": "BESTBANN",
+      "line2": "Weronika Pozłutko",
+      "line3": "Street: Sapiehy 21",
+      "line4": "City: Kraków 31-644",
+      "line5": "Poland"
+    },
+    "contacts": {
+      "phone1": "+48 12 307 28 77",
+      "phone2": "+48 692 933 069",
+      "email1": "office@bestbann.com",
+      "email2": "shop@bestbann.com"
+    },
+    "bottom": {
+      "copyright": "Copyright®2025",
+      "privacy": {
+        "text": "Privacy policy",
+        "href": "/privacy-policy"
+      },
+      "legal": {
+        "text": "Legal notice",
+        "href": "/legal-notice"
+      }
+    }
   }
 }
