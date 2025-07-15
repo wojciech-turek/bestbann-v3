@@ -44,14 +44,14 @@ const OurProducts = async ({ lang }: { lang: string }) => {
     },
   ];
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex container mx-auto items-center justify-between gap-4 px-9">
+    <div className="flex flex-col gap-8 sm:gap-10">
+      <div className="flex flex-col sm:flex-row container mx-auto items-center justify-between gap-5 px-4 sm:px-9">
         <TypographyH2>{dict.home.ourProducts.title}</TypographyH2>
-        <Button size="lg">
+        <Button size="lg" className="w-full sm:w-fit">
           {dict.buttons.viewCatalog} <ArrowRight className="w-4 h-4" />
         </Button>
       </div>
-      <div className="grid grid-cols-3 container mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 container mx-auto">
         {products.map((product, i) => {
           const isLastInRow = (i + 1) % 3 === 0;
           const isLastRow = i >= products.length - 3;

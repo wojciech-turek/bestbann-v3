@@ -32,18 +32,18 @@ const BenefitsBannetons = async ({ lang }: { lang: string }) => {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-24">
+    <div className="container mx-auto sm:py-12 px-4 sm:px-24">
       <div className="text-center">
-        <TypographyH2>
+        <TypographyH2 className="whitespace-nowrap">
           <RichText>{dict.home.benefits.title}</RichText>
         </TypographyH2>
       </div>
 
-      <div className="mt-12 grid items-center gap-8 md:grid-cols-3">
+      <div className="mt-8 sm:mt-12 grid items-center gap-8 md:grid-cols-3">
         <div className="flex flex-col gap-8">
           {sections.slice(0, 2).map((section) => (
             <div key={section.title} className="text-center">
-              <div className="relative mx-auto mb-4 h-32 w-32">
+              <div className="relative mx-auto sm:mb-4 h-30 w-30">
                 <Image
                   src={section.src}
                   alt={section.title}
@@ -57,12 +57,12 @@ const BenefitsBannetons = async ({ lang }: { lang: string }) => {
           ))}
         </div>
 
-        <div className="relative h-[486px] px-24 ">
+        <div className="relative h-[396px] sm:h-[486px] sm:px-24 ">
           <Image
             src="/imgs/home/benefits-trimmed.png"
             alt={dict.home.benefits.title as string}
             fill
-            className="object-contain"
+            className="object-contain h-fit"
           />
         </div>
 

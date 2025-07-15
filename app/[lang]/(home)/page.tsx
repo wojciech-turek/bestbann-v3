@@ -1,4 +1,8 @@
+import BenefitsBannetons from "./components/BenefitsBannetons";
+import BestSellers from "./components/BestSellers";
 import Hero from "./components/Hero";
+import OurProducts from "./components/OurProducts";
+import WeMakeBannetons from "./components/WeMakeBannetons";
 
 export default async function Home({
   params: { lang },
@@ -6,12 +10,14 @@ export default async function Home({
   params: { lang: string };
 }) {
   return (
-    <div className="flex flex-col gap-40">
+    <div className="flex flex-col gap-20 sm:gap-40">
       <Hero lang={lang} />
-      {/* <WeMakeBannetons lang={lang} />
+      <WeMakeBannetons lang={lang} />
       <OurProducts lang={lang} />
       <BenefitsBannetons lang={lang} />
       <BestSellers lang={lang} />
+      {/*
+     
       <UniqueBasket lang={lang} />
       <Materials lang={lang} />
       <CorkBaskets lang={lang} />

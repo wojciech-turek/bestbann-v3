@@ -83,12 +83,12 @@ export const BestSellersCarousel = ({
   };
 
   return (
-    <div className="container mx-auto flex flex-col gap-6 px-9">
-      <div className="flex items-center justify-between">
+    <div className="container mx-auto flex flex-col gap-6 sm:px-9">
+      <div className="flex items-center justify-between px-4">
         <TypographyH2 className="text-left">
           <RichText>{dict.home.bestSellers.title}</RichText>
         </TypographyH2>
-        <div className="flex items-center gap-2">
+        <div className="hidden sm:flex items-center gap-2">
           <Button
             variant="outline"
             size="lg"
@@ -116,7 +116,7 @@ export const BestSellersCarousel = ({
               {bestSellersData.map((item, index) => (
                 <CarouselItem
                   key={item.id}
-                  className="md:basis-1/3  2xl:basis-1/4"
+                  className="md:basis-1/3 2xl:basis-1/4"
                 >
                   <div className="flex gap-4">
                     <div className="group relative flex flex-col gap-4">
