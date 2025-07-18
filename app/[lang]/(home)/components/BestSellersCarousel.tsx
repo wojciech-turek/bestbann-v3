@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
 import { getDictionary } from "@/dictionaries";
+import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight, Dot } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -115,15 +116,15 @@ export const BestSellersCarousel = ({
         </div>
       </div>
       <div className="border-y border-beige-2 py-6">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto pl-4">
           <Carousel setApi={setApi} opts={{ align: "start" }}>
             <CarouselContent>
               {bestSellersData.map((item, index) => (
                 <CarouselItem
                   key={item.id}
-                  className="basis-11/12 md:basis-1/3 2xl:basis-1/4"
+                  className={cn("basis-11/12 md:basis-1/3 2xl:basis-1/4")}
                 >
-                  <div className="flex gap-4">
+                  <div>
                     <div className="group relative flex flex-col gap-4">
                       <div className="relative">
                         <Image
