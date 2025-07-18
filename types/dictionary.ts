@@ -83,6 +83,7 @@ export type Dictionary = {
         natural: {
           title: string;
           description: string;
+          description1: string;
         };
       };
     };
@@ -144,12 +145,6 @@ export type Dictionary = {
       line3: string;
       line4: string;
       line5: string;
-    };
-    contacts: {
-      phone1: string;
-      phone2: string;
-      email1: string;
-      email2: string;
     };
     bottom: {
       copyright: string;

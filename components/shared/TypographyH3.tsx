@@ -10,7 +10,7 @@ export function TypographyH3({
   return (
     <h3
       className={cn(
-        "scroll-m-20 text-2xl font-semibold tracking-tight text-brown-100",
+        "scroll-m-20 text-2xl font-medium tracking-tight text-brown-100",
         className
       )}
     >

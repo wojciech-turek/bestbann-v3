@@ -85,7 +85,8 @@
         },
         "natural": {
           "title": "Natural rattan material",
-          "description": "We use only natural rattan material for the bread proofing baskets production. No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
+          "description": "We use only natural rattan material for the bread proofing baskets production.",
+          "description1": "No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
         }
       }
     },
@@ -134,7 +135,7 @@
     "orderUniqueBasket": "Order a Unique Product",
     "buyRattanBaskets": "Buy Rattan Baskets",
     "buyCorkBaskets": "Buy Cork Baskets",
-    "downloadCertificate": "Download Certificate",
+    "downloadCertificate": "Download Certificates",
     "viewMore": "View More",
     "viewLess": "View Less",
     "moreAboutUs": "More About Us"
