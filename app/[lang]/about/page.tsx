@@ -1,10 +1,11 @@
 import WelcomeText from "./components/WelcomeText";
 
 const AboutUsPage = async ({
-  params: { lang },
+  params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) => {
+  const { lang } = await params;
   return (
     <div className="flex flex-col gap-40 bg-beige-3">
       <WelcomeText lang={lang} />

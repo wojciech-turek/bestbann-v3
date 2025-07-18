@@ -2,13 +2,15 @@ import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import Hero from "./components/Hero";
 import OurProducts from "./components/OurProducts";
+import UniqueBasket from "./components/UniqueBasket";
 import WeMakeBannetons from "./components/WeMakeBannetons";
 
 export default async function Home({
-  params: { lang },
+  params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
+  const { lang } = await params;
   return (
     <div className="flex flex-col gap-20 sm:gap-40">
       <Hero lang={lang} />
@@ -16,6 +18,7 @@ export default async function Home({
       <OurProducts lang={lang} />
       <BenefitsBannetons lang={lang} />
       <BestSellers lang={lang} />
+      <UniqueBasket lang={lang} />
       {/*
      
       <UniqueBasket lang={lang} />
