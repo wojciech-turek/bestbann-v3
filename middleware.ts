@@ -36,11 +36,6 @@ export function middleware(request: NextRequest) {
 
   console.log(pathnameHasLocale);
 
-  // Skip locale handling for specific paths
-  if (pathname.startsWith("/videos")) {
-    return NextResponse.next();
-  }
-
   // if users try to enter an invalid locale, we redirect to the home page
 
   if (pathnameHasLocale) return;
@@ -56,9 +51,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    "/((?!_next).*)",
-    // Optional: only run on root (/) URL
-    // '/'
+    // Only run on page routes, exclude static assets
+    "/((?!_next|imgs|videos|deco|favicon\\.ico).*)",
   ],
 };
