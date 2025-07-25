@@ -4,6 +4,7 @@ import path from "path";
 const dictionariesDir = path.join(process.cwd(), "app", "dictionaries");
 const outputFile = path.join(process.cwd(), "types", "dictionary.ts");
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function generateTypeFromJson(obj: any, indent: string = "  "): string {
   if (typeof obj !== "object" || obj === null) {
     return "string";

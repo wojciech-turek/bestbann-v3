@@ -1,58 +1,196 @@
 {
-  "products": {
-    "cart": "Ajouter au panier",
-    "add": "Ajouter"
+  "about": {
+    "welcome": {
+      "title": "Merci d'avoir visité <deco>notre page !</deco>",
+      "description": "Nous sommes très heureux de pouvoir nous présenter et de vous parler de nous et de ce que nous faisons. Nous serons ravis de partager plus de détails et de discuter, alors n'hésitez pas à nous contacter !"
+    }
+  },
+  "home": {
+    "hero": {
+      "slogan": "Créez le pain parfait avec nos <deco>bannetons de fermentation !</deco>",
+      "description": "Les boulangers expérimentés nous choisissent pour obtenir la texture et la forme de pain parfaites."
+    },
+    "weMakeBannetons": {
+      "title": "Nous fabriquons des bannetons à la main à partir de <deco>matériaux naturels</deco>",
+      "description": "Notre technologie exclusive les rend idéaux pour la fermentation du pain. Chaque produit est fabriqué avec le plus grand soin afin que vous puissiez obtenir les meilleurs produits de boulangerie possibles."
+    },
+    "ourProducts": {
+      "title": "Nos produits",
+      "products": {
+        "rattan": {
+          "title": "Bannetons de fermentation en rotin",
+          "description": "Excellents bannetons en rotin pour la fermentation du pain, fabriqués à la main à partir des meilleurs matériaux naturels."
+        },
+        "cork": {
+          "title": "Bannetons de fermentation en liège",
+          "description": "La levée dans un panier, grâce à l'absorption d'une partie de l'humidité et au maintien de la chaleur, assure également une meilleure..."
+        },
+        "bamboo": {
+          "title": "Paniers en plastique de fibre de bambou",
+          "description": "Un produit unique qui combine une bonne ventilation de l'air et un superbe aspect artisanal."
+        },
+        "platic": {
+          "title": "Paniers en polypropylène",
+          "description": "Les paniers fabriqués combinent les principaux avantages des paniers en rotin, qui sont une bonne ventilation et..."
+        },
+        "engraved": {
+          "title": "Paniers avec fond gravé",
+          "description": "Nous proposons des paniers avec une base gravée - vous pouvez commander l'un de nos nombreux modèles ou créer le vôtre."
+        },
+        "liners": {
+          "title": "Housses pour bannetons",
+          "description": "Les housses aident à garder le panier propre plus longtemps et sont très utiles avec une pâte très hydratée..."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages des <deco>bannetons</deco>",
+      "sections": {
+        "eco": {
+          "title": "Matériaux écologiques",
+          "description": "Nos produits sont fabriqués à partir de matériaux naturels, qui sont sans danger pour votre santé."
+        },
+        "easy": {
+          "title": "Facilité d'utilisation",
+          "description": "Nos produits sont faciles à nettoyer et vous dureront longtemps."
+        },
+        "shape": {
+          "title": "Forme parfaite",
+          "description": "Les bannetons maintiennent la forme parfaite de la pâte pour des pains professionnels."
+        },
+        "handmade": {
+          "title": "Fait à la main",
+          "description": "Tous les produits sont faits à la main avec amour et attention aux détails."
+        }
+      }
+    },
+    "uniqueBasket": {
+      "title": "Commandez un banneton de fermentation <deco>unique</deco>",
+      "description": "Vous pouvez commander un banneton de fermentation parmi notre large gamme de formes et de tailles ou créer votre propre panier unique. Nous pouvons personnaliser les dimensions, les formes ou ajouter une gravure. Nous sommes ouverts à vos idées et suggestions !"
+    },
+    "bestSellers": {
+      "title": "Meilleures ventes",
+      "bestSellerBadge": "Best-seller"
+    },
+    "materials": {
+      "title": "Prendre soin de la haute qualité de nos <deco>produits</deco>",
+      "sections": {
+        "sgh": {
+          "title": "Rapports de test SGS et certificat PZH",
+          "description": "Nos paniers peuvent être en contact avec les aliments en toute sécurité, conformément à :",
+          "regulations": [
+            "Règlement (CE) n° 1935/2004 du Parlement européen et du Conseil du 27 octobre 2004 concernant les matériaux et objets destinés à entrer en contact avec des denrées alimentaires",
+            "Loi allemande sur les denrées alimentaires et les aliments pour animaux (LFGB) Art. 30, 31"
+          ]
+        },
+        "natural": {
+          "title": "Matériau en rotin naturel",
+          "description": "Nous utilisons uniquement du rotin naturel pour la production des bannetons de fermentation.",
+          "description1": "Pas d'agents de blanchiment, pas de produits chimiques. Nos paniers sont faits à la main, c'est pourquoi chaque bâton de rotin est soigneusement vérifié avant utilisation."
+        }
+      }
+    },
+    "corkBaskets": {
+      "title": "Les paniers en granulés de liège sont notre propre <deco>invention</deco>",
+      "description": "Ils peuvent être lavés sous l'eau pour enlever les restes de farine et de pâte, ce qui simplifie considérablement le nettoyage des paniers !"
+    },
+    "customerFeedback": {
+      "title": "Avis des clients"
+    },
+    "familyCompany": {
+      "title": "Nous sommes une <deco>entreprise</deco> familiale",
+      "description": "Nous sommes une entreprise familiale avec plus de 14 ans d'expérience dans l'industrie alimentaire. Les valeurs familiales sont très importantes pour nous et c'est pourquoi nous traitons chaque client comme un membre de notre grande famille de boulangers. Nous sommes positifs, honnêtes, courageux et déterminés à donner le meilleur de nous-mêmes et à ne créer que les meilleurs produits.",
+      "imageCaption": "Weronika et Michal"
+    },
+    "faq": {
+      "title": "Réponses aux questions fréquemment <deco>posées</deco>",
+      "questions": [
+        {
+          "question": "Comment utiliser un banneton de fermentation ?",
+          "answer": "Farinez légèrement le panier pour éviter qu'il ne colle, puis placez la pâte façonnée à l'intérieur, la soudure vers le haut. Laissez la pâte lever jusqu'à ce qu'elle soit prête, puis retournez doucement le panier sur une surface de cuisson. Le panier aide à maintenir la forme de la pâte pour un pain magnifiquement formé."
+        },
+        {
+          "question": "De quoi sont faits les bannetons de fermentation ?",
+          "answer": "Oui, ils le sont. Pour les paniers en rotin, vous pouvez taper pour enlever l'excès de farine et utiliser une brosse dure pour les nettoyer. Les paniers en liège peuvent même être lavés sous l'eau. Les housses aident également à les garder propres."
+        },
+        {
+          "question": "Puis-je laver mon banneton de fermentation ?",
+          "answer": "Absolument ! Nous pouvons créer un panier personnalisé avec les dimensions et la forme que vous souhaitez. Vous pouvez également ajouter une gravure personnalisée au fond. Contactez-nous simplement pour discuter de vos besoins."
+        },
+        {
+          "question": "Quelle taille de banneton de fermentation dois-je choisir ?",
+          "answer": "Oui, tous nos produits sont certifiés pour être sans danger pour les aliments conformément aux réglementations du Parlement européen (CE) n° 1935/2004 et aux normes allemandes LFGB."
+        }
+      ]
+    }
+  },
+  "questionsBox": {
+    "title": "Des questions ?",
+    "contactUs": "<deco>Contactez-nous</deco>",
+    "description": "Nous sommes là pour vous aider avec toutes les questions que vous pourriez avoir. Contactez-nous pour obtenir de l'aide, des informations détaillées ou un soutien concernant nos bannetons de fermentation."
   },
   "buttons": {
-    "viewCatalog": "View catalog",
-    "leaveRequest": "Leave a request",
-    "priceButton": "Find out the price",
-    "orderUniqueBasket": "Order a Unique Product",
-    "buyRattanBaskets": "Buy Rattan Baskets",
-    "buyCorkBaskets": "Buy Cork Baskets",
-    "downloadCertificate": "Download Certificate",
-    "viewMore": "View More",
-    "viewLess": "View Less",
-    "moreAboutUs": "More About Us"
+    "viewCatalog": "Voir le catalogue",
+    "leaveRequest": "Laisser une demande",
+    "priceButton": "Découvrir le prix",
+    "orderUniqueBasket": "Commander un produit unique",
+    "buyRattanBaskets": "Acheter des paniers en rotin",
+    "buyCorkBaskets": "Acheter des paniers en liège",
+    "downloadCertificate": "Télécharger les certificats",
+    "viewMore": "Voir plus",
+    "viewLess": "Voir moins",
+    "moreAboutUs": "En savoir plus sur nous"
   },
   "footer": {
     "headings": {
-      "shop": "Shop",
-      "info": "Info",
-      "office": "Office"
+      "shop": "Boutique",
+      "info": "Infos",
+      "office": "Bureau"
     },
     "links": {
       "shop": [
         {
-          "text": "Rattan bread proofing baskets",
+          "text": "Bannetons de fermentation en rotin",
           "href": "/products/rattan"
         },
-        { "text": "Cork bread proofing baskets", "href": "/products/cork" },
         {
-          "text": "Bamboo fiber plastic baskets",
+          "text": "Bannetons de fermentation en liège",
+          "href": "/products/cork"
+        },
+        {
+          "text": "Paniers en plastique de fibre de bambou",
           "href": "/products/bamboo"
         },
         {
-          "text": "Polypropylene baskets",
+          "text": "Paniers en polypropylène",
           "href": "/products/plastic"
         },
         {
-          "text": "Baskets with engraved bottom",
+          "text": "Paniers avec fond gravé",
           "href": "/products/engraved"
         },
-        { "text": "Liners for baskets", "href": "/products/liners" }
+        {
+          "text": "Housses pour bannetons",
+          "href": "/products/liners"
+        }
       ],
       "info": [
-        { "text": "About Us", "href": "/about" },
-        { "text": "Contacts", "href": "/contact" }
+        {
+          "text": "À propos de nous",
+          "href": "/about"
+        },
+        {
+          "text": "Contacts",
+          "href": "/contact"
+        }
       ]
     },
     "office": {
       "line1": "BESTBANN",
       "line2": "Weronika Pozłutko",
-      "line3": "Street: Sapiehy 21",
-      "line4": "City: Kraków 31-644",
-      "line5": "Poland"
+      "line3": "Rue : Sapiehy 21",
+      "line4": "Ville : Cracovie 31-644",
+      "line5": "Pologne"
     },
     "contacts": {
       "phone1": "+48 12 307 28 77",
@@ -63,11 +201,11 @@
     "bottom": {
       "copyright": "Copyright®2025",
       "privacy": {
-        "text": "Privacy policy",
+        "text": "Politique de confidentialité",
         "href": "/privacy-policy"
       },
       "legal": {
-        "text": "Legal notice",
+        "text": "Mentions légales",
         "href": "/legal-notice"
       }
     }
