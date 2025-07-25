@@ -9,9 +9,9 @@ import Image from "next/image";
 const CorkBaskets = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
   return (
-    <div className="bg-beige-3 pt-32">
+    <div className="bg-beige-3 pt-9 sm:pt-32">
       <div className="flex relative">
-        <div className="relative flex-1 hidden lg:block">
+        <div className="relative flex-1">
           <Image
             src="/deco/bean-orange-transparent.svg"
             alt="deco"
@@ -27,14 +27,14 @@ const CorkBaskets = async ({ lang }: { lang: string }) => {
             className="absolute top-3/5 left-1/3"
           />
         </div>
-        <div className="flex flex-col items-center z-10 px-4">
-          <TypographyH2 className="text-center mb-12">
+        <div className="flex flex-col sm:items-center z-10 px-4">
+          <TypographyH2 className="text-left sm:text-center mb-12">
             <RichText>{dict.home.corkBaskets.title}</RichText>
           </TypographyH2>
-          <TypographyP className="text-center mb-12 text-lg max-w-[60ch]">
+          <TypographyP className="text-left sm:text-center mb-12 text-lg max-w-[60ch]">
             <RichText>{dict.home.corkBaskets.description}</RichText>
           </TypographyP>
-          <Button size="lg" className="">
+          <Button size="lg" className="w-fit">
             {dict.buttons.buyCorkBaskets} <ArrowRight className="w-4 h-4" />
           </Button>
           <Image
@@ -42,10 +42,10 @@ const CorkBaskets = async ({ lang }: { lang: string }) => {
             alt="Cork Baskets"
             width={803}
             height={357}
-            className="mt-16"
+            className="mt-20 sm:mt-16"
           />
         </div>
-        <div className="relative flex-1 hidden lg:block">
+        <div className="relative flex-1">
           <Image
             src="/deco/bean-orange.svg"
             alt="deco"

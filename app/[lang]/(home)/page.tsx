@@ -1,5 +1,6 @@
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
+import CorkBaskets from "./components/CorkBaskets";
 import Hero from "./components/Hero";
 import Materials from "./components/Materials";
 import OurProducts from "./components/OurProducts";
@@ -21,8 +22,9 @@ export default async function Home({
       <BestSellers lang={lang} />
       <UniqueBasket lang={lang} />
       <Materials lang={lang} />
+      <CorkBaskets lang={lang} />
       {/*
-     
+        
      
 
       <CorkBaskets lang={lang} />
