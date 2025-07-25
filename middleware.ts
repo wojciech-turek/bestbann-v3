@@ -11,6 +11,8 @@ const getLocale = (request: NextRequest) => {
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
 
+  console.log(languages);
+
   try {
     return match(languages, locales, defaultLocale);
   } catch {
@@ -25,9 +27,12 @@ const getLocale = (request: NextRequest) => {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  console.log(pathname);
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
+
+  console.log(pathnameHasLocale);
 
   // Skip locale handling for specific paths
   if (pathname.startsWith("/videos")) {
@@ -39,6 +44,7 @@ export function middleware(request: NextRequest) {
   if (pathnameHasLocale) return;
   // Redirect if there is no locale
   const locale = getLocale(request);
+  console.log("locale", locale);
   request.nextUrl.pathname = `/${locale}${pathname}`;
 
   // e.g. incoming request is /products
@@ -49,7 +55,7 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    "/((?!_next/static|_next/image|favicon.ico|monitoring|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp3)$).*)",
+    "/((?!_next).*)",
     // Optional: only run on root (/) URL
     // '/'
   ],
