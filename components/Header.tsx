@@ -41,6 +41,7 @@ const Header = ({
       setScrollOpacity(opacity);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {

@@ -30,7 +30,7 @@ export function LanguageSwitcher() {
       newPath = `/${newLocale}${pathname}`;
     }
 
-    router.push(newPath);
+    router.push(newPath, { scroll: false });
   };
 
   const currentLocale = locales.find((loc) => pathname.startsWith(`/${loc}`));
