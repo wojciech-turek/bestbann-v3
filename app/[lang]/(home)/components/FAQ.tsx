@@ -7,7 +7,7 @@ import { FAQAccordion } from "./FAQAccordion";
 const FAQ = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
   return (
-    <div className="container mx-auto flex">
+    <div className="container mx-auto flex flex-col sm:flex-row px-4">
       <div className="basis-2/5 relative">
         <TypographyH2 className="text-left">
           <RichText>{dict.home.faq.title}</RichText>
@@ -17,7 +17,7 @@ const FAQ = async ({ lang }: { lang: string }) => {
           alt="FAQ"
           width={138}
           height={138}
-          className="absolute top-1/2 left-0"
+          className="block sm:absolute top-1/2 left-0 scale-75 sm:scale-100"
         />
       </div>
       <div className="basis-1/2">

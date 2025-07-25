@@ -24,12 +24,10 @@ import { Separator } from "./ui/separator";
 const Header = ({
   lang,
   links,
-  contacts,
   buttons,
 }: {
   lang: string;
   links: Dictionary["footer"]["links"];
-  contacts: Dictionary["footer"]["contacts"];
   buttons: Dictionary["buttons"];
 }) => {
   const [scrollOpacity, setScrollOpacity] = useState(0);
@@ -49,8 +47,6 @@ const Header = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const menuLinks = [{ text: "Products", href: "/products" }, ...links.info];
 
   return (
     <header

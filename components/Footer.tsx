@@ -42,10 +42,10 @@ const Footer = async ({ lang }: { lang: string }) => {
             </ul>
           </div>
           <div>
-            <div className="text-lg font-semibold">
+            <div className=" sm:text-lg font-semibold">
               {footer.headings.office}
             </div>
-            <div className="mt-4 space-y-1">
+            <div className="mt-4 space-y-1 text-sm sm:text-base">
               <p>{footer.office.line1}</p>
               <p>{footer.office.line2}</p>
               <p>{footer.office.line3}</p>

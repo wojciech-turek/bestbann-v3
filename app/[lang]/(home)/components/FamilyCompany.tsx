@@ -9,7 +9,7 @@ import Image from "next/image";
 const FamilyCompany = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
   return (
-    <div className="container mx-auto flex gap-20 items-center justify-center">
+    <div className="container mx-auto flex flex-col sm:flex-row gap-8 sm:gap-20 items-center justify-center px-4 sm:px-0">
       <div className="flex flex-col items-end">
         <Image
           src="/imgs/home/weronika-and-michal.png"

@@ -1,6 +1,11 @@
+import QuestionsBox from "@/components/QuestionsBox";
+import BannetonsLargeText from "./components/BannetonsLargeText";
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
+import CustomerFeedback from "./components/CustomerFeedback";
+import FamilyCompany from "./components/FamilyCompany";
+import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
 import Materials from "./components/Materials";
 import OurProducts from "./components/OurProducts";
@@ -23,16 +28,11 @@ export default async function Home({
       <UniqueBasket lang={lang} />
       <Materials lang={lang} />
       <CorkBaskets lang={lang} />
-      {/*
-        
-     
-
-      <CorkBaskets lang={lang} />
       <CustomerFeedback lang={lang} />
       <FamilyCompany lang={lang} />
       <FAQ lang={lang} />
       <QuestionsBox lang={lang} />
-      <BannetonsLargeText /> */}
+      <BannetonsLargeText />
     </div>
   );
 }

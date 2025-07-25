@@ -125,7 +125,8 @@
     }
   },
   "questionsBox": {
-    "title": "Any questions? <deco>Contact us!</deco>",
+    "title": "Any questions?",
+    "contactUs": "<deco>Contact us</deco>",
     "description": "We're here to help with any inquiries you may have. Reach out to us for assistance, detailed information, or support regarding our bread proofing baskets."
   },
   "buttons": {

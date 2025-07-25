@@ -27,22 +27,18 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }>) {
-  const dict = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   return (
     <html lang="en">
       <body
         className={`${plusJakartaSans.variable} ${libreBaskerville.variable} font-sans antialiased bg-beige-1 overflow-x-hidden`}
       >
-        <Header
-          lang={params.lang}
-          links={dict.footer.links}
-          contacts={dict.footer.contacts}
-          buttons={dict.buttons}
-        />
+        <Header lang={lang} links={dict.footer.links} buttons={dict.buttons} />
         {children}
-        <Footer lang={params.lang} />
+        <Footer lang={lang} />
       </body>
     </html>
   );

@@ -97,8 +97,8 @@ export const CustomerFeedbackCarousel = ({
   };
 
   return (
-    <div className="container mx-auto flex flex-col gap-6 px-9">
-      <div className="flex items-center justify-between">
+    <div className="container mx-auto flex flex-col gap-6 px-0 sm:px-9">
+      <div className="flex flex-col sm:flex-row items-center justify-between px-4">
         <TypographyH2 className="text-left">
           <RichText>{dict.home.customerFeedback.title}</RichText>
         </TypographyH2>
@@ -124,7 +124,7 @@ export const CustomerFeedbackCarousel = ({
         </div>
       </div>
       <div className="border-y border-beige-2 py-6">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <Carousel setApi={setApi} opts={{ align: "start" }}>
             <CarouselContent>
               {customerFeedbackData.map((item, index) => (

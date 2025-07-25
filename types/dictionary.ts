@@ -78,7 +78,7 @@ export type Dictionary = {
         sgh: {
           title: string;
           description: string;
-          regulations: (string)[];
+          regulations: string[];
         };
         natural: {
           title: string;
@@ -101,14 +101,15 @@ export type Dictionary = {
     };
     faq: {
       title: string;
-      questions: ({
+      questions: {
         question: string;
         answer: string;
-      })[];
+      }[];
     };
   };
   questionsBox: {
     title: string;
+    contactUs: string;
     description: string;
   };
   buttons: {
@@ -130,14 +131,14 @@ export type Dictionary = {
       office: string;
     };
     links: {
-      shop: ({
+      shop: {
         text: string;
         href: string;
-      })[];
-      info: ({
+      }[];
+      info: {
         text: string;
         href: string;
-      })[];
+      }[];
     };
     office: {
       line1: string;
