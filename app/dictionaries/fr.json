@@ -5,6 +5,10 @@
       "description": "Nous sommes très heureux de pouvoir nous présenter et de vous parler de nous et de ce que nous faisons. Nous serons ravis de partager plus de détails et de discuter, alors n'hésitez pas à nous contacter !"
     }
   },
+  "products": {
+    "cart": "Ajouter au panier",
+    "add": "Ajouter"
+  },
   "home": {
     "hero": {
       "slogan": "Créez le pain parfait avec nos <deco>bannetons de fermentation !</deco>",
@@ -98,7 +102,7 @@
       "title": "Avis des clients"
     },
     "familyCompany": {
-      "title": "Nous sommes une <deco>entreprise</deco> familiale",
+      "title": "Nous sommes une <deco>entreprise familiale</deco> ",
       "description": "Nous sommes une entreprise familiale avec plus de 14 ans d'expérience dans l'industrie alimentaire. Les valeurs familiales sont très importantes pour nous et c'est pourquoi nous traitons chaque client comme un membre de notre grande famille de boulangers. Nous sommes positifs, honnêtes, courageux et déterminés à donner le meilleur de nous-mêmes et à ne créer que les meilleurs produits.",
       "imageCaption": "Weronika et Michal"
     },
@@ -125,7 +129,7 @@
     }
   },
   "questionsBox": {
-    "title": "Des questions ?",
+    "title": "Des questions?",
     "contactUs": "<deco>Contactez-nous</deco>",
     "description": "Nous sommes là pour vous aider avec toutes les questions que vous pourriez avoir. Contactez-nous pour obtenir de l'aide, des informations détaillées ou un soutien concernant nos bannetons de fermentation."
   },

@@ -231,7 +231,9 @@ const Header = ({
 
           <div className="flex items-center space-x-6">
             <LanguageSwitcher />
-            <Button>{buttons.leaveRequest}</Button>
+            <Button className="font-semibold text-base leading-6 py-3 px-12">
+              {buttons.leaveRequest}
+            </Button>
           </div>
         </div>
       </div>
