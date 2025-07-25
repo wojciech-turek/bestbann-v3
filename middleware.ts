@@ -7,6 +7,8 @@ const locales = ["en", "nl", "fr"];
 
 const getLocale = (request: NextRequest) => {
   const negotiatorHeaders: Record<string, string> = {};
+
+  console.log(request.headers);
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
