@@ -7,6 +7,8 @@ import LazyHeroVideo from "./LazyHeroVideo";
 
 const Hero = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
+
+  console.log(dict);
   return (
     <div className="relative flex flex-col sm:flex-row justify-end sm:justify-between items-center sm:items-end gap-8 sm:gap-0 z-10 min-h-[120vh] sm:min-h-screen p-4 sm:p-8 pb-8 sm:pb-20 bg-[url('/imgs/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="absolute z-20 inset-0 bg-[#552d176e]" />

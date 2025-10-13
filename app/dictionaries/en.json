@@ -1,127 +1,143 @@
 {
-  "about": {
-    "welcome": {
-      "title": "Thank you for visiting <deco>our page!</deco>",
-      "description": "We're very pleased to be able to introduce ourselves and tell you about us and what we do. We will gladly share more details and have a chat so please do not hesitate to contact us!"
-    }
-  },
-  "home": {
-    "hero": {
-      "slogan": "Create the perfect bread with our <deco>proofing baskets!</deco>",
-      "description": "Experienced bakers choose us to achieve the perfect bread texture and shape"
-    },
-    "weMakeBannetons": {
-      "title": "We make bannetons by hand from <deco>natural materials</deco>",
-      "description": "Our exclusive technology makes them ideal for bread proofing. Each product is made with the utmost care so that you can have the best baked goods possible"
-    },
-    "ourProducts": {
-      "title": "Our products",
-      "products": {
-        "rattan": {
-          "title": "Rattan bread proofing baskets",
-          "description": "Excellent rattan baskets for proofing bread, handmade from the best natural materials"
-        },
-        "cork": {
-          "title": "Cork bread proofing baskets",
-          "description": "Rising in a basket, thanks to absorbing some of the moisture and keeping warm, also ensures better..."
-        },
-        "bamboo": {
-          "title": "Bamboo fiber plastic baskets",
-          "description": "A unique product that combines good air ventilation and a great, artisanal look"
-        },
-        "platic": {
-          "title": "Polypropylene baskets",
-          "description": "Baskets made combine the main advantages of rattan baskets, which are good ventilation and..."
-        },
-        "engraved": {
-          "title": "Baskets with engraved bottom",
-          "description": "We offer baskets with an engraved base - you can order one of our many designs or place your own"
-        },
-        "liners": {
-          "title": "Liners for baskets",
-          "description": "Liners help to keep the basket clean for longer time and are very helpful with very hydrated..."
-        }
+  "pages": {
+    "about": {
+      "welcome": {
+        "title": "Thank you for visiting <deco>our page!</deco>",
+        "description": "We're very pleased to be able to introduce ourselves and tell you about us and what we do. We will gladly share more details and have a chat so please do not hesitate to contact us!",
+        "quote1": "We're very pleased to be able to introduce ourselves and tell you",
+        "quote2": "about us and what we do. We will gladly share more details and have a chat",
+        "quote3": "so please do not hesitate to <deco>contact us!</deco>"
+      },
+      "ourProducts": {
+        "title": "Our <deco>products</deco>",
+        "description": "We are producing bread proofing baskets, also called bannetons by our own hands, with the utmost care. For many years we have been improving in this very difficult craft to ensure the highest quality of our products. We're deeply engaged and passionate about our work"
+      },
+      "takingCare": {
+        "title": "Taking care of the high quality of our <deco>products</deco>"
       }
     },
-    "benefits": {
-      "title": "Benefits of <deco>bannetons</deco>",
-      "sections": {
-        "eco": {
-          "title": "Ecological materials",
-          "description": "Our products are made of natural materials, which are safe for your health"
-        },
-        "easy": {
-          "title": "Ease of use",
-          "description": "Our products are easy to clean and will last you a long time"
-        },
-        "shape": {
-          "title": "Perfect shape",
-          "description": "Bannetons maintain the perfect dough shape for professional breads"
-        },
-        "handmade": {
-          "title": "Handmade",
-          "description": "All products are handmade with love and attention to detail"
+    "home": {
+      "hero": {
+        "slogan": "Create the perfect bread with our <deco>proofing baskets!</deco>",
+        "description": "Experienced bakers choose us to achieve the perfect bread texture and shape"
+      },
+      "weMakeBannetons": {
+        "title": "We make bannetons by hand from <deco>natural materials</deco>",
+        "description": "Our exclusive technology makes them ideal for bread proofing. Each product is made with the utmost care so that you can have the best baked goods possible"
+      },
+      "ourProducts": {
+        "title": "Our products",
+        "products": {
+          "rattan": {
+            "title": "Rattan bread proofing baskets",
+            "description": "Excellent rattan baskets for proofing bread, handmade from the best natural materials"
+          },
+          "cork": {
+            "title": "Cork bread proofing baskets",
+            "description": "Rising in a basket, thanks to absorbing some of the moisture and keeping warm, also ensures better..."
+          },
+          "bamboo": {
+            "title": "Bamboo fiber plastic baskets",
+            "description": "A unique product that combines good air ventilation and a great, artisanal look"
+          },
+          "platic": {
+            "title": "Polypropylene baskets",
+            "description": "Baskets made combine the main advantages of rattan baskets, which are good ventilation and..."
+          },
+          "engraved": {
+            "title": "Baskets with engraved bottom",
+            "description": "We offer baskets with an engraved base - you can order one of our many designs or place your own"
+          },
+          "liners": {
+            "title": "Liners for baskets",
+            "description": "Liners help to keep the basket clean for longer time and are very helpful with very hydrated..."
+          }
         }
+      },
+      "benefits": {
+        "title": "Benefits of <deco>bannetons</deco>",
+        "sections": {
+          "eco": {
+            "title": "Ecological materials",
+            "description": "Our products are made of natural materials, which are safe for your health"
+          },
+          "easy": {
+            "title": "Ease of use",
+            "description": "Our products are easy to clean and will last you a long time"
+          },
+          "shape": {
+            "title": "Perfect shape",
+            "description": "Bannetons maintain the perfect dough shape for professional breads"
+          },
+          "handmade": {
+            "title": "Handmade",
+            "description": "All products are handmade with love and attention to detail"
+          }
+        }
+      },
+      "uniqueBasket": {
+        "title": "Order a unique bread proofing <deco>basket</deco>",
+        "description": "You can order a bread proofing basket from our wide range of shapes and sizes or create your own unique basket. We can customize dimensions, shapes or add an engraving. We are open for your ideas and suggestions!"
+      },
+      "bestSellers": {
+        "title": "Best sellers",
+        "bestSellerBadge": "Bestseller"
+      },
+      "materials": {
+        "title": "Taking care of the high quality of our <deco>products</deco>",
+        "sections": {
+          "sgh": {
+            "title": "SGS Test Reports and PZH Certificate",
+            "description": "Our baskets can safely have contact with food, in accordance with:",
+            "regulations": [
+              "Regulation (EC) No 1935/2004 of the European Parliament and of the Council of 27 October 2004 on materials and articles intended to come into contact with food",
+              "Germany LFGB (LMBG) Food and Feed Law Art. 30, 31"
+            ]
+          },
+          "natural": {
+            "title": "Natural rattan material",
+            "description": "We use only natural rattan material for the bread proofing baskets production.",
+            "description1": "No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
+          }
+        }
+      },
+      "corkBaskets": {
+        "title": "Baskets made of cork granules are our own <deco>invention</deco>",
+        "description": "They can be washed under the water from the remains of flour and dough, which is a significant simplification in terms of keeping the baskets clean!"
+      },
+      "customerFeedback": {
+        "title": "Customer feedback"
+      },
+
+      "faq": {
+        "title": "Answers to frequently asked <deco>questions</deco>",
+        "questions": [
+          {
+            "question": "How do I use a bread proofing basket?",
+            "answer": "Lightly flour the basket to prevent sticking, then place the shaped dough inside, seam side up. Allow the dough to rise until ready, then gently turn the basket over onto a baking surface. The basket helps maintain the dough’s shape for a beautifully formed loaf."
+          },
+          {
+            "question": "What are bread proofing baskets made of?",
+            "answer": "Yes, they are. For rattan baskets, you can tap out the excess flour and use a stiff brush to clean them. Cork baskets can even be washed under water. Liners also help keep them clean."
+          },
+          {
+            "question": "Can I wash my bread proofing basket?",
+            "answer": "Absolutely! We can create a custom basket with your desired dimensions and shape. You can also add a custom engraving to the bottom. Just contact us to discuss your requirements."
+          },
+          {
+            "question": "What size bread proofing basket should I choose?",
+            "answer": "Yes, all our products are certified to be food-safe according to European Parliament regulations (EC) No 1935/2004 and German LFGB standards."
+          }
+        ]
       }
     },
-    "uniqueBasket": {
-      "title": "Order a unique bread proofing <deco>basket</deco>",
-      "description": "You can order a bread proofing basket from our wide range of shapes and sizes or create your own unique basket. We can customize dimensions, shapes or add an engraving. We are open for your ideas and suggestions!"
-    },
-    "bestSellers": {
-      "title": "Best sellers",
-      "bestSellerBadge": "Bestseller"
-    },
-    "materials": {
-      "title": "Taking care of the high quality of our <deco>products</deco>",
-      "sections": {
-        "sgh": {
-          "title": "SGS Test Reports and PZH Certificate",
-          "description": "Our baskets can safely have contact with food, in accordance with:",
-          "regulations": [
-            "Regulation (EC) No 1935/2004 of the European Parliament and of the Council of 27 October 2004 on materials and articles intended to come into contact with food",
-            "Germany LFGB (LMBG) Food and Feed Law Art. 30, 31"
-          ]
-        },
-        "natural": {
-          "title": "Natural rattan material",
-          "description": "We use only natural rattan material for the bread proofing baskets production.",
-          "description1": "No bleaches, no chemicals.Our baskets are handmade, therefore every rattan stick is carefully checked before use."
-        }
+    "shared": {
+      "familyCompany": {
+        "title": "We're a <deco>family company</deco>",
+        "description": "We are a family owned company with over 14-years’ of experience in the food industry.",
+        "description1": "Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
+        "imageCaption": "Weronika and Michal"
       }
-    },
-    "corkBaskets": {
-      "title": "Baskets made of cork granules are our own <deco>invention</deco>",
-      "description": "They can be washed under the water from the remains of flour and dough, which is a significant simplification in terms of keeping the baskets clean!"
-    },
-    "customerFeedback": {
-      "title": "Customer feedback"
-    },
-    "familyCompany": {
-      "title": "We're a <deco>family company</deco>",
-      "description": "We are a family owned company with over 14-years’ of experience in the food industry.Family values are very important to us and that is why we treat each customer as a member of our great bakers family. We're positive, honest, brave and determined to give our best and create only the best products.",
-      "imageCaption": "Weronika and Michal"
-    },
-    "faq": {
-      "title": "Answers to frequently asked <deco>questions</deco>",
-      "questions": [
-        {
-          "question": "How do I use a bread proofing basket?",
-          "answer": "Lightly flour the basket to prevent sticking, then place the shaped dough inside, seam side up. Allow the dough to rise until ready, then gently turn the basket over onto a baking surface. The basket helps maintain the dough’s shape for a beautifully formed loaf."
-        },
-        {
-          "question": "What are bread proofing baskets made of?",
-          "answer": "Yes, they are. For rattan baskets, you can tap out the excess flour and use a stiff brush to clean them. Cork baskets can even be washed under water. Liners also help keep them clean."
-        },
-        {
-          "question": "Can I wash my bread proofing basket?",
-          "answer": "Absolutely! We can create a custom basket with your desired dimensions and shape. You can also add a custom engraving to the bottom. Just contact us to discuss your requirements."
-        },
-        {
-          "question": "What size bread proofing basket should I choose?",
-          "answer": "Yes, all our products are certified to be food-safe according to European Parliament regulations (EC) No 1935/2004 and German LFGB standards."
-        }
-      ]
     }
   },
   "questionsBox": {

@@ -1,3 +1,7 @@
+import FamilyCompany from "../(home)/components/FamilyCompany";
+import OurProducts from "./components/OurProducts";
+import Quote from "./components/Quote";
+import TakingCare from "./components/TakingCare";
 import WelcomeText from "./components/WelcomeText";
 
 const AboutUsPage = async ({
@@ -7,8 +11,12 @@ const AboutUsPage = async ({
 }) => {
   const { lang } = await params;
   return (
-    <div className="flex flex-col gap-40 bg-beige-3">
+    <div className="flex flex-col gap-40 bg-beige-1 px-9">
       <WelcomeText lang={lang} />
+      <Quote lang={lang} />
+      <FamilyCompany lang={lang} />
+      <OurProducts lang={lang} />
+      <TakingCare lang={lang} />
     </div>
   );
 };

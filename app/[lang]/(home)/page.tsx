@@ -1,5 +1,3 @@
-import QuestionsBox from "@/components/QuestionsBox";
-import BannetonsLargeText from "./components/BannetonsLargeText";
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
@@ -18,6 +16,7 @@ export default async function Home({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+
   return (
     <div className="flex flex-col gap-20 sm:gap-40 overflow-x-hidden">
       <Hero lang={lang} />
@@ -31,8 +30,6 @@ export default async function Home({
       <CustomerFeedback lang={lang} />
       <FamilyCompany lang={lang} />
       <FAQ lang={lang} />
-      <QuestionsBox lang={lang} />
-      <BannetonsLargeText />
     </div>
   );
 }

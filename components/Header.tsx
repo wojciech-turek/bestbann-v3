@@ -5,7 +5,7 @@ import { Dictionary } from "@/types/dictionary";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   NavigationMenu,
@@ -16,6 +16,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { MenuIcon, XIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { TypographyH4 } from "./shared/TypographyH4";
 import { Button } from "./ui/button";
@@ -30,32 +31,24 @@ const Header = ({
   links: Dictionary["footer"]["links"];
   buttons: Dictionary["buttons"];
 }) => {
-  const [scrollOpacity, setScrollOpacity] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const heroSectionHeight = window.innerHeight; // Or a specific element's height
-      const currentScroll = window.scrollY;
-      const opacity = Math.min(currentScroll / (heroSectionHeight * 0.5), 0.6);
-      setScrollOpacity(opacity);
-    };
+  const pathnameWithoutLang = pathname.replace(`/${lang}`, "") || "/";
 
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
+  const colors: { [key: string]: { textColor: string } } = {
+    "/": {
+      textColor: "text-white",
+    },
+    "/about": {
+      textColor: "text-brown-100",
+    },
+  };
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const textColor = colors[pathnameWithoutLang]?.textColor ?? "text-white";
 
   return (
-    <header
-      className="fixed py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9"
-      style={{
-        backgroundColor: `oklch(0.3443 0.0678 48.07 / ${scrollOpacity})`,
-      }}
-    >
+    <header className="absolute py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9">
       <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
         {/* Mobile Nav */}
         <div className="md:hidden flex items-center w-full relative ">
@@ -209,7 +202,7 @@ const Header = ({
                   >
                     <Link
                       href={`/${lang}${link.href}`}
-                      className="text-white font-semibold"
+                      className={`font-semibold ${textColor}`}
                     >
                       {link.text}
                     </Link>

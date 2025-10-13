@@ -11,7 +11,7 @@ const QuestionsBox = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-32">
       <div className="relative h-[473px] w-full">
         <WavyBackground className="absolute inset-0 -z-10 h-full w-full text-[#F2E8E0]" />
         {/* Mobile-only images */}

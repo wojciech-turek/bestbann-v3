@@ -29,6 +29,10 @@ const FamilyCompany = async ({ lang }: { lang: string }) => {
         <TypographyP className="mt-4 text-lg max-w-[50ch]">
           <RichText>{dict.home.familyCompany.description}</RichText>
         </TypographyP>
+        <TypographyP className="mt-4 text-lg max-w-[50ch]">
+          <RichText>{dict.home.familyCompany.description1}</RichText>
+        </TypographyP>
+        <div className="my-8 bg-brown-10 text-lg max-w-[50ch] h-[2.5px]" />
         <Button size="lg" className="mt-8 self-start px-12">
           {dict.buttons.moreAboutUs}
           <ArrowRight className="h-4 w-4" />
