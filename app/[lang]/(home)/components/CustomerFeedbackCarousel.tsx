@@ -100,7 +100,7 @@ export const CustomerFeedbackCarousel = ({
     <div className="container mx-auto flex flex-col gap-6 px-0 sm:px-9">
       <div className="flex flex-col sm:flex-row items-center justify-between px-4">
         <TypographyH2 className="text-left">
-          <RichText>{dict.home.customerFeedback.title}</RichText>
+          <RichText>{dict.pages.home.customerFeedback.title}</RichText>
         </TypographyH2>
         <div className="flex items-center gap-2">
           <Button

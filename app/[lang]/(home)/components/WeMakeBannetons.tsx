@@ -31,10 +31,10 @@ const WeMakeBannetons = async ({ lang }: { lang: string }) => {
           height={42}
         />
         <TypographyH2 className="sm:max-w-[20ch]">
-          <RichText>{dict.home.weMakeBannetons.title}</RichText>
+          <RichText>{dict.pages.home.weMakeBannetons.title}</RichText>
         </TypographyH2>
         <TypographyP className="sm:text-lg sm:max-w-[42ch] text-center">
-          {dict.home.weMakeBannetons.description}
+          {dict.pages.home.weMakeBannetons.description}
         </TypographyP>
       </div>
     </div>

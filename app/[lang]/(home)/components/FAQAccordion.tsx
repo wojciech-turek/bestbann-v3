@@ -44,7 +44,7 @@ export function FAQAccordion({ dict }: { dict: Dictionary }) {
       className="w-full border-t border-brown-20"
       defaultValue="item-0"
     >
-      {Object.values(dict.home.faq.questions).map(
+      {Object.values(dict.pages.home.faq.questions).map(
         (item: { question: string; answer: string }, index: number) => (
           <AccordionItem
             value={`item-${index}`}

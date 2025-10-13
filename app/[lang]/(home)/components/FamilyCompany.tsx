@@ -5,8 +5,15 @@ import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
-const FamilyCompany = async ({ lang }: { lang: string }) => {
+const FamilyCompany = async ({
+  lang,
+  showButton,
+}: {
+  lang: string;
+  showButton: boolean;
+}) => {
   const dict = await getDictionary(lang);
   return (
     <div className="container mx-auto flex flex-col sm:flex-row gap-8 sm:gap-20 items-center justify-center px-4 sm:px-0">
@@ -19,24 +26,30 @@ const FamilyCompany = async ({ lang }: { lang: string }) => {
           className="rounded-lg"
         />
         <TypographyP className="self-start">
-          {dict.home.familyCompany.imageCaption}
+          {dict.pages.shared.familyCompany.imageCaption}
         </TypographyP>
       </div>
       <div className="flex flex-col justify-center basis-1/2">
         <TypographyH2 className="text-left">
-          <RichText>{dict.home.familyCompany.title}</RichText>
+          <RichText>{dict.pages.shared.familyCompany.title}</RichText>
         </TypographyH2>
         <TypographyP className="mt-4 text-lg max-w-[50ch]">
-          <RichText>{dict.home.familyCompany.description}</RichText>
+          <RichText>{dict.pages.shared.familyCompany.description}</RichText>
         </TypographyP>
         <TypographyP className="mt-4 text-lg max-w-[50ch]">
-          <RichText>{dict.home.familyCompany.description1}</RichText>
+          <RichText>{dict.pages.shared.familyCompany.description1}</RichText>
         </TypographyP>
-        <div className="my-8 bg-brown-10 text-lg max-w-[50ch] h-[2.5px]" />
-        <Button size="lg" className="mt-8 self-start px-12">
-          {dict.buttons.moreAboutUs}
-          <ArrowRight className="h-4 w-4" />
-        </Button>
+        {showButton && (
+          <>
+            <div className="my-8 bg-brown-10 text-lg max-w-[50ch] h-[2.5px]" />
+            <Button asChild size="lg" className="mt-8 self-start px-12">
+              <Link href={dict.links.aboutUs}>
+                {dict.buttons.moreAboutUs}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </>
+        )}
       </div>
     </div>
   );

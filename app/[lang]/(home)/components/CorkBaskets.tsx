@@ -44,10 +44,10 @@ const CorkBaskets = async ({ lang }: { lang: string }) => {
 
       <div className="flex flex-col sm:items-center z-10 px-4 relative">
         <TypographyH2 className="text-left sm:text-center mb-12">
-          <RichText>{dict.home.corkBaskets.title}</RichText>
+          <RichText>{dict.pages.home.corkBaskets.title}</RichText>
         </TypographyH2>
         <TypographyP className="text-left sm:text-center mb-12 text-lg max-w-[60ch]">
-          <RichText>{dict.home.corkBaskets.description}</RichText>
+          <RichText>{dict.pages.home.corkBaskets.description}</RichText>
         </TypographyP>
         <Button size="lg" className="w-fit">
           {dict.buttons.buyCorkBaskets} <ArrowRight className="w-4 h-4" />

@@ -92,7 +92,7 @@ export const BestSellersCarousel = ({
     <div className="container mx-auto flex flex-col gap-6 sm:px-9">
       <div className="flex items-center justify-between px-4">
         <TypographyH2 className="text-left">
-          <RichText>{dict.home.bestSellers.title}</RichText>
+          <RichText>{dict.pages.home.bestSellers.title}</RichText>
         </TypographyH2>
         <div className="hidden sm:flex items-center gap-2">
           <Button
@@ -135,7 +135,7 @@ export const BestSellersCarousel = ({
                           className="w-full rounded-2xl"
                         />
                         <Badge className="absolute left-4 top-4 bg-white text-orange-100">
-                          {dict.home.bestSellers.bestSellerBadge}
+                          {dict.pages.home.bestSellers.bestSellerBadge}
                         </Badge>
                       </div>
 

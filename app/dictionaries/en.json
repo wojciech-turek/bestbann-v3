@@ -157,6 +157,9 @@
     "viewLess": "View Less",
     "moreAboutUs": "More About Us"
   },
+  "links": {
+    "aboutUs": "/about"
+  },
   "footer": {
     "headings": {
       "shop": "Shop",

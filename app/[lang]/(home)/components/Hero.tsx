@@ -8,16 +8,15 @@ import LazyHeroVideo from "./LazyHeroVideo";
 const Hero = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
 
-  console.log(dict);
   return (
     <div className="relative flex flex-col sm:flex-row justify-end sm:justify-between items-center sm:items-end gap-8 sm:gap-0 z-10 min-h-[120vh] sm:min-h-screen p-4 sm:p-8 pb-8 sm:pb-20 bg-[url('/imgs/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="absolute z-20 inset-0 bg-[#552d176e]" />
       <main className="flex z-30 flex-col sm:basis-1/2 ">
         <TypographyH1 className="text-white text-left">
-          <RichText>{dict.home.hero.slogan}</RichText>
+          <RichText>{dict.pages.home.hero.slogan}</RichText>
         </TypographyH1>
         <p className="text-white text-xl sm:max-w-[30ch] mt-7">
-          {dict.home.hero.description}
+          {dict.pages.home.hero.description}
         </p>
         <Button
           size="lg"

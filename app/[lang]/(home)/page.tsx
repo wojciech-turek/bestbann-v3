@@ -28,7 +28,7 @@ export default async function Home({
       <Materials lang={lang} />
       <CorkBaskets lang={lang} />
       <CustomerFeedback lang={lang} />
-      <FamilyCompany lang={lang} />
+      <FamilyCompany lang={lang} showButton={true} />
       <FAQ lang={lang} />
     </div>
   );

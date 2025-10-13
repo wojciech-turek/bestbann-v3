@@ -1,110 +1,125 @@
 export type Dictionary = {
-  about: {
-    welcome: {
-      title: string;
-      description: string;
-    };
-  };
-  home: {
-    hero: {
-      slogan: string;
-      description: string;
-    };
-    weMakeBannetons: {
-      title: string;
-      description: string;
-    };
-    ourProducts: {
-      title: string;
-      products: {
-        rattan: {
-          title: string;
-          description: string;
-        };
-        cork: {
-          title: string;
-          description: string;
-        };
-        bamboo: {
-          title: string;
-          description: string;
-        };
-        platic: {
-          title: string;
-          description: string;
-        };
-        engraved: {
-          title: string;
-          description: string;
-        };
-        liners: {
-          title: string;
-          description: string;
-        };
+  pages: {
+    about: {
+      welcome: {
+        title: string;
+        description: string;
+        quote1: string;
+        quote2: string;
+        quote3: string;
+      };
+      ourProducts: {
+        title: string;
+        description: string;
+      };
+      takingCare: {
+        title: string;
       };
     };
-    benefits: {
-      title: string;
-      sections: {
-        eco: {
-          title: string;
-          description: string;
-        };
-        easy: {
-          title: string;
-          description: string;
-        };
-        shape: {
-          title: string;
-          description: string;
-        };
-        handmade: {
-          title: string;
-          description: string;
+    home: {
+      hero: {
+        slogan: string;
+        description: string;
+      };
+      weMakeBannetons: {
+        title: string;
+        description: string;
+      };
+      ourProducts: {
+        title: string;
+        products: {
+          rattan: {
+            title: string;
+            description: string;
+          };
+          cork: {
+            title: string;
+            description: string;
+          };
+          bamboo: {
+            title: string;
+            description: string;
+          };
+          platic: {
+            title: string;
+            description: string;
+          };
+          engraved: {
+            title: string;
+            description: string;
+          };
+          liners: {
+            title: string;
+            description: string;
+          };
         };
       };
-    };
-    uniqueBasket: {
-      title: string;
-      description: string;
-    };
-    bestSellers: {
-      title: string;
-      bestSellerBadge: string;
-    };
-    materials: {
-      title: string;
-      sections: {
-        sgh: {
-          title: string;
-          description: string;
-          regulations: string[];
-        };
-        natural: {
-          title: string;
-          description: string;
-          description1: string;
+      benefits: {
+        title: string;
+        sections: {
+          eco: {
+            title: string;
+            description: string;
+          };
+          easy: {
+            title: string;
+            description: string;
+          };
+          shape: {
+            title: string;
+            description: string;
+          };
+          handmade: {
+            title: string;
+            description: string;
+          };
         };
       };
+      uniqueBasket: {
+        title: string;
+        description: string;
+      };
+      bestSellers: {
+        title: string;
+        bestSellerBadge: string;
+      };
+      materials: {
+        title: string;
+        sections: {
+          sgh: {
+            title: string;
+            description: string;
+            regulations: (string)[];
+          };
+          natural: {
+            title: string;
+            description: string;
+            description1: string;
+          };
+        };
+      };
+      corkBaskets: {
+        title: string;
+        description: string;
+      };
+      customerFeedback: {
+        title: string;
+      };
+      faq: {
+        title: string;
+        questions: ({
+          question: string;
+          answer: string;
+        })[];
+      };
     };
-    corkBaskets: {
-      title: string;
-      description: string;
-    };
-    customerFeedback: {
-      title: string;
-    };
-    familyCompany: {
-      title: string;
-      description: string;
-      imageCaption: string;
-    };
-    faq: {
-      title: string;
-      questions: {
-        question: string;
-        answer: string;
-      }[];
+    shared: {
+      familyCompany: {
+        title: string;
+        description: string;
+        description1: string;
+        imageCaption: string;
+      };
     };
   };
   questionsBox: {
@@ -124,6 +139,9 @@ export type Dictionary = {
     viewLess: string;
     moreAboutUs: string;
   };
+  links: {
+    aboutUs: string;
+  };
   footer: {
     headings: {
       shop: string;
@@ -131,14 +149,14 @@ export type Dictionary = {
       office: string;
     };
     links: {
-      shop: {
+      shop: ({
         text: string;
         href: string;
-      }[];
-      info: {
+      })[];
+      info: ({
         text: string;
         href: string;
-      }[];
+      })[];
     };
     office: {
       line1: string;

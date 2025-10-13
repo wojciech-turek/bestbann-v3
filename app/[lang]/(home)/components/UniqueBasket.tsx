@@ -28,14 +28,14 @@ const UniqueBasket = async ({ lang }: { lang: string }) => {
           className="absolute top-0 sm:top-5 scale-75 sm:scale-100 right-0 sm:right-30 w-32 h-32 rotate-140 z-0"
         />
         <TypographyH2 className="text-left max-w-[12ch] sm:w-full relative z-10">
-          <RichText>{dict.home.uniqueBasket.title}</RichText>
+          <RichText>{dict.pages.home.uniqueBasket.title}</RichText>
         </TypographyH2>
         <Separator
           orientation="horizontal"
           className="bg-brown-20 my-5 sm:my-12 relative z-10"
         />
         <TypographyP className="text-lg text-left relative z-10">
-          <RichText>{dict.home.uniqueBasket.description}</RichText>
+          <RichText>{dict.pages.home.uniqueBasket.description}</RichText>
         </TypographyP>
         <Button size="lg" className="w-fit mt-10 px-12 relative z-10">
           {dict.buttons.orderUniqueBasket} <ArrowRight className="w-4 h-4" />

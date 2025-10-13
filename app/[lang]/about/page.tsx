@@ -14,7 +14,7 @@ const AboutUsPage = async ({
     <div className="flex flex-col gap-40 bg-beige-1 px-9">
       <WelcomeText lang={lang} />
       <Quote lang={lang} />
-      <FamilyCompany lang={lang} />
+      <FamilyCompany lang={lang} showButton={false} />
       <OurProducts lang={lang} />
       <TakingCare lang={lang} />
     </div>

@@ -10,7 +10,7 @@ const FAQ = async ({ lang }: { lang: string }) => {
     <div className="container mx-auto flex flex-col sm:flex-row px-4">
       <div className="basis-2/5 relative">
         <TypographyH2 className="text-left">
-          <RichText>{dict.home.faq.title}</RichText>
+          <RichText>{dict.pages.home.faq.title}</RichText>
         </TypographyH2>
         <Image
           src="/deco/star-orange.svg"

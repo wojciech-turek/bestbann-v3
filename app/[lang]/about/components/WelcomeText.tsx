@@ -9,10 +9,10 @@ const WelcomeText = async ({ lang }: { lang: string }) => {
   return (
     <div className="pt-40 flex flex-col gap-7 items-center">
       <TypographyH1 className="">
-        <RichText>{dict.about.welcome.title}</RichText>
+        <RichText>{dict.pages.about.welcome.title}</RichText>
       </TypographyH1>
       <TypographyP className="text-xl max-w-[50ch] text-center">
-        {dict.about.welcome.description}
+        {dict.pages.about.welcome.description}
       </TypographyP>
       <div className="relative w-full mx-auto h-[80vh] rounded-3xl overflow-hidden">
         <div className="absolute inset-0 bg-[#552d176e]" />

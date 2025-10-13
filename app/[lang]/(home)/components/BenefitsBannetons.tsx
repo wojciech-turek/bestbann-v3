@@ -10,23 +10,23 @@ const BenefitsBannetons = async ({ lang }: { lang: string }) => {
 
   const sections = [
     {
-      title: dict.home.benefits.sections.eco.title,
-      description: dict.home.benefits.sections.eco.description,
+      title: dict.pages.home.benefits.sections.eco.title,
+      description: dict.pages.home.benefits.sections.eco.description,
       src: "/deco/ecological.svg",
     },
     {
-      title: dict.home.benefits.sections.easy.title,
-      description: dict.home.benefits.sections.easy.description,
+      title: dict.pages.home.benefits.sections.easy.title,
+      description: dict.pages.home.benefits.sections.easy.description,
       src: "/deco/easy.svg",
     },
     {
-      title: dict.home.benefits.sections.shape.title,
-      description: dict.home.benefits.sections.shape.description,
+      title: dict.pages.home.benefits.sections.shape.title,
+      description: dict.pages.home.benefits.sections.shape.description,
       src: "/deco/shape.svg",
     },
     {
-      title: dict.home.benefits.sections.handmade.title,
-      description: dict.home.benefits.sections.handmade.description,
+      title: dict.pages.home.benefits.sections.handmade.title,
+      description: dict.pages.home.benefits.sections.handmade.description,
       src: "/deco/handmade.svg",
     },
   ];
@@ -35,7 +35,7 @@ const BenefitsBannetons = async ({ lang }: { lang: string }) => {
     <div className="container mx-auto sm:py-12 px-4 sm:px-24">
       <div className="text-center">
         <TypographyH2 className="whitespace-nowrap">
-          <RichText>{dict.home.benefits.title}</RichText>
+          <RichText>{dict.pages.home.benefits.title}</RichText>
         </TypographyH2>
       </div>
 
@@ -60,7 +60,7 @@ const BenefitsBannetons = async ({ lang }: { lang: string }) => {
         <div className="relative h-[396px] sm:h-[486px] sm:px-24 ">
           <Image
             src="/imgs/home/benefits-trimmed.png"
-            alt={dict.home.benefits.title as string}
+            alt={dict.pages.home.benefits.title as string}
             fill
             className="object-contain h-fit"
           />

@@ -1,8 +1,10 @@
 import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyP } from "@/components/shared/TypographyP";
+import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/dictionaries";
 import Image from "next/image";
+import Link from "next/link";
 
 const OurProducts = async ({ lang }: { lang: string }) => {
   const dict = await getDictionary(lang);
@@ -23,10 +25,10 @@ const OurProducts = async ({ lang }: { lang: string }) => {
         className="absolute right-12 -top-32 scale-x-[-1]"
       />
       <TypographyH2 className="relative text-center">
-        <RichText>{dict.about.ourProducts.title}</RichText>
+        <RichText>{dict.pages.about.ourProducts.title}</RichText>
       </TypographyH2>
       <TypographyP className="relative mx-auto max-w-[68ch] text-center text-lg">
-        {dict.about.ourProducts.description}
+        {dict.pages.about.ourProducts.description}
       </TypographyP>
 
       <div className="relative mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 h-[600px] mx-auto">
@@ -41,6 +43,20 @@ const OurProducts = async ({ lang }: { lang: string }) => {
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
+            <Link
+              href="#"
+              className="absolute inset-0 z-10 flex items-center justify-center bg-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <div className="bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium">
+                <Button
+                  size="lg"
+                  className="text-brown-100 hover:text-brown-100 text-base font-semibold"
+                  variant="outline"
+                >
+                  {dict.buttons.viewCatalog}
+                </Button>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

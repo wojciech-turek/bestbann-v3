@@ -13,40 +13,40 @@ const OurProducts = async ({ lang }: { lang: string }) => {
 
   const products = [
     {
-      title: dict.home.ourProducts.products.rattan.title,
-      description: dict.home.ourProducts.products.rattan.description,
+      title: dict.pages.home.ourProducts.products.rattan.title,
+      description: dict.pages.home.ourProducts.products.rattan.description,
       src: "/imgs/home/rattan.png",
     },
     {
-      title: dict.home.ourProducts.products.cork.title,
-      description: dict.home.ourProducts.products.cork.description,
+      title: dict.pages.home.ourProducts.products.cork.title,
+      description: dict.pages.home.ourProducts.products.cork.description,
       src: "/imgs/home/cork.png",
     },
     {
-      title: dict.home.ourProducts.products.bamboo.title,
-      description: dict.home.ourProducts.products.bamboo.description,
+      title: dict.pages.home.ourProducts.products.bamboo.title,
+      description: dict.pages.home.ourProducts.products.bamboo.description,
       src: "/imgs/home/bamboo.png",
     },
     {
-      title: dict.home.ourProducts.products.platic.title,
-      description: dict.home.ourProducts.products.platic.description,
+      title: dict.pages.home.ourProducts.products.platic.title,
+      description: dict.pages.home.ourProducts.products.platic.description,
       src: "/imgs/home/plastic.png",
     },
     {
-      title: dict.home.ourProducts.products.engraved.title,
-      description: dict.home.ourProducts.products.engraved.description,
+      title: dict.pages.home.ourProducts.products.engraved.title,
+      description: dict.pages.home.ourProducts.products.engraved.description,
       src: "/imgs/home/engraved.png",
     },
     {
-      title: dict.home.ourProducts.products.liners.title,
-      description: dict.home.ourProducts.products.liners.description,
+      title: dict.pages.home.ourProducts.products.liners.title,
+      description: dict.pages.home.ourProducts.products.liners.description,
       src: "/imgs/home/liners.png",
     },
   ];
   return (
     <div className="flex flex-col gap-8 sm:gap-10">
       <div className="flex flex-col sm:flex-row container mx-auto items-center justify-between gap-5 px-4 sm:px-9">
-        <TypographyH2>{dict.home.ourProducts.title}</TypographyH2>
+        <TypographyH2>{dict.pages.home.ourProducts.title}</TypographyH2>
         <Button size="lg" className="w-full sm:w-fit">
           {dict.buttons.viewCatalog} <ArrowRight className="w-4 h-4" />
         </Button>

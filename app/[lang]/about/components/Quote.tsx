@@ -16,7 +16,7 @@ const Quote = async ({ lang }: { lang: string }) => {
         className="absolute -top-10 -left-20 z-0"
       />
       <TypographyH3 className="relative z-10 text-[40px] leading-[40px] text-center">
-        <RichText>{dict.about.welcome.quote1}</RichText>
+        <RichText>{dict.pages.about.welcome.quote1}</RichText>
         <Image
           src="/imgs/baskets/engraved/engraved.jpg"
           alt="Quote"
@@ -24,7 +24,7 @@ const Quote = async ({ lang }: { lang: string }) => {
           height={40}
           className="inline-block rounded-full aspect-square object-cover mx-2"
         />
-        <RichText>{dict.about.welcome.quote2}</RichText>
+        <RichText>{dict.pages.about.welcome.quote2}</RichText>
         <Image
           src="/imgs/home/rattan-material.jpg"
           alt="Quote"
@@ -32,11 +32,11 @@ const Quote = async ({ lang }: { lang: string }) => {
           height={40}
           className="inline-block rounded-full aspect-square object-cover mx-2"
         />
-        <RichText>{dict.about.welcome.quote3}</RichText>
+        <RichText>{dict.pages.about.welcome.quote3}</RichText>
       </TypographyH3>
 
       <TypographyP className="relative z-10 font-medium">
-        {dict.home.familyCompany.imageCaption}
+        - {dict.pages.shared.familyCompany.imageCaption}
       </TypographyP>
     </div>
   );

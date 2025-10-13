@@ -7,7 +7,7 @@ const TakingCare = async ({ lang }: { lang: string }) => {
   return (
     <div className="">
       <TypographyH2 className="text-center">
-        <RichText>{dict.about.takingCare.title}</RichText>
+        <RichText>{dict.pages.about.takingCare.title}</RichText>
       </TypographyH2>
     </div>
   );
