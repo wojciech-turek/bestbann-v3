@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import type { Metadata } from "next";
 import { Libre_Baskerville, Plus_Jakarta_Sans } from "next/font/google";
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "fr" }];
+  return [{ lang: Locale.EN }];
 }
 
 export default async function RootLayout({
@@ -31,7 +31,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: Locale }>;
 }>) {
   const { lang } = await params;
   const dict = await getDictionary(lang);

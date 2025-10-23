@@ -1,7 +1,7 @@
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { CustomerFeedbackCarousel } from "./CustomerFeedbackCarousel";
 
-const CustomerFeedback = async ({ lang }: { lang: string }) => {
+const CustomerFeedback = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
 
   return <CustomerFeedbackCarousel dict={dict} />;

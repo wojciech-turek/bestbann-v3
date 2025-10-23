@@ -2,13 +2,13 @@ import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyH4 } from "@/components/shared/TypographyH4";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { clsx } from "clsx";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const OurProducts = async ({ lang }: { lang: string }) => {
+const OurProducts = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
 
   const products = [

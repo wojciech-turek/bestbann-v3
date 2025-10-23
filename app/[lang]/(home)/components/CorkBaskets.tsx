@@ -2,11 +2,11 @@ import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const CorkBaskets = async ({ lang }: { lang: string }) => {
+const CorkBaskets = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
     <div className="bg-beige-3 pt-9 sm:pt-32 relative overflow-hidden">

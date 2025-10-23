@@ -1,13 +1,14 @@
 import RichText from "@/components/RichText";
+import BestQualitySeparator from "@/components/shared/BestQualitySeparator";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyH3 } from "@/components/shared/TypographyH3";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const Materials = async ({ lang }: { lang: string }) => {
+const Materials = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
     <div className="container mx-auto px-4 sm:px-0 py-12">
@@ -50,16 +51,7 @@ const Materials = async ({ lang }: { lang: string }) => {
         </div>
       </div>
 
-      <div className="my-8 sm:my-16 flex items-center justify-center gap-4">
-        <div className="h-px flex-grow bg-brown-10"></div>
-        <Image
-          src="/deco/best-quality.png"
-          alt="Best Quality"
-          width={150}
-          height={150}
-        />
-        <div className="h-px flex-grow bg-brown-10"></div>
-      </div>
+      <BestQualitySeparator />
 
       <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-5 sm:gap-20">
         <div className="text-left max-w-[40ch] basis-1/2 mx-auto">

@@ -1,11 +1,11 @@
 import RichText from "@/components/RichText";
 import { TypographyH1 } from "@/components/shared/TypographyH1";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRightIcon } from "lucide-react";
 import LazyHeroVideo from "./LazyHeroVideo";
 
-const Hero = async ({ lang }: { lang: string }) => {
+const Hero = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
 
   return (

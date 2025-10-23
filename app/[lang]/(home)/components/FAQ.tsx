@@ -1,10 +1,10 @@
 import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import Image from "next/image";
 import { FAQAccordion } from "./FAQAccordion";
 
-const FAQ = async ({ lang }: { lang: string }) => {
+const FAQ = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
     <div className="container mx-auto flex flex-col sm:flex-row px-4">

@@ -1,6 +1,7 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Locale } from "@/dictionaries";
 import { Dictionary } from "@/types/dictionary";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +28,7 @@ const Header = ({
   links,
   buttons,
 }: {
-  lang: string;
+  lang: Locale;
   links: Dictionary["footer"]["links"];
   buttons: Dictionary["buttons"];
 }) => {

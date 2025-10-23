@@ -1,10 +1,10 @@
 import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyP } from "@/components/shared/TypographyP";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import Image from "next/image";
 
-const WeMakeBannetons = async ({ lang }: { lang: string }) => {
+const WeMakeBannetons = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
     <div className="relative my-20 sm:my-0">

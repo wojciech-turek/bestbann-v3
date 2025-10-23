@@ -3,11 +3,11 @@ import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const UniqueBasket = async ({ lang }: { lang: string }) => {
+const UniqueBasket = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
     <div className="flex flex-col md:flex-row container mx-auto gap-3 md:gap-2.5 px-4 md:px-0">

@@ -1,4 +1,4 @@
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import RichText from "./RichText";
@@ -7,7 +7,7 @@ import { TypographyP } from "./shared/TypographyP";
 import { Button } from "./ui/button";
 import WavyBackground from "./WavyBackground";
 
-const QuestionsBox = async ({ lang }: { lang: string }) => {
+const QuestionsBox = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
 
   return (

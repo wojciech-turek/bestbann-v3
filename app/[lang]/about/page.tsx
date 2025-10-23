@@ -1,4 +1,6 @@
+import { Locale } from "@/dictionaries";
 import FamilyCompany from "../(home)/components/FamilyCompany";
+import BakersFamily from "./components/BakersFamily";
 import OurProducts from "./components/OurProducts";
 import Quote from "./components/Quote";
 import TakingCare from "./components/TakingCare";
@@ -7,7 +9,7 @@ import WelcomeText from "./components/WelcomeText";
 const AboutUsPage = async ({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: Locale }>;
 }) => {
   const { lang } = await params;
   return (
@@ -17,6 +19,7 @@ const AboutUsPage = async ({
       <FamilyCompany lang={lang} showButton={false} />
       <OurProducts lang={lang} />
       <TakingCare lang={lang} />
+      <BakersFamily lang={lang} />
     </div>
   );
 };

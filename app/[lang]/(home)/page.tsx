@@ -1,3 +1,4 @@
+import { Locale } from "@/dictionaries";
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
@@ -13,7 +14,7 @@ import WeMakeBannetons from "./components/WeMakeBannetons";
 export default async function Home({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
 

@@ -2,10 +2,10 @@ import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyH3 } from "@/components/shared/TypographyH3";
 import { TypographyP } from "@/components/shared/TypographyP";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import Image from "next/image";
 
-const BenefitsBannetons = async ({ lang }: { lang: string }) => {
+const BenefitsBannetons = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
 
   const sections = [

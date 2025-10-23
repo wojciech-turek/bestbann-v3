@@ -2,7 +2,7 @@
   "pages": {
     "about": {
       "welcome": {
-        "title": "Thank you for visiting <deco>our page!</deco>",
+        "title": "Thank you for visiting <br/> <deco>our page!</deco>",
         "description": "We're very pleased to be able to introduce ourselves and tell you about us and what we do. We will gladly share more details and have a chat so please do not hesitate to contact us!",
         "quote1": "We're very pleased to be able to introduce ourselves and tell you",
         "quote2": "about us and what we do. We will gladly share more details and have a chat",
@@ -13,7 +13,11 @@
         "description": "We are producing bread proofing baskets, also called bannetons by our own hands, with the utmost care. For many years we have been improving in this very difficult craft to ensure the highest quality of our products. We're deeply engaged and passionate about our work"
       },
       "takingCare": {
-        "title": "Taking care of the high quality of our <deco>products</deco>"
+        "title": "Taking care of the high quality <br/> of our <deco>products</deco>"
+      },
+      "bakersFamily": {
+        "title": "Join our bestbann <br/> <deco>bakers family</deco>",
+        "description": "With the determination to continuous improvement of production processes and expanding the range of products, we are able to offer numerous types and sizes of bread proofing baskets, which we have already delivered to almost all continents, to more than 30 countries. We successfully cooperate with huge wholesalers, online stores, bakeries, hotels and restaurants, as well as with individual customers."
       }
     },
     "home": {

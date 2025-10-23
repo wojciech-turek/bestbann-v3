@@ -2,14 +2,14 @@ import RichText from "@/components/RichText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import Image from "next/image";
 import Link from "next/link";
 
-const OurProducts = async ({ lang }: { lang: string }) => {
+const OurProducts = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   return (
-    <div className="relative flex flex-col gap-7 overflow-hidden rounded-2xl bg-beige-3 p-10 pt-30">
+    <div className="relative flex flex-col gap-7 overflow-hidden rounded-2xl bg-beige-3 p-10 py-30">
       <Image
         src="/deco/bean-gray-transparent.svg"
         alt="deco"

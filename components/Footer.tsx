@@ -1,11 +1,11 @@
 import BannetonsLargeText from "@/components/BannetonsLargeText";
-import { getDictionary } from "@/dictionaries";
+import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import QuestionsBox from "./QuestionsBox";
 import { Button } from "./ui/button";
 
-const Footer = async ({ lang }: { lang: string }) => {
+const Footer = async ({ lang }: { lang: Locale }) => {
   const dict = await getDictionary(lang);
   const { footer, buttons } = dict;
 
