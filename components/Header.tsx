@@ -21,11 +21,48 @@ import { TypographyH4 } from "./shared/TypographyH4";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
-const links = ["/about"] as const;
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations("Buttons");
+  const t = useTranslations("Header");
+  const tButtons = useTranslations("Buttons");
+
+  const navLinks = [
+    {
+      href: "/about",
+      title: t("navLinks.about"),
+    },
+    {
+      href: "/contact",
+      title: t("navLinks.contact"),
+    },
+  ] as const;
+
+  const productLinks = [
+    {
+      href: "/products/rattan",
+      title: t("productLinks.rattan"),
+    },
+    {
+      href: "/products/cork",
+      title: t("productLinks.cork"),
+    },
+    {
+      href: "/products/bamboo",
+      title: t("productLinks.bamboo"),
+    },
+    {
+      href: "/products/plastic",
+      title: t("productLinks.plastic"),
+    },
+    {
+      href: "/products/engraved",
+      title: t("productLinks.engraved"),
+    },
+    {
+      href: "/products/liners",
+      title: t("productLinks.liners"),
+    },
+  ] as const;
 
   return (
     <header className="py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9">
@@ -65,19 +102,19 @@ const Header = () => {
                       className="text-xl text-brown-100 font-medium"
                       href={`/`}
                     >
-                      Products
+                      {t("productLinks.title")}
                     </Link>
                     <Link
                       className="text-xl text-brown-100 font-medium"
                       href={`/about`}
                     >
-                      About Us
+                      {t("navLinks.about")}
                     </Link>
                     <Link
                       className="text-xl text-brown-100 font-medium"
                       href={`/contact`}
                     >
-                      Contact
+                      {t("navLinks.contact")}
                     </Link>
                   </div>
                 </div>
@@ -164,20 +201,24 @@ const Header = () => {
                         </Link>
                       </NavigationMenuLink>
                     </li>
-                    {links.map((link) => (
-                      <ListItem key={link} href={link} title={link} />
+                    {productLinks.map((link) => (
+                      <ListItem
+                        key={link.href}
+                        href={link.href}
+                        title={link.title}
+                      />
                     ))}
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              {links.map((link) => (
-                <NavigationMenuItem key={link}>
+              {navLinks.map((link) => (
+                <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
                     asChild
                     className="rounded-full px-4 py-2"
                   >
-                    <Link href={link} className={`font-semibold`}>
-                      {link}
+                    <Link href={link.href} className={`font-semibold`}>
+                      {link.title}
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -199,7 +240,7 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <LanguageSwitcher />
             <Button className="font-semibold text-base leading-6 py-3 px-12">
-              {t("leaveRequest")}
+              {tButtons("leaveRequest")}
             </Button>
           </div>
         </div>
@@ -214,7 +255,15 @@ function ListItem({
   href,
   ...props
 }: React.ComponentPropsWithoutRef<"li"> & {
-  href: (typeof links)[number];
+  href:
+    | "/about"
+    | "/contact"
+    | "/products/rattan"
+    | "/products/cork"
+    | "/products/bamboo"
+    | "/products/plastic"
+    | "/products/engraved"
+    | "/products/liners";
   title: string;
 }) {
   return (

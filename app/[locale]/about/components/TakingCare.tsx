@@ -41,9 +41,13 @@ const TakingCare = () => {
             className="object-cover"
             quality={100}
           />
-          <div className="flex flex-col w-[454px]">
-            <TypographyH3>{cards[0].title}</TypographyH3>
-            <TypographyP>{cards[0].description}</TypographyP>
+          <div className="flex flex-col w-[600px]">
+            <TypographyH3 className="text-[40px] tracking-tight">
+              {cards[0].title}
+            </TypographyH3>
+            <TypographyP className="w-[500px]">
+              {cards[0].description}
+            </TypographyP>
           </div>
         </div>
         <BestQualitySeparator />
@@ -56,9 +60,13 @@ const TakingCare = () => {
             className="object-cover"
             quality={100}
           />
-          <div className="flex flex-col w-[454px]">
-            <TypographyH3>{cards[1].title}</TypographyH3>
-            <TypographyP>{cards[1].description}</TypographyP>
+          <div className="flex flex-col w-[600px]">
+            <TypographyH3 className="text-[40px] tracking-tight">
+              {cards[1].title}
+            </TypographyH3>
+            <TypographyP className="w-[500px]">
+              {cards[1].description}
+            </TypographyP>
           </div>
         </div>
       </div>
