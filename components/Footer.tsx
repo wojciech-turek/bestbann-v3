@@ -1,32 +1,76 @@
 import BannetonsLargeText from "@/components/BannetonsLargeText";
-import { getDictionary, Locale } from "@/dictionaries";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+
 import QuestionsBox from "./QuestionsBox";
 import { Button } from "./ui/button";
 
-const Footer = async ({ lang }: { lang: Locale }) => {
-  const dict = await getDictionary(lang);
-  const { footer, buttons } = dict;
+const Footer = () => {
+  const t = useTranslations("Footer");
+  const tButtons = useTranslations("Buttons");
+
+  const shopLinks = [
+    {
+      text: t("links.shop.rattan.text"),
+      href: "/products/rattan" as const,
+      key: "rattan",
+    },
+    {
+      text: t("links.shop.cork.text"),
+      href: "/products/cork" as const,
+      key: "cork",
+    },
+    {
+      text: t("links.shop.bamboo.text"),
+      href: "/products/bamboo" as const,
+      key: "bamboo",
+    },
+    {
+      text: t("links.shop.plastic.text"),
+      href: "/products/plastic" as const,
+      key: "plastic",
+    },
+    {
+      text: t("links.shop.engraved.text"),
+      href: "/products/engraved" as const,
+      key: "engraved",
+    },
+    {
+      text: t("links.shop.liners.text"),
+      href: "/products/liners" as const,
+      key: "liners",
+    },
+  ];
+
+  const infoLinks = [
+    {
+      text: t("links.info.about.text"),
+      href: "/about" as const,
+      key: "about",
+    },
+    {
+      text: t("links.info.contacts.text"),
+      href: "/contact" as const,
+      key: "contacts",
+    },
+  ];
 
   return (
     <div>
-      <QuestionsBox lang={lang} />
+      <QuestionsBox />
       <BannetonsLargeText />
       <footer className="bg-dark-brown text-white">
         <div className="container mx-auto px-4 py-16 pb-8 sm:pb-48">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-0">
             <div>
               <div className="text-lg font-semibold">
-                {footer.headings.shop}
+                {t("headings.shop")} asd
               </div>
               <ul className="mt-4 space-y-3">
-                {Object.values(footer.links.shop).map((link) => (
+                {shopLinks.map((link) => (
                   <li key={link.href} className="text-sm">
-                    <Link
-                      href={`/${lang}${link.href}`}
-                      className="hover:underline"
-                    >
+                    <Link href={link.href} className="hover:underline">
                       {link.text}
                     </Link>
                   </li>
@@ -34,16 +78,11 @@ const Footer = async ({ lang }: { lang: Locale }) => {
               </ul>
             </div>
             <div>
-              <div className="text-lg font-semibold">
-                {footer.headings.info}
-              </div>
+              <div className="text-lg font-semibold">{t("headings.info")}</div>
               <ul className="mt-4 space-y-3">
-                {Object.values(footer.links.info).map((link) => (
+                {infoLinks.map((link) => (
                   <li key={link.href} className="text-sm">
-                    <Link
-                      href={`/${lang}${link.href}`}
-                      className="hover:underline"
-                    >
+                    <Link href={link.href} className="hover:underline">
                       {link.text}
                     </Link>
                   </li>
@@ -52,14 +91,14 @@ const Footer = async ({ lang }: { lang: Locale }) => {
             </div>
             <div>
               <div className=" sm:text-lg font-semibold">
-                {footer.headings.office}
+                {t("headings.office")}
               </div>
               <div className="mt-4 space-y-1 text-sm sm:text-base">
-                <p>{footer.office.line1}</p>
-                <p>{footer.office.line2}</p>
-                <p>{footer.office.line3}</p>
-                <p>{footer.office.line4}</p>
-                <p>{footer.office.line5}</p>
+                <p>{t("office.line1")}</p>
+                <p>{t("office.line2")}</p>
+                <p>{t("office.line3")}</p>
+                <p>{t("office.line4")}</p>
+                <p>{t("office.line5")}</p>
               </div>
             </div>
             <div className="flex flex-col sm:items-end sm:col-span-2">
@@ -93,9 +132,9 @@ const Footer = async ({ lang }: { lang: Locale }) => {
                   </a>
                 </div>
               </div>
-              <Link href={`/${lang}/contact`} className="">
+              <Link href={"/contact"} className="">
                 <Button variant={"secondary"} size="lg" className="">
-                  {buttons.leaveRequest} <ArrowRight />
+                  {tButtons("leaveRequest")} <ArrowRight />
                 </Button>
               </Link>
             </div>
@@ -103,18 +142,12 @@ const Footer = async ({ lang }: { lang: Locale }) => {
         </div>
         <div className="border-t border-white/20 text-white/60">
           <div className="container mx-auto flex justify-between sm:justify-start items-center px-4 py-4 text-sm sm:gap-20 whitespace-nowrap">
-            <p>{footer.bottom.copyright}</p>
-            <Link
-              href={`/${lang}${footer.bottom.privacy.href}`}
-              className="hover:underline"
-            >
-              {footer.bottom.privacy.text}
+            <p>{t("bottom.copyright")}</p>
+            <Link href="/privacy-policy" className="hover:underline">
+              {t("bottom.privacy.text")}
             </Link>
-            <Link
-              href={`/${lang}${footer.bottom.legal.href}`}
-              className="hover:underline"
-            >
-              {footer.bottom.legal.text}
+            <Link href="/legal-notice" className="hover:underline">
+              {t("bottom.legal.text")}
             </Link>
           </div>
         </div>

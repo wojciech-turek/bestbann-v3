@@ -1,15 +1,15 @@
-import { getDictionary, Locale } from "@/dictionaries";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import RichText from "./RichText";
+import DecoText from "./shared/DecoText";
 import { TypographyH2 } from "./shared/TypographyH2";
 import { TypographyP } from "./shared/TypographyP";
 import { Button } from "./ui/button";
 import WavyBackground from "./WavyBackground";
 
-const QuestionsBox = async ({ lang }: { lang: Locale }) => {
-  const dict = await getDictionary(lang);
-
+const QuestionsBox = () => {
+  const t = useTranslations("QuestionsBox");
+  const tButtons = useTranslations("Buttons");
   return (
     <div className="container mx-auto py-32">
       <div className="relative h-[473px] w-full">
@@ -65,15 +65,17 @@ const QuestionsBox = async ({ lang }: { lang: Locale }) => {
             </div>
             <div className="z-10 flex flex-col items-center justify-center gap-2 sm:gap-6">
               <TypographyH2 className="">
-                {dict.questionsBox.title}
+                {t.rich("title", {
+                  deco: (chunks) => <DecoText>{chunks}</DecoText>,
+                })}
                 <br />
-                <RichText>{dict.questionsBox.contactUs}</RichText>
+                <span className="font-deco font-normal">{t("contactUs")}</span>
               </TypographyH2>
               <TypographyP className="max-w-[60ch] text-center">
-                <RichText>{dict.questionsBox.description}</RichText>
+                {t("description")}
               </TypographyP>
               <Button size="lg" className="mt-4">
-                {dict.buttons.leaveRequest} <ArrowRight className="size-4" />
+                {tButtons("leaveRequest")} <ArrowRight className="size-4" />
               </Button>
             </div>
             <div className="relative hidden h-full flex-1 md:block">

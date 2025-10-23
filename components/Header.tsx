@@ -1,10 +1,7 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Locale } from "@/dictionaries";
-import { Dictionary } from "@/types/dictionary";
 import Image from "next/image";
-import Link from "next/link";
 import * as React from "react";
 import { useState } from "react";
 
@@ -16,40 +13,22 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { Link } from "@/i18n/navigation";
 import { MenuIcon, XIcon } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { TypographyH4 } from "./shared/TypographyH4";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
-const Header = ({
-  lang,
-  links,
-  buttons,
-}: {
-  lang: Locale;
-  links: Dictionary["footer"]["links"];
-  buttons: Dictionary["buttons"];
-}) => {
+const links = ["/about"] as const;
+
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-
-  const pathnameWithoutLang = pathname.replace(`/${lang}`, "") || "/";
-
-  const colors: { [key: string]: { textColor: string } } = {
-    "/": {
-      textColor: "text-white",
-    },
-    "/about": {
-      textColor: "text-brown-100",
-    },
-  };
-
-  const textColor = colors[pathnameWithoutLang]?.textColor ?? "text-white";
+  const t = useTranslations("Buttons");
 
   return (
-    <header className="absolute py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9">
+    <header className="py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9">
       <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
         {/* Mobile Nav */}
         <div className="md:hidden flex items-center w-full relative ">
@@ -84,19 +63,19 @@ const Header = ({
                   <div className="flex flex-col gap-2">
                     <Link
                       className="text-xl text-brown-100 font-medium"
-                      href={`/${lang}`}
+                      href={`/`}
                     >
                       Products
                     </Link>
                     <Link
                       className="text-xl text-brown-100 font-medium"
-                      href={`/${lang}`}
+                      href={`/about`}
                     >
                       About Us
                     </Link>
                     <Link
                       className="text-xl text-brown-100 font-medium"
-                      href={`/${lang}`}
+                      href={`/contact`}
                     >
                       Contact
                     </Link>
@@ -144,7 +123,7 @@ const Header = ({
           </Sheet>
 
           <div className="w-[143px] h-[32px] relative mx-auto">
-            <Link href={`/${lang}`}>
+            <Link href={`/`}>
               <Image
                 src="/imgs/logo.png"
                 alt="BestBann"
@@ -185,27 +164,20 @@ const Header = ({
                         </Link>
                       </NavigationMenuLink>
                     </li>
-                    {links.shop.map((product) => (
-                      <ListItem
-                        key={product.href}
-                        href={`/${lang}${product.href}`}
-                        title={product.text}
-                      />
+                    {links.map((link) => (
+                      <ListItem key={link} href={link} title={link} />
                     ))}
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              {links.info.map((link) => (
-                <NavigationMenuItem key={link.href}>
+              {links.map((link) => (
+                <NavigationMenuItem key={link}>
                   <NavigationMenuLink
                     asChild
                     className="rounded-full px-4 py-2"
                   >
-                    <Link
-                      href={`/${lang}${link.href}`}
-                      className={`font-semibold ${textColor}`}
-                    >
-                      {link.text}
+                    <Link href={link} className={`font-semibold`}>
+                      {link}
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -214,7 +186,7 @@ const Header = ({
           </NavigationMenu>
 
           <div className="w-[165px] h-[38px] relative">
-            <Link href={`/${lang}`}>
+            <Link href={`/`}>
               <Image
                 src="/imgs/logo.png"
                 alt="BestBann"
@@ -227,7 +199,7 @@ const Header = ({
           <div className="flex items-center space-x-6">
             <LanguageSwitcher />
             <Button className="font-semibold text-base leading-6 py-3 px-12">
-              {buttons.leaveRequest}
+              {t("leaveRequest")}
             </Button>
           </div>
         </div>
@@ -241,7 +213,10 @@ function ListItem({
   children,
   href,
   ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string; title: string }) {
+}: React.ComponentPropsWithoutRef<"li"> & {
+  href: (typeof links)[number];
+  title: string;
+}) {
   return (
     <li {...props}>
       <NavigationMenuLink asChild>
