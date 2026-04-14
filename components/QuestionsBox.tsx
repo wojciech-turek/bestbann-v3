@@ -69,7 +69,7 @@ const QuestionsBox = () => {
                   deco: (chunks) => <DecoText>{chunks}</DecoText>,
                 })}
                 <br />
-                <span className="font-deco font-normal">{t("contactUs")}</span>
+                <span className="font-deco italic">{t("contactUs")}</span>
               </TypographyH2>
               <TypographyP className="max-w-[60ch] text-center">
                 {t("description")}
