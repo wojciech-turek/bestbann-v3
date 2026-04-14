@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const OurProducts = () => {
-  const t = useTranslations("HomePage.ourProducts");
+  const t = useTranslations();
   const tButtons = useTranslations("Buttons");
 
   const products = productsCatalog.products.map((product) => ({
@@ -45,7 +45,7 @@ const OurProducts = () => {
                 {
                   "border-r border-beige-1": !isLastInRow,
                   "border-b border-beige-1": !isLastRow,
-                }
+                },
               )}
             >
               <Image
