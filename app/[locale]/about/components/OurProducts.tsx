@@ -110,7 +110,7 @@ const OurProducts = () => {
         size="lg"
         className="md:hidden w-full h-[60px] text-base font-semibold"
       >
-        <Link href="/products">
+        <Link href="/products" className="">
           {buttonsT("viewCatalog")}
           <ArrowRight className="h-5 w-5" />
         </Link>

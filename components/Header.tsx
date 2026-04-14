@@ -1,7 +1,7 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { productsCatalog } from "@/lib/products-catalog";
 import { ArrowRightIcon, MenuIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -32,6 +32,7 @@ type ProductHref =
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const t = useTranslations("Header");
   const tProducts = useTranslations("ProductsPage");
   const tButtons = useTranslations("Buttons");
@@ -55,6 +56,9 @@ const Header = () => {
     ),
     image: product.coverImage,
   }));
+
+  const isProductsActive = pathname.startsWith("/products");
+  const isLinkActive = (href: string) => pathname === href;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brown-10 bg-beige-1/78 px-4 py-3 backdrop-blur-xl supports-[backdrop-filter]:bg-beige-1/62 sm:px-9">
@@ -93,7 +97,7 @@ const Header = () => {
                     {productLinks.map((link) => (
                       <Link
                         key={link.href}
-                        className="rounded-lg px-3 py-2 text-base font-medium text-brown-100 hover:bg-brown-10"
+                        className={`rounded-lg px-3 py-2 text-base font-medium text-brown-100 hover:bg-brown-10 ${isLinkActive(link.href) ? "border border-brown-100 bg-white" : ""}`}
                         href={link.href}
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -107,7 +111,7 @@ const Header = () => {
                     className="mt-2 flex items-center justify-between rounded-xl bg-beige-2 px-3 py-2.5 text-base font-semibold text-brown-100 transition-colors hover:bg-beige-3"
                   >
                     {t("menu.allProducts")}
-                    <ArrowRightIcon className="h-4 w-4" />
+                    <ArrowRightIcon className="h-4 w-4 text-brown-100" />
                   </Link>
                 </div>
 
@@ -117,7 +121,7 @@ const Header = () => {
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
-                      className="rounded-lg px-3 py-2 text-xl font-medium text-brown-100 hover:bg-brown-500"
+                      className={`rounded-lg px-3 py-2 text-xl font-medium text-brown-100 hover:bg-brown-10 ${isLinkActive(link.href) ? "border border-brown-100 bg-white" : ""}`}
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -150,7 +154,7 @@ const Header = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   showChevron={false}
-                  className="rounded-full border border-brown-20 bg-white/95 px-5 py-3 text-brown-100 hover:bg-white"
+                  className={`rounded-full border bg-white/95 px-5 py-3 text-brown-100 hover:bg-white ${isProductsActive ? "border-brown-100" : "border-brown-20"}`}
                 >
                   <MenuIcon className="h-4 w-4" />
                   {t("productLinks.title")}
@@ -191,7 +195,7 @@ const Header = () => {
                         className="mt-2 flex items-center justify-between rounded-xl bg-beige-2 px-4 py-3 text-sm font-semibold text-brown-100 transition-colors hover:bg-beige-3"
                       >
                         {t("menu.allProducts")}
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon className="inline-block h-4 w-4 text-brown-100" />
                       </Link>
                     </NavigationMenuLink>
                   </div>
@@ -202,7 +206,7 @@ const Header = () => {
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
                     asChild
-                    className="rounded-full px-4 py-2"
+                    className={`rounded-full border px-4 py-2 ${isLinkActive(link.href) ? "border-brown-100 bg-white/80" : "border-transparent"}`}
                   >
                     <Link
                       href={link.href}
