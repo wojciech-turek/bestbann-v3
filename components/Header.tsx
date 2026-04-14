@@ -151,7 +151,7 @@ const Header = () => {
           <div className="relative mx-auto h-[32px] w-[143px]">
             <Link href="/">
               <Image
-                src="/imgs/logo.png"
+                src="/imgs/logo-black.png"
                 alt="BestBann"
                 fill
                 className="object-contain"

@@ -24,11 +24,11 @@ const cards = [
 const TakingCare = () => {
   const t = useTranslations("AboutPage.takingCare");
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 px-4">
       <TypographyH2>
         {t.rich("title", {
           deco: (chunks) => <DecoText>{chunks}</DecoText>,
-          br: () => <br />,
+          br: () => <br className="hidden sm:block" />,
         })}
       </TypographyH2>
       <div className="flex flex-col gap-10">
@@ -48,8 +48,8 @@ const TakingCare = () => {
             <TypographyP>{cards[0].description}</TypographyP>
           </div>
         </div>
-        <BestQualitySeparator />
-        <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-8 md:gap-16 lg:gap-32">
+        <BestQualitySeparator className="hidden sm:flex" />
+        <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-8 md:gap-16 lg:gap-32">
           <Image
             src={"/imgs/taking-care-2.png"}
             alt={cards[1].title}

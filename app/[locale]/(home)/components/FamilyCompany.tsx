@@ -11,7 +11,7 @@ const FamilyCompany = ({ showButton }: { showButton: boolean }) => {
   const t = useTranslations("Shared.familyCompany");
   const tButtons = useTranslations("Buttons");
   return (
-    <div className="container mx-auto flex flex-col sm:flex-row gap-8 sm:gap-20 items-center justify-center px-4 sm:px-0">
+    <div className="container mx-auto flex flex-col sm:flex-row justify-between gap-8 sm:gap-20 items-center  px-4 sm:px-0 max-w-7xl mx-auto">
       <div className="flex flex-col items-end">
         <Image
           src="/imgs/home/weronika-and-michal.png"
