@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { routing } from "@/i18n/routing";
@@ -48,6 +49,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>
           <Header />
+          <Breadcrumbs />
           {children}
           <Footer />
         </NextIntlClientProvider>

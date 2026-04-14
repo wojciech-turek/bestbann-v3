@@ -3,7 +3,7 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "@/i18n/navigation";
 import { productsCatalog } from "@/lib/products-catalog";
-import { MenuIcon, XIcon } from "lucide-react";
+import { ArrowRightIcon, MenuIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,6 +22,7 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
 type ProductHref =
+  | "/products"
   | "/products/rattan"
   | "/products/cork"
   | "/products/bamboo"
@@ -54,10 +55,6 @@ const Header = () => {
     ),
     image: product.coverImage,
   }));
-
-  const featuredRattan = productLinks.find(
-    (link) => link.href === "/products/rattan",
-  );
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brown-10 bg-beige-1/78 px-4 py-3 backdrop-blur-xl supports-[backdrop-filter]:bg-beige-1/62 sm:px-9">
@@ -92,27 +89,6 @@ const Header = () => {
                   <TypographyH4 className="text-left text-xl text-brown-100">
                     {t("productLinks.title")}
                   </TypographyH4>
-                  {featuredRattan && (
-                    <Link
-                      href={featuredRattan.href}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <div className="mt-3 overflow-hidden rounded-xl border border-brown-10 bg-white">
-                        <Image
-                          src={featuredRattan.image}
-                          alt={featuredRattan.title}
-                          width={640}
-                          height={360}
-                          className="h-36 w-full object-cover"
-                        />
-                        <div className="p-3">
-                          <p className="text-lg font-medium text-brown-100">
-                            {featuredRattan.title}
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-                  )}
                   <div className="mt-3 grid grid-cols-1 gap-2">
                     {productLinks.map((link) => (
                       <Link
@@ -125,6 +101,14 @@ const Header = () => {
                       </Link>
                     ))}
                   </div>
+                  <Link
+                    href="/products"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="mt-2 flex items-center justify-between rounded-xl bg-beige-2 px-3 py-2.5 text-base font-semibold text-brown-100 transition-colors hover:bg-beige-3"
+                  >
+                    {t("menu.allProducts")}
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </Link>
                 </div>
 
                 <Separator />
@@ -133,7 +117,7 @@ const Header = () => {
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
-                      className="rounded-lg px-3 py-2 text-xl font-medium text-brown-100 hover:bg-brown-10"
+                      className="rounded-lg px-3 py-2 text-xl font-medium text-brown-100 hover:bg-brown-500"
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -172,41 +156,45 @@ const Header = () => {
                   {t("productLinks.title")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-2 md:w-[520px] lg:w-[680px] lg:grid-cols-[1fr_1.1fr]">
-                    <li className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full flex-col justify-end overflow-hidden rounded-xl border border-brown-10 bg-white no-underline outline-hidden select-none focus:shadow-md"
-                          href="/products/rattan"
-                        >
-                          <Image
-                            src="/imgs/products/rattan/cover.png"
-                            alt={t("productLinks.links.rattan")}
-                            width={560}
-                            height={360}
-                            className="h-40 w-full object-cover"
-                          />
-                          <div className="p-4">
-                            <div className="mb-1 text-lg font-semibold text-brown-100">
-                              {t("productLinks.links.rattan")}
-                            </div>
-                            <p className="line-clamp-3 text-sm leading-tight text-brown-80">
-                              {t("menu.rattanFeatured")}
-                            </p>
-                          </div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    {productLinks.map((link) => (
-                      <ListItem
-                        key={link.href}
-                        href={link.href}
-                        title={link.title}
+                  <div className="md:w-[600px] lg:w-[820px]">
+                    <ul className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+                      {productLinks.map((link) => (
+                        <li key={link.href}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              href={link.href}
+                              className="block select-none overflow-hidden rounded-xl border border-brown-10 bg-white no-underline outline-none transition-colors hover:bg-beige-2 focus:bg-beige-2"
+                            >
+                              <Image
+                                src={link.image}
+                                alt={link.title}
+                                width={400}
+                                height={240}
+                                className="h-32 w-full object-cover"
+                              />
+                              <div className="p-3">
+                                <div className="text-sm font-semibold text-brown-100">
+                                  {link.title}
+                                </div>
+                                <p className="mt-1 line-clamp-2 text-xs leading-snug text-brown-80">
+                                  {link.description}
+                                </p>
+                              </div>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/products"
+                        className="mt-2 flex items-center justify-between rounded-xl bg-beige-2 px-4 py-3 text-sm font-semibold text-brown-100 transition-colors hover:bg-beige-3"
                       >
-                        {link.description}
-                      </ListItem>
-                    ))}
-                  </ul>
+                        {t("menu.allProducts")}
+                        <ArrowRightIcon className="h-4 w-4" />
+                      </Link>
+                    </NavigationMenuLink>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
@@ -252,33 +240,5 @@ const Header = () => {
     </header>
   );
 };
-
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<"li"> & {
-  href: ProductHref;
-  title: string;
-}) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link
-          href={href}
-          className="block select-none space-y-2 rounded-lg border border-brown-10 bg-white p-3 leading-none no-underline outline-none transition-colors hover:bg-beige-2 focus:bg-beige-2"
-        >
-          <div className="text-sm leading-none font-semibold text-brown-100">
-            {title}
-          </div>
-          <p className="line-clamp-2 text-sm leading-snug text-brown-80">
-            {children}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  );
-}
 
 export default Header;

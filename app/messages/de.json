@@ -25,8 +25,22 @@
       }
     },
     "menu": {
-      "rattanFeatured": "Natuerliche Rattan-Klassiker in den gefragtesten Formen fuer Handwerks- und Produktionsbaeckereien."
+      "rattanFeatured": "Natuerliche Rattan-Klassiker in den gefragtesten Formen fuer Handwerks- und Produktionsbaeckereien.",
+      "allProducts": "Alle Produkte",
+      "allProductsDescription": "Entdecken Sie unser gesamtes Sortiment an Gaerkoerben und Zubehoer."
     }
+  },
+  "Breadcrumbs": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Ueber uns",
+    "contact": "Kontakt",
+    "rattan": "Rattan",
+    "cork": "Kork",
+    "bamboo": "Bambus",
+    "plastic": "Kunststoff",
+    "engraved": "Graviert",
+    "liners": "Liner"
   },
   "QuestionsBox": {
     "title": "Any questions?",

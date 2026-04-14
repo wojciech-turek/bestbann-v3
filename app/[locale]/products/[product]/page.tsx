@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
 import DecoText from "@/components/shared/DecoText";
+import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { getProductBySlug, productsCatalog } from "@/lib/products-catalog";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 type ProductPageProps = {
@@ -27,7 +27,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
   }
 
   const productTitle = t(`${product.translationKey}.title`);
-  const productDescription = t(`ProductDetailPage.products.${product.slug}.heroDescription`);
+  const productDescription = t(
+    `ProductDetailPage.products.${product.slug}.heroDescription`,
+  );
   const stageItems = [
     {
       title: t(`ProductDetailPage.products.${product.slug}.stages.step1.title`),
@@ -55,7 +57,7 @@ const ProductPage = async ({ params }: ProductPageProps) => {
             className="h-[420px] w-full object-cover sm:h-[560px]"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-r from-black/55 via-black/32 to-black/8" />
+          <div className="absolute inset-0 bg-linear-to-r from-brown-100/55 via-brown-100/32 to-brown-100/8" />
           <div className="absolute left-4 right-4 top-4 text-sm text-white/90 sm:left-8 sm:right-8 sm:top-7">
             <Link href="/" className="hover:text-white">
               {t("ProductsPage.breadcrumb.home")}
@@ -110,7 +112,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                   key={index}
                   className="rounded-xl border border-brown-10 bg-white/80 px-4 py-3 text-brown-100"
                 >
-                  {t(`ProductDetailPage.products.${product.slug}.context.${index}`)}
+                  {t(
+                    `ProductDetailPage.products.${product.slug}.context.${index}`,
+                  )}
                 </li>
               ))}
             </ul>
@@ -122,7 +126,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
             {t("ProductDetailPage.variants.title")}
           </h2>
           <p className="max-w-[72ch] text-base leading-7 text-brown-80 sm:text-lg">
-            {t(`ProductDetailPage.products.${product.slug}.variantsDescription`)}
+            {t(
+              `ProductDetailPage.products.${product.slug}.variantsDescription`,
+            )}
           </p>
 
           {product.hasVariants ? (
@@ -141,13 +147,16 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                       className="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                     />
                     <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/45 via-black/20 to-transparent p-4">
-                      <h3 className="text-2xl leading-tight text-white">{t(variant.translationKey)}</h3>
+                      <h3 className="text-2xl leading-tight text-white">
+                        {t(variant.translationKey)}
+                      </h3>
                     </div>
                   </div>
                   <div className="p-4">
                     <Link href="/contact">
                       <Button size="lg" className="w-full">
-                        {t("Buttons.priceButton")} <ArrowRight className="h-4 w-4" />
+                        {t("Buttons.priceButton")}{" "}
+                        <ArrowRight className="h-4 w-4" />
                       </Button>
                     </Link>
                   </div>
@@ -158,14 +167,19 @@ const ProductPage = async ({ params }: ProductPageProps) => {
             <div className="grid gap-6 lg:grid-cols-[1.05fr_1fr]">
               <div className="rounded-3xl border border-brown-10 bg-white p-6 sm:p-8">
                 <h3 className="text-[30px] leading-tight tracking-[-0.02em] text-brown-100 sm:text-[42px]">
-                  {t(`ProductDetailPage.products.${product.slug}.noVariantsTitle`)}
+                  {t(
+                    `ProductDetailPage.products.${product.slug}.noVariantsTitle`,
+                  )}
                 </h3>
                 <p className="mt-4 text-base leading-7 text-brown-80 sm:text-lg">
-                  {t(`ProductDetailPage.products.${product.slug}.noVariantsDescription`)}
+                  {t(
+                    `ProductDetailPage.products.${product.slug}.noVariantsDescription`,
+                  )}
                 </p>
                 <Link href="/contact">
                   <Button size="lg" className="mt-7">
-                    {t("Buttons.leaveRequest")} <ArrowRight className="h-4 w-4" />
+                    {t("Buttons.leaveRequest")}{" "}
+                    <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -183,7 +197,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                       height={560}
                       className="h-56 w-full object-cover"
                     />
-                    <h3 className="p-4 text-xl text-brown-100">{t(variant.translationKey)}</h3>
+                    <h3 className="p-4 text-xl text-brown-100">
+                      {t(variant.translationKey)}
+                    </h3>
                   </article>
                 ))}
               </div>
@@ -205,8 +221,12 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                   index === 1 ? "lg:rounded-[140px]" : ""
                 }`}
               >
-                <p className="text-3xl leading-[1.1] tracking-[-0.02em] text-brown-100">{stage.title}</p>
-                <p className="mt-5 text-base leading-7 text-brown-80">{stage.body}</p>
+                <p className="text-3xl leading-[1.1] tracking-[-0.02em] text-brown-100">
+                  {stage.title}
+                </p>
+                <p className="mt-5 text-base leading-7 text-brown-80">
+                  {stage.body}
+                </p>
               </article>
             ))}
           </div>

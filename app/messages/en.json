@@ -25,8 +25,22 @@
       }
     },
     "menu": {
-      "rattanFeatured": "Natural rattan classics in the most requested shapes for artisan and commercial bakeries."
+      "rattanFeatured": "Natural rattan classics in the most requested shapes for artisan and commercial bakeries.",
+      "allProducts": "All Products",
+      "allProductsDescription": "Browse our full catalog of bread proofing baskets and accessories."
     }
+  },
+  "Breadcrumbs": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "rattan": "Rattan",
+    "cork": "Cork",
+    "bamboo": "Bamboo",
+    "plastic": "Plastic",
+    "engraved": "Engraved",
+    "liners": "Liners"
   },
   "QuestionsBox": {
     "title": "Any questions?",
