@@ -8,15 +8,15 @@ const Quote = () => {
   const t = useTranslations("AboutPage.welcome");
 
   return (
-    <div className="relative flex flex-col gap-7 items-center text-[40px] max-w-[34ch] mx-auto">
+    <div className="relative flex flex-col gap-7 items-center sm:max-w-1/2 mx-auto px-4 sm:px-0">
       <Image
         src="/deco/quotes.svg"
         alt="Quotes decoration"
         width={120}
         height={90}
-        className="absolute -top-10 -left-20 z-0"
+        className="absolute -top-6 sm:-top-10 -left-4 sm:-left-20 z-0 w-16 h-12 sm:w-[120px] sm:h-[90px]"
       />
-      <TypographyH3 className="relative z-10 text-[40px] leading-[40px] text-center">
+      <TypographyH3 className="relative z-10 text-xl sm:text-[28px] md:text-[40px] leading-snug sm:leading-[32px] md:leading-[40px] text-center">
         {t("quote1")}
         <Image
           src="/imgs/baskets/engraved/engraved.jpg"

@@ -1,8 +1,11 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link } from "@/i18n/navigation";
+import { productsCatalog } from "@/lib/products-catalog";
+import { MenuIcon, XIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import * as React from "react";
 import { useState } from "react";
 
 import {
@@ -13,68 +16,59 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Link } from "@/i18n/navigation";
-import { MenuIcon, XIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { TypographyH4 } from "./shared/TypographyH4";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
+type ProductHref =
+  | "/products/rattan"
+  | "/products/cork"
+  | "/products/bamboo"
+  | "/products/plastic"
+  | "/products/engraved"
+  | "/products/liners";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("Header");
+  const tProducts = useTranslations("ProductsPage");
   const tButtons = useTranslations("Buttons");
 
   const navLinks = [
     {
-      href: "/about",
+      href: "/about" as const,
       title: t("navLinks.about"),
     },
     {
-      href: "/contact",
+      href: "/contact" as const,
       title: t("navLinks.contact"),
     },
-  ] as const;
+  ];
 
-  const productLinks = [
-    {
-      href: "/products/rattan",
-      title: t("productLinks.rattan"),
-    },
-    {
-      href: "/products/cork",
-      title: t("productLinks.cork"),
-    },
-    {
-      href: "/products/bamboo",
-      title: t("productLinks.bamboo"),
-    },
-    {
-      href: "/products/plastic",
-      title: t("productLinks.plastic"),
-    },
-    {
-      href: "/products/engraved",
-      title: t("productLinks.engraved"),
-    },
-    {
-      href: "/products/liners",
-      title: t("productLinks.liners"),
-    },
-  ] as const;
+  const productLinks = productsCatalog.products.map((product) => ({
+    href: product.href as ProductHref,
+    title: t(`productLinks.links.${product.slug}` as Parameters<typeof t>[0]),
+    description: tProducts(
+      `products.${product.slug}.description` as Parameters<typeof tProducts>[0],
+    ),
+    image: product.coverImage,
+  }));
+
+  const featuredRattan = productLinks.find(
+    (link) => link.href === "/products/rattan",
+  );
 
   return (
-    <header className="py-3 z-20 w-full backdrop-blur-sm px-4 sm:px-9">
-      <div className="container flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
-        {/* Mobile Nav */}
-        <div className="md:hidden flex items-center w-full relative ">
+    <header className="sticky top-0 z-50 w-full border-b border-brown-10 bg-beige-1/78 px-4 py-3 backdrop-blur-xl supports-[backdrop-filter]:bg-beige-1/62 sm:px-9">
+      <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
+        <div className="relative flex w-full items-center md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="outline"
                 size="icon"
-                className="rounded-full absolute px-8 bg-white text-black"
+                className="absolute rounded-full border-brown-20 bg-white/95 px-8 text-brown-100"
               >
                 {isMenuOpen ? (
                   <XIcon className="h-5 w-5" />
@@ -83,84 +77,79 @@ const Header = () => {
                 )}
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-4/5 p-4 pt-8">
-              <div className="flex flex-col justify-center gap-5">
+            <SheetContent side="left" className="w-11/12 p-4 pt-8 sm:w-[420px]">
+              <div className="flex flex-col gap-5">
                 <Image
                   src="/imgs/logo-black.png"
                   alt="BestBann"
                   width={143}
                   height={32}
-                  className="object-contain mx-auto"
+                  className="mx-auto object-contain"
                 />
                 <Separator />
-                <div className="flex flex-col gap-4">
-                  <TypographyH4 className="text-orange-100 text-2xl">
-                    Menu
+
+                <div className="rounded-2xl border border-brown-10 bg-beige-1 p-4">
+                  <TypographyH4 className="text-left text-xl text-brown-100">
+                    {t("productLinks.title")}
                   </TypographyH4>
-                  <div className="flex flex-col gap-2">
+                  {featuredRattan && (
                     <Link
-                      className="text-xl text-brown-100 font-medium"
-                      href={`/`}
+                      href={featuredRattan.href}
+                      onClick={() => setIsMenuOpen(false)}
                     >
-                      {t("productLinks.title")}
+                      <div className="mt-3 overflow-hidden rounded-xl border border-brown-10 bg-white">
+                        <Image
+                          src={featuredRattan.image}
+                          alt={featuredRattan.title}
+                          width={640}
+                          height={360}
+                          className="h-36 w-full object-cover"
+                        />
+                        <div className="p-3">
+                          <p className="text-lg font-medium text-brown-100">
+                            {featuredRattan.title}
+                          </p>
+                        </div>
+                      </div>
                     </Link>
-                    <Link
-                      className="text-xl text-brown-100 font-medium"
-                      href={`/about`}
-                    >
-                      {t("navLinks.about")}
-                    </Link>
-                    <Link
-                      className="text-xl text-brown-100 font-medium"
-                      href={`/contact`}
-                    >
-                      {t("navLinks.contact")}
-                    </Link>
+                  )}
+                  <div className="mt-3 grid grid-cols-1 gap-2">
+                    {productLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        className="rounded-lg px-3 py-2 text-base font-medium text-brown-100 hover:bg-brown-10"
+                        href={link.href}
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {link.title}
+                      </Link>
+                    ))}
                   </div>
                 </div>
+
                 <Separator />
-                <div className="flex flex-col gap-4">
-                  <TypographyH4 className="text-orange-100 text-2xl">
-                    Language
-                  </TypographyH4>
-                  <LanguageSwitcher />
+
+                <div className="flex flex-col gap-2">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      className="rounded-lg px-3 py-2 text-xl font-medium text-brown-100 hover:bg-brown-10"
+                      href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.title}
+                    </Link>
+                  ))}
                 </div>
+
                 <Separator />
-                <div className="flex flex-col gap-4">
-                  <TypographyH4 className="text-orange-100 text-2xl">
-                    Contact
-                  </TypographyH4>
-                  <div className="space-y-4 text-brown-100 font-medium">
-                    <div className="space-y-1">
-                      <a href="tel:+48123072877" className="block text-xl">
-                        +48 12 307 28 77
-                      </a>
-                      <a href="tel:+48692933069" className="block text-xl">
-                        +48 692 933 069
-                      </a>
-                    </div>
-                    <div className="space-y-1">
-                      <a
-                        href="mailto:office@bestbann.com"
-                        className="block text-xl hover:underline"
-                      >
-                        office@bestbann.com
-                      </a>
-                      <a
-                        href="mailto:shop@bestbann.com"
-                        className="block text-xl hover:underline"
-                      >
-                        shop@bestbann.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <LanguageSwitcher />
               </div>
             </SheetContent>
           </Sheet>
 
-          <div className="w-[143px] h-[32px] relative mx-auto">
-            <Link href={`/`}>
+          <div className="relative mx-auto h-[32px] w-[143px]">
+            <Link href="/">
               <Image
                 src="/imgs/logo.png"
                 alt="BestBann"
@@ -171,33 +160,40 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex w-full items-center justify-between">
+        <div className="hidden w-full items-center justify-between md:flex">
           <NavigationMenu>
             <NavigationMenuList className="space-x-2">
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   showChevron={false}
-                  className="rounded-full flex items-center gap-2 px-5 py-3"
+                  className="rounded-full border border-brown-20 bg-white/95 px-5 py-3 text-brown-100 hover:bg-white"
                 >
                   <MenuIcon className="h-4 w-4" />
-                  Products
+                  {t("productLinks.title")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <ul className="grid gap-2 md:w-[520px] lg:w-[680px] lg:grid-cols-[1fr_1.1fr]">
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <Link
-                          className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
-                          href="/"
+                          className="flex h-full w-full flex-col justify-end overflow-hidden rounded-xl border border-brown-10 bg-white no-underline outline-hidden select-none focus:shadow-md"
+                          href="/products/rattan"
                         >
-                          <div className="mt-4 mb-2 text-lg font-medium">
-                            shadcn/ui
+                          <Image
+                            src="/imgs/products/rattan/cover.png"
+                            alt={t("productLinks.links.rattan")}
+                            width={560}
+                            height={360}
+                            className="h-40 w-full object-cover"
+                          />
+                          <div className="p-4">
+                            <div className="mb-1 text-lg font-semibold text-brown-100">
+                              {t("productLinks.links.rattan")}
+                            </div>
+                            <p className="line-clamp-3 text-sm leading-tight text-brown-80">
+                              {t("menu.rattanFeatured")}
+                            </p>
                           </div>
-                          <p className="text-muted-foreground text-sm leading-tight">
-                            Beautifully designed components built with Tailwind
-                            CSS.
-                          </p>
                         </Link>
                       </NavigationMenuLink>
                     </li>
@@ -206,18 +202,24 @@ const Header = () => {
                         key={link.href}
                         href={link.href}
                         title={link.title}
-                      />
+                      >
+                        {link.description}
+                      </ListItem>
                     ))}
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
               {navLinks.map((link) => (
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink
                     asChild
                     className="rounded-full px-4 py-2"
                   >
-                    <Link href={link.href} className={`font-semibold`}>
+                    <Link
+                      href={link.href}
+                      className="font-semibold text-brown-100"
+                    >
                       {link.title}
                     </Link>
                   </NavigationMenuLink>
@@ -226,10 +228,10 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <div className="w-[165px] h-[38px] relative">
-            <Link href={`/`}>
+          <div className="relative h-[38px] w-[165px]">
+            <Link href="/">
               <Image
-                src="/imgs/logo.png"
+                src="/imgs/logo-black.png"
                 alt="BestBann"
                 fill
                 className="object-contain"
@@ -239,9 +241,11 @@ const Header = () => {
 
           <div className="flex items-center space-x-6">
             <LanguageSwitcher />
-            <Button className="font-semibold text-base leading-6 py-3 px-12">
-              {tButtons("leaveRequest")}
-            </Button>
+            <Link href="/contact">
+              <Button className="px-12 py-3 text-base leading-6 font-semibold">
+                {tButtons("priceButton")}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -255,15 +259,7 @@ function ListItem({
   href,
   ...props
 }: React.ComponentPropsWithoutRef<"li"> & {
-  href:
-    | "/about"
-    | "/contact"
-    | "/products/rattan"
-    | "/products/cork"
-    | "/products/bamboo"
-    | "/products/plastic"
-    | "/products/engraved"
-    | "/products/liners";
+  href: ProductHref;
   title: string;
 }) {
   return (
@@ -271,10 +267,12 @@ function ListItem({
       <NavigationMenuLink asChild>
         <Link
           href={href}
-          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+          className="block select-none space-y-2 rounded-lg border border-brown-10 bg-white p-3 leading-none no-underline outline-none transition-colors hover:bg-beige-2 focus:bg-beige-2"
         >
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+          <div className="text-sm leading-none font-semibold text-brown-100">
+            {title}
+          </div>
+          <p className="line-clamp-2 text-sm leading-snug text-brown-80">
             {children}
           </p>
         </Link>

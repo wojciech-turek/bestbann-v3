@@ -3,6 +3,7 @@ import { TypographyH4 } from "@/components/shared/TypographyH4";
 import { TypographyP } from "@/components/shared/TypographyP";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { productsCatalog } from "@/lib/products-catalog";
 import { clsx } from "clsx";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -12,38 +13,18 @@ const OurProducts = () => {
   const t = useTranslations("HomePage.ourProducts");
   const tButtons = useTranslations("Buttons");
 
-  const products = [
-    {
-      title: t("products.rattan.title"),
-      description: t("products.rattan.description"),
-      src: "/imgs/home/rattan.png",
-    },
-    {
-      title: t("products.cork.title"),
-      description: t("products.cork.description"),
-      src: "/imgs/home/cork.png",
-    },
-    {
-      title: t("products.bamboo.title"),
-      description: t("products.bamboo.description"),
-      src: "/imgs/home/bamboo.png",
-    },
-    {
-      title: t("products.platic.title"),
-      description: t("products.platic.description"),
-      src: "/imgs/home/plastic.png",
-    },
-    {
-      title: t("products.engraved.title"),
-      description: t("products.engraved.description"),
-      src: "/imgs/home/engraved.png",
-    },
-    {
-      title: t("products.liners.title"),
-      description: t("products.liners.description"),
-      src: "/imgs/home/liners.png",
-    },
-  ];
+  const products = productsCatalog.products.map((product) => ({
+    href: product.href as
+      | "/products/rattan"
+      | "/products/cork"
+      | "/products/bamboo"
+      | "/products/plastic"
+      | "/products/engraved"
+      | "/products/liners",
+    title: t(`${product.homeProductKey}.title`),
+    description: t(`${product.homeProductKey}.description`),
+    src: product.coverImage,
+  }));
   return (
     <div className="flex flex-col gap-8 sm:gap-10">
       <div className="flex flex-col sm:flex-row container mx-auto items-center justify-between gap-5 px-4 sm:px-9">
@@ -78,7 +59,7 @@ const OurProducts = () => {
               <TypographyP>{product.description}</TypographyP>
 
               <Link
-                href="/products"
+                href={product.href}
                 className="absolute inset-0 z-10 flex items-center justify-center bg-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               >
                 <div className="bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium">

@@ -23,6 +23,9 @@
         "engraved": "Engraved",
         "liners": "Liners"
       }
+    },
+    "menu": {
+      "rattanFeatured": "Natural rattan classics in the most requested shapes for artisan and commercial bakeries."
     }
   },
   "QuestionsBox": {
@@ -216,6 +219,299 @@
         "question4": {
           "question": "What size bread proofing basket should I choose?",
           "answer": "Yes, all our products are certified to be food-safe according to European Parliament regulations (EC) No 1935/2004 and German LFGB standards."
+        }
+      }
+    }
+  },
+  "ProductsPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products"
+    },
+    "hero": {
+      "title": "Products",
+      "description": "If you are looking for premium baking accessories, choose <deco>baskets crafted for rising and proofing bread dough.</deco> We offer durable, well-shaped products that help your loaves stay full, stable and beautifully formed."
+    },
+    "actions": {
+      "learnMore": "Learn more"
+    },
+    "labels": {
+      "bestseller": "Bestseller"
+    },
+    "products": {
+      "rattan": {
+        "title": "Rattan bread proofing baskets",
+        "description": "Handmade rattan baskets with excellent airflow and a natural texture that supports consistent proofing results.",
+        "variants": {
+          "round": "Round",
+          "oblong": "Oblong",
+          "oval": "Oval",
+          "baguette": "Baguette",
+          "miniRound": "Mini round",
+          "square": "Square",
+          "bigSlicedBread": "Big sliced bread"
+        }
+      },
+      "cork": {
+        "title": "Cork bread proofing baskets",
+        "description": "Our cork line is easy to keep clean, keeps a stable shape and gives dough support during every proof.",
+        "variants": {
+          "round": "Round",
+          "oblong": "Oblong",
+          "oval": "Oval",
+          "baguette": "Baguette",
+          "engravedBottom": "Engraved bottom"
+        }
+      },
+      "bamboo": {
+        "title": "Bamboo fiber bread proofing baskets",
+        "description": "Lightweight and durable bamboo fiber baskets designed for daily use in bakeries and artisan kitchens.",
+        "variants": {
+          "round": "Round",
+          "oblong": "Oblong"
+        }
+      },
+      "plastic": {
+        "title": "Plastic bread proofing baskets",
+        "description": "Practical polypropylene baskets that combine long service life with repeatable, professional results.",
+        "variants": {
+          "round": "Round",
+          "oblong": "Oblong"
+        }
+      },
+      "engraved": {
+        "title": "Engraved bread proofing baskets",
+        "description": "Custom engraved options for rattan and cork products, ideal for bakeries that want a distinctive finish.",
+        "variants": {
+          "customEngraving": "Custom engraving"
+        }
+      },
+      "liners": {
+        "title": "Liners for bread proofing baskets",
+        "description": "Soft liners that simplify maintenance and support high-hydration dough handling across basket types.",
+        "variants": {
+          "universalLiners": "Universal liners"
+        }
+      }
+    }
+  },
+  "ProductDetailPage": {
+    "context": {
+      "title": "Good to know"
+    },
+    "variants": {
+      "title": "Choose a basket form"
+    },
+    "products": {
+      "rattan": {
+        "heroDescription": "Experienced bakers choose rattan to achieve a crisp surface, stable structure and a beautiful final shape.",
+        "introTitle": "Our <deco>rattan</deco> products",
+        "introDescription": "Rattan proofing baskets are available in multiple shapes and sizes for artisan and professional production. The material supports airflow during proofing and helps maintain a clean dough structure.",
+        "variantsDescription": "Pick a shape that matches your loaf profile, hydration and cutting style.",
+        "context": {
+          "1": "Handmade from selected natural rattan.",
+          "2": "Available in standard and custom dimensions.",
+          "3": "Suitable for bakeries, restaurants and home professionals."
+        },
+        "stagesTitle": "Stages of working with <deco>a rattan basket</deco>",
+        "stages": {
+          "step1": {
+            "title": "Preparation",
+            "body": "Lightly moisten a new basket and dust it with flour before first use. For very hydrated dough, using a liner can improve handling."
+          },
+          "step2": {
+            "title": "Proofing",
+            "body": "Place shaped dough inside, seam up, and proof in warm conditions. The basket helps keep structure while supporting even fermentation."
+          },
+          "step3": {
+            "title": "Care",
+            "body": "After use, remove flour residue and dry the basket at room temperature. Store in a dry, ventilated space."
+          }
+        },
+        "noVariantsTitle": "Rattan options",
+        "noVariantsDescription": "We prepare rattan baskets in many shapes and dimensions, adapted to your baking workflow."
+      },
+      "cork": {
+        "heroDescription": "Cork baskets are easy to maintain and deliver clean, repeatable proofing for daily bakery production.",
+        "introTitle": "Our <deco>cork</deco> products",
+        "introDescription": "Cork baskets are practical, washable and designed for stable everyday use. They are especially useful when easy cleaning and quick turnaround matter.",
+        "variantsDescription": "Select a cork shape that fits your dough style and production rhythm.",
+        "context": {
+          "1": "Easy to clean under running water.",
+          "2": "Stable form during repeated use.",
+          "3": "Designed for long production cycles."
+        },
+        "stagesTitle": "Stages of working with <deco>a cork basket</deco>",
+        "stages": {
+          "step1": {
+            "title": "Preparation",
+            "body": "Dust the basket with flour before each use. For sticky dough, increase flour lightly on contact areas."
+          },
+          "step2": {
+            "title": "Proofing",
+            "body": "Place shaped dough in the basket and proof until ready. Cork supports the dough form and keeps handling predictable."
+          },
+          "step3": {
+            "title": "Care",
+            "body": "Rinse after use if needed and dry fully before storage. Keep baskets in a dry place between shifts."
+          }
+        },
+        "noVariantsTitle": "Cork options",
+        "noVariantsDescription": "Tell us what dimensions you need and we will help you select the right cork basket setup."
+      },
+      "bamboo": {
+        "heroDescription": "Bamboo fiber models combine low weight with practical durability for frequent, high-volume use.",
+        "introTitle": "Our <deco>bamboo fiber</deco> products",
+        "introDescription": "Bamboo fiber baskets are lightweight and reliable, giving bakeries a practical option for continuous work and standardized results.",
+        "variantsDescription": "Choose between key formats based on dough volume and final loaf shape.",
+        "context": {
+          "1": "Lightweight for fast daily handling.",
+          "2": "Durable material for repeated production.",
+          "3": "Balanced option for modern bakeries."
+        },
+        "stagesTitle": "Stages of working with <deco>a bamboo basket</deco>",
+        "stages": {
+          "step1": {
+            "title": "Preparation",
+            "body": "Apply a light flour layer before placing dough. Keep surfaces clean for repeatable daily use."
+          },
+          "step2": {
+            "title": "Proofing",
+            "body": "Proof dough as usual based on your recipe and temperature. The basket helps keep the intended loaf form."
+          },
+          "step3": {
+            "title": "Care",
+            "body": "Brush off flour and let the basket dry completely. Avoid storing in humid environments."
+          }
+        },
+        "noVariantsTitle": "Bamboo options",
+        "noVariantsDescription": "We can also prepare specific size ranges for your bakery and order volume."
+      },
+      "plastic": {
+        "heroDescription": "Polypropylene baskets are robust and consistent, designed for bakeries that rely on repeatable output.",
+        "introTitle": "Our <deco>plastic</deco> products",
+        "introDescription": "Plastic baskets are made for stable, high-frequency production and are suitable for teams that need predictable process performance every day.",
+        "variantsDescription": "Choose the format that best matches your target bread line and shaping process.",
+        "context": {
+          "1": "Robust structure for repetitive use.",
+          "2": "Consistent geometry between batches.",
+          "3": "Efficient for high-volume workflows."
+        },
+        "stagesTitle": "Stages of working with <deco>a plastic basket</deco>",
+        "stages": {
+          "step1": {
+            "title": "Preparation",
+            "body": "Flour contact surfaces before loading dough. Keep a regular prep routine for stable output."
+          },
+          "step2": {
+            "title": "Proofing",
+            "body": "Use your normal proofing time and conditions. The basket maintains shape and supports repeatability."
+          },
+          "step3": {
+            "title": "Care",
+            "body": "Clean baskets after production and dry before stacking. Store away from heat sources."
+          }
+        },
+        "noVariantsTitle": "Plastic options",
+        "noVariantsDescription": "If you need custom dimensions or recurring supply, contact us and we will prepare an offer."
+      },
+      "engraved": {
+        "heroDescription": "Engraved baskets are made to highlight your bakery identity with custom marks and personalized bottoms.",
+        "introTitle": "Our <deco>engraved</deco> products",
+        "introDescription": "Engraved products are made to order and developed with your brand requirements in mind. We can prepare custom motifs and basket setups for private labels.",
+        "variantsDescription": "Engraved lines are configured case by case based on your brand and basket specifications.",
+        "context": {
+          "1": "Custom motifs and private-label options.",
+          "2": "Available for selected rattan and cork formats.",
+          "3": "Prepared after technical approval."
+        },
+        "stagesTitle": "Stages of preparing <deco>engraved baskets</deco>",
+        "stages": {
+          "step1": {
+            "title": "Brief",
+            "body": "Share your logo, dimensions and preferred basket line. We verify technical fit and engraving direction."
+          },
+          "step2": {
+            "title": "Prototype",
+            "body": "We align engraving depth and visual details with your team before approving final production."
+          },
+          "step3": {
+            "title": "Production",
+            "body": "After approval we run production and quality checks, then prepare secure shipping."
+          }
+        },
+        "noVariantsTitle": "Custom engraving service",
+        "noVariantsDescription": "This line is prepared individually. We define shape, size and engraving details together before production."
+      },
+      "liners": {
+        "heroDescription": "Our liner collection helps keep baskets cleaner and supports smooth dough release during handling.",
+        "introTitle": "Our basket <deco>liners</deco>",
+        "introDescription": "Liners are designed to simplify basket care and support cleaner dough handling, especially in high-hydration recipes and high-turnover schedules.",
+        "variantsDescription": "Use liners matched to your basket type and size for best handling performance.",
+        "context": {
+          "1": "Improves hygiene and speeds up cleanup.",
+          "2": "Useful for very hydrated doughs.",
+          "3": "Compatible with many basket formats."
+        },
+        "stagesTitle": "Stages of using <deco>basket liners</deco>",
+        "stages": {
+          "step1": {
+            "title": "Fit",
+            "body": "Choose a liner size matched to your basket geometry so the fabric sits evenly without folds."
+          },
+          "step2": {
+            "title": "Proofing",
+            "body": "Place the liner, dust with flour if needed, then load shaped dough for proofing."
+          },
+          "step3": {
+            "title": "Care",
+            "body": "Wash and dry liners according to your bakery routine to keep consistent hygiene standards."
+          }
+        },
+        "noVariantsTitle": "Universal liner selection",
+        "noVariantsDescription": "Liners are tailored to basket type and size. Share your basket dimensions and we will match the right option."
+      }
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "title": "Let’s talk about your <deco>perfect basket</deco>",
+      "description": "Tell us what you need and we will prepare the best solution for your bakery, store or brand.",
+      "imageAlt": "Weronika and Michal from Bestbann"
+    },
+    "details": {
+      "phoneTitle": "Phone",
+      "phonePrimary": "+48 12 307 28 77",
+      "phoneSecondary": "+48 692 933 069",
+      "emailTitle": "Email",
+      "emailPrimary": "office@bestbann.com",
+      "emailSecondary": "shop@bestbann.com",
+      "addressTitle": "Office",
+      "addressLine1": "BESTBANN",
+      "addressLine2": "Sapiehy 21, 31-644 Kraków",
+      "addressLine3": "Poland"
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "We usually get back to you within one business day.",
+      "submit": "Send message",
+      "notice": "By sending this form, you agree that we can contact you regarding your inquiry.",
+      "fields": {
+        "name": {
+          "label": "Full name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "you@company.com"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Company name"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us what products you are interested in..."
         }
       }
     }

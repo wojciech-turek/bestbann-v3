@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Locale } from "@/dictionaries";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: Locale.EN }];
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -34,7 +33,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
 
@@ -50,7 +49,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Header />
           {children}
-          <Footer lang={locale} />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

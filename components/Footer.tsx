@@ -1,5 +1,8 @@
+"use client";
+
 import BannetonsLargeText from "@/components/BannetonsLargeText";
 import { Link } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -9,6 +12,8 @@ import { Button } from "./ui/button";
 const Footer = () => {
   const t = useTranslations("Footer");
   const tButtons = useTranslations("Buttons");
+  const pathname = usePathname();
+  const isContactPage = pathname === "/contact";
 
   const shopLinks = [
     {
@@ -58,7 +63,7 @@ const Footer = () => {
 
   return (
     <div>
-      <QuestionsBox />
+      {!isContactPage && <QuestionsBox />}
       <BannetonsLargeText />
       <footer className="bg-dark-brown text-white">
         <div className="container mx-auto px-4 py-16 pb-8 sm:pb-48">

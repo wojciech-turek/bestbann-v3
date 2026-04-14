@@ -10,7 +10,7 @@ const OurProducts = () => {
   const t = useTranslations("AboutPage.ourProducts");
   const buttonsT = useTranslations("Buttons");
   return (
-    <div className="relative flex flex-col gap-7 overflow-hidden rounded-2xl bg-beige-3 p-10 py-30">
+    <div className="relative flex flex-col gap-7 overflow-hidden rounded-2xl bg-beige-3 p-5 sm:p-10 py-16 sm:py-30">
       <Image
         src="/deco/bean-gray-transparent.svg"
         alt="deco"
@@ -34,7 +34,7 @@ const OurProducts = () => {
         {t("description")}
       </TypographyP>
 
-      <div className="relative mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 h-[600px] mx-auto">
+      <div className="relative mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 md:gap-8 w-full max-w-5xl mx-auto">
         {Array.from({ length: 6 }).map((_, i) => (
           <div
             key={i}

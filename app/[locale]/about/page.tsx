@@ -7,7 +7,7 @@ import WelcomeText from "./components/WelcomeText";
 
 const AboutUsPage = async () => {
   return (
-    <div className="flex flex-col gap-40 bg-beige-1 px-9">
+    <div className="flex flex-col gap-16 sm:gap-24 md:gap-40 bg-beige-1">
       <WelcomeText />
       <Quote />
       <FamilyCompany showButton={false} />

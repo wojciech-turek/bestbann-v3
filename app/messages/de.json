@@ -14,7 +14,7 @@
     },
 
     "productLinks": {
-      "title": "Products",
+      "title": "Produkte",
       "links": {
         "rattan": "Rattan",
         "cork": "Cork",
@@ -23,6 +23,9 @@
         "engraved": "Engraved",
         "liners": "Liners"
       }
+    },
+    "menu": {
+      "rattanFeatured": "Natuerliche Rattan-Klassiker in den gefragtesten Formen fuer Handwerks- und Produktionsbaeckereien."
     }
   },
   "QuestionsBox": {
@@ -216,6 +219,299 @@
         "question4": {
           "question": "What size bread proofing basket should I choose?",
           "answer": "Yes, all our products are certified to be food-safe according to European Parliament regulations (EC) No 1935/2004 and German LFGB standards."
+        }
+      }
+    }
+  },
+  "ProductsPage": {
+    "breadcrumb": {
+      "home": "Startseite",
+      "products": "Produkte"
+    },
+    "hero": {
+      "title": "Produkte",
+      "description": "Wenn Sie hochwertige Backzubehoer suchen, waehlen Sie <deco>Gaerkoerbe fuer das Gehen und Reifen von Brotteig.</deco> Wir bieten robuste, formstabile Produkte, die Ihren Broten Volumen, Symmetrie und ein professionelles Ergebnis geben."
+    },
+    "actions": {
+      "learnMore": "Mehr erfahren"
+    },
+    "labels": {
+      "bestseller": "Bestseller"
+    },
+    "products": {
+      "rattan": {
+        "title": "Rattan-Gaerkoerbe fuer Brot",
+        "description": "Handgefertigte Rattan-Gaerkoerbe mit optimaler Luftzirkulation und natuerlicher Struktur fuer gleichmaessige Ergebnisse.",
+        "variants": {
+          "round": "Rund",
+          "oblong": "Laenglich",
+          "oval": "Oval",
+          "baguette": "Baguette",
+          "miniRound": "Mini rund",
+          "square": "Quadratisch",
+          "bigSlicedBread": "Grosses Schnittbrot"
+        }
+      },
+      "cork": {
+        "title": "Kork-Gaerkoerbe fuer Brot",
+        "description": "Unsere Kork-Serie ist leicht zu reinigen, formstabil und bietet dem Teig in jeder Gare sichere Unterstuetzung.",
+        "variants": {
+          "round": "Rund",
+          "oblong": "Laenglich",
+          "oval": "Oval",
+          "baguette": "Baguette",
+          "engravedBottom": "Gravierter Boden"
+        }
+      },
+      "bamboo": {
+        "title": "Gaerkoerbe aus Bambusfaser",
+        "description": "Leichte und langlebige Bambusfaser-Gaerkoerbe fuer den taeglichen Einsatz in Baeckereien und Backstuben.",
+        "variants": {
+          "round": "Rund",
+          "oblong": "Laenglich"
+        }
+      },
+      "plastic": {
+        "title": "Kunststoff-Gaerkoerbe fuer Brot",
+        "description": "Praktische Polypropylen-Gaerkoerbe mit langer Lebensdauer und reproduzierbaren professionellen Ergebnissen.",
+        "variants": {
+          "round": "Rund",
+          "oblong": "Laenglich"
+        }
+      },
+      "engraved": {
+        "title": "Gaerkoerbe mit Gravur",
+        "description": "Individuelle Gravur-Optionen fuer Rattan- und Korkprodukte, ideal fuer Baeckereien mit eigenem Markenauftritt.",
+        "variants": {
+          "customEngraving": "Individuelle Gravur"
+        }
+      },
+      "liners": {
+        "title": "Einlagen fuer Brot-Gaerkoerbe",
+        "description": "Weiche Einlagen fuer einfachere Pflege und bessere Handhabung von Teigen mit hoher Hydration in allen Korbtypen.",
+        "variants": {
+          "universalLiners": "Universelle Einlagen"
+        }
+      }
+    }
+  },
+  "ProductDetailPage": {
+    "context": {
+      "title": "Wissenswert"
+    },
+    "variants": {
+      "title": "Korbform auswaehlen"
+    },
+    "products": {
+      "rattan": {
+        "heroDescription": "Erfahrene Baecker waehlen Rattan fuer eine knusprige Kruste, stabile Struktur und eine saubere Endform.",
+        "introTitle": "Unsere <deco>Rattan</deco>-Produkte",
+        "introDescription": "Rattan-Gaerkoerbe sind in vielen Formen und Groessen verfuegbar. Das Material unterstuetzt Luftzirkulation waehrend der Gare und stabile Teigfuehrung.",
+        "variantsDescription": "Waehlen Sie die Form passend zu Teigmenge, Hydration und gewuenschtem Brotprofil.",
+        "context": {
+          "1": "Handgefertigt aus ausgewaehltem Natur-Rattan.",
+          "2": "In Standard- und Sondermassen erhaeltlich.",
+          "3": "Geeignet fuer Baeckereien, Gastronomie und Profis zu Hause."
+        },
+        "stagesTitle": "Arbeitsphasen mit <deco>Rattan-Koerben</deco>",
+        "stages": {
+          "step1": {
+            "title": "Vorbereitung",
+            "body": "Neuen Korb leicht anfeuchten und vor der ersten Nutzung bemehlen. Bei sehr feuchten Teigen hilft ein Liner."
+          },
+          "step2": {
+            "title": "Gare",
+            "body": "Geformten Teig mit Schluss nach oben einlegen und unter passenden Bedingungen gehen lassen."
+          },
+          "step3": {
+            "title": "Pflege",
+            "body": "Mehlreste nach Gebrauch entfernen, gut trocknen lassen und trocken lagern."
+          }
+        },
+        "noVariantsTitle": "Rattan-Optionen",
+        "noVariantsDescription": "Wir fertigen Rattan-Gaerkoerbe in vielen Formen und Groessen passend zu Ihrem Produktionsablauf."
+      },
+      "cork": {
+        "heroDescription": "Kork-Gaerkoerbe sind pflegeleicht und liefern wiederholbare Ergebnisse fuer den taeglichen Backbetrieb.",
+        "introTitle": "Unsere <deco>Kork</deco>-Produkte",
+        "introDescription": "Kork-Koerbe sind praktisch, gut zu reinigen und fuer den taeglichen Einsatz in der Backstube ausgelegt.",
+        "variantsDescription": "Waehlen Sie die passende Kork-Form fuer Ihre Rezeptur und Produktionsroutine.",
+        "context": {
+          "1": "Einfache Reinigung unter Wasser.",
+          "2": "Formstabil bei wiederholter Nutzung.",
+          "3": "Geeignet fuer kontinuierliche Produktionszyklen."
+        },
+        "stagesTitle": "Arbeitsphasen mit <deco>Kork-Koerben</deco>",
+        "stages": {
+          "step1": {
+            "title": "Vorbereitung",
+            "body": "Korb vor dem Einlegen des Teigs leicht bemehlen."
+          },
+          "step2": {
+            "title": "Gare",
+            "body": "Teig einlegen und wie gewohnt fuehren. Der Korb stabilisiert die Form waehrend der Gare."
+          },
+          "step3": {
+            "title": "Pflege",
+            "body": "Bei Bedarf abspuelen, vollstaendig trocknen und trocken lagern."
+          }
+        },
+        "noVariantsTitle": "Kork-Optionen",
+        "noVariantsDescription": "Nennen Sie uns Ihre Wunschmasse, und wir helfen Ihnen bei der Auswahl der passenden Kork-Ausfuehrung."
+      },
+      "bamboo": {
+        "heroDescription": "Modelle aus Bambusfaser verbinden geringes Gewicht mit hoher Alltagstauglichkeit fuer regelmaessigen Einsatz.",
+        "introTitle": "Unsere <deco>Bambusfaser</deco>-Produkte",
+        "introDescription": "Bambusfaser-Koerbe sind leicht, robust und fuer standardisierte Tagesablaeufe in der Produktion geeignet.",
+        "variantsDescription": "Waehlen Sie das Format passend zu Brottyp und Teigmenge.",
+        "context": {
+          "1": "Geringes Gewicht fuer schnelles Handling.",
+          "2": "Langlebig fuer den taeglichen Einsatz.",
+          "3": "Praxisnahe Option fuer moderne Backbetriebe."
+        },
+        "stagesTitle": "Arbeitsphasen mit <deco>Bambus-Koerben</deco>",
+        "stages": {
+          "step1": {
+            "title": "Vorbereitung",
+            "body": "Kontaktflaechen leicht bemehlen und sauber halten."
+          },
+          "step2": {
+            "title": "Gare",
+            "body": "Teig nach Rezept fuehren. Der Korb unterstuetzt die gewuenschte Form."
+          },
+          "step3": {
+            "title": "Pflege",
+            "body": "Mehlreste entfernen, vollstaendig trocknen und trocken lagern."
+          }
+        },
+        "noVariantsTitle": "Bambus-Optionen",
+        "noVariantsDescription": "Wir koennen auch konkrete Groessenbereiche passend zu Ihrer Backstube und Bestellmenge vorbereiten."
+      },
+      "plastic": {
+        "heroDescription": "Polypropylen-Gaerkoerbe sind robust und konstant, ideal fuer Baeckereien mit klaren Produktionsstandards.",
+        "introTitle": "Unsere <deco>Kunststoff</deco>-Produkte",
+        "introDescription": "Kunststoff-Koerbe sind fuer hohe Frequenz und reproduzierbare Ergebnisse in der Backproduktion entwickelt.",
+        "variantsDescription": "Waehlen Sie die Form passend zu Ihrer Brotlinie und Produktionsplanung.",
+        "context": {
+          "1": "Robuste Struktur fuer Serienbetrieb.",
+          "2": "Konstante Geometrie je Charge.",
+          "3": "Effizient fuer hohe Auslastung."
+        },
+        "stagesTitle": "Arbeitsphasen mit <deco>Kunststoff-Koerben</deco>",
+        "stages": {
+          "step1": {
+            "title": "Vorbereitung",
+            "body": "Vor der Nutzung leicht bemehlen und stationenweise vorbereiten."
+          },
+          "step2": {
+            "title": "Gare",
+            "body": "Teig wie gewohnt fuehren, der Korb sorgt fuer stabile Formgebung."
+          },
+          "step3": {
+            "title": "Pflege",
+            "body": "Nach dem Einsatz reinigen, trocknen und ordentlich stapeln."
+          }
+        },
+        "noVariantsTitle": "Kunststoff-Optionen",
+        "noVariantsDescription": "Bei Sondermassen oder wiederkehrendem Bedarf erstellen wir gern ein passendes Angebot."
+      },
+      "engraved": {
+        "heroDescription": "Gravierte Koerbe staerken Ihren Markenauftritt mit individuellen Motiven und personalisierten Boeden.",
+        "introTitle": "Unsere <deco>gravierten</deco> Produkte",
+        "introDescription": "Gravierte Loesungen werden individuell entwickelt und auf Ihre Marke, Formate und Produktionsanforderungen abgestimmt.",
+        "variantsDescription": "Diese Produktlinie wird projektspezifisch geplant und abgestimmt.",
+        "context": {
+          "1": "Eigene Motive und Private-Label moeglich.",
+          "2": "Fuer ausgewaehlte Rattan- und Korkformen verfuegbar.",
+          "3": "Fertigung nach technischer Freigabe."
+        },
+        "stagesTitle": "Arbeitsphasen fuer <deco>gravierte Koerbe</deco>",
+        "stages": {
+          "step1": {
+            "title": "Briefing",
+            "body": "Sie teilen Logo, Groessen und Wunschlinie mit. Wir pruefen die technische Umsetzbarkeit."
+          },
+          "step2": {
+            "title": "Muster",
+            "body": "Gravurtiefe und visuelle Details werden gemeinsam abgestimmt."
+          },
+          "step3": {
+            "title": "Fertigung",
+            "body": "Nach Freigabe starten Produktion, Qualitaetskontrolle und Versandvorbereitung."
+          }
+        },
+        "noVariantsTitle": "Individueller Gravur-Service",
+        "noVariantsDescription": "Diese Produktlinie wird individuell geplant. Form, Groesse und Gravurdetails stimmen wir vor der Fertigung gemeinsam ab."
+      },
+      "liners": {
+        "heroDescription": "Unsere Einlagen halten Koerbe laenger sauber und erleichtern das Entnehmen des Teigs im Arbeitsprozess.",
+        "introTitle": "Unsere <deco>Liner</deco>-Produkte",
+        "introDescription": "Liner erleichtern die Reinigung, verbessern die Handhabung und sind besonders hilfreich bei Teigen mit hoher Hydration.",
+        "variantsDescription": "Nutzen Sie passende Liner je Korbtyp und Groesse fuer einen sauberen Ablauf.",
+        "context": {
+          "1": "Verbessert Hygiene und Reinigungsaufwand.",
+          "2": "Hilfreich bei weichen, feuchten Teigen.",
+          "3": "Kompatibel mit vielen Korbformaten."
+        },
+        "stagesTitle": "Arbeitsphasen mit <deco>Linern</deco>",
+        "stages": {
+          "step1": {
+            "title": "Anpassen",
+            "body": "Liner passend zur Korbgeometrie auswaehlen und glatt einlegen."
+          },
+          "step2": {
+            "title": "Gare",
+            "body": "Bei Bedarf bemehlen, Teig einlegen und wie gewohnt fuehren."
+          },
+          "step3": {
+            "title": "Pflege",
+            "body": "Liner gemaess Betriebsroutine waschen, trocknen und sauber lagern."
+          }
+        },
+        "noVariantsTitle": "Universelle Einlagen-Auswahl",
+        "noVariantsDescription": "Einlagen werden nach Korbtyp und Groesse ausgewaehlt. Teilen Sie uns Ihre Masse mit, wir empfehlen die passende Variante."
+      }
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "title": "Sprechen wir über Ihren <deco>perfekten Gärkorb</deco>",
+      "description": "Teilen Sie uns Ihre Anforderungen mit und wir bereiten die beste Lösung für Ihre Bäckerei, Ihren Shop oder Ihre Marke vor.",
+      "imageAlt": "Weronika und Michal von Bestbann"
+    },
+    "details": {
+      "phoneTitle": "Telefon",
+      "phonePrimary": "+48 12 307 28 77",
+      "phoneSecondary": "+48 692 933 069",
+      "emailTitle": "E-Mail",
+      "emailPrimary": "office@bestbann.com",
+      "emailSecondary": "shop@bestbann.com",
+      "addressTitle": "Büro",
+      "addressLine1": "BESTBANN",
+      "addressLine2": "Sapiehy 21, 31-644 Kraków",
+      "addressLine3": "Polen"
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "description": "Wir melden uns in der Regel innerhalb eines Werktags zurück.",
+      "submit": "Nachricht senden",
+      "notice": "Durch das Senden dieses Formulars stimmen Sie zu, dass wir Sie bezüglich Ihrer Anfrage kontaktieren dürfen.",
+      "fields": {
+        "name": {
+          "label": "Vollständiger Name",
+          "placeholder": "Ihr vollständiger Name"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "sie@unternehmen.de"
+        },
+        "company": {
+          "label": "Unternehmen",
+          "placeholder": "Name des Unternehmens"
+        },
+        "message": {
+          "label": "Nachricht",
+          "placeholder": "Teilen Sie uns mit, für welche Produkte Sie sich interessieren..."
         }
       }
     }

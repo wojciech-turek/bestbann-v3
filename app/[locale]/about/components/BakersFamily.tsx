@@ -9,7 +9,7 @@ const BakersFamily = () => {
   const t = useTranslations("AboutPage.bakersFamily");
 
   return (
-    <div className="flex flex-col md:flex-row container mx-auto gap-3 md:gap-2.5 px-4 md:px-0 mb-40">
+    <div className="flex flex-col md:flex-row container mx-auto gap-3 md:gap-2.5 px-4 md:px-0 mb-16 sm:mb-24 md:mb-40">
       <div className="w-full md:basis-1/2 bg-beige-1 relative rounded-2xl overflow-hidden h-64 md:h-auto">
         <Image
           src="/imgs/bakers-family.png"

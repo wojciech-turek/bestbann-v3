@@ -32,41 +32,37 @@ const TakingCare = () => {
         })}
       </TypographyH2>
       <div className="flex flex-col gap-10">
-        <div className="flex items-center justify-center gap-32">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-32">
           <Image
             src={"/imgs/taking-care-1.png"}
             alt={cards[0].title}
-            width={648}
-            height={432}
-            className="object-cover"
+            width={432}
+            height={288}
+            className="object-cover rounded-2xl w-full md:w-auto md:max-w-[50%]"
             quality={100}
           />
-          <div className="flex flex-col w-[600px]">
-            <TypographyH3 className="text-[40px] tracking-tight">
+          <div className="flex flex-col max-w-full md:max-w-[500px]">
+            <TypographyH3 className="text-2xl sm:text-[32px] md:text-[40px] tracking-tight">
               {cards[0].title}
             </TypographyH3>
-            <TypographyP className="w-[500px]">
-              {cards[0].description}
-            </TypographyP>
+            <TypographyP>{cards[0].description}</TypographyP>
           </div>
         </div>
         <BestQualitySeparator />
-        <div className="flex flex-row-reverse items-center justify-center gap-32">
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-center gap-8 md:gap-16 lg:gap-32">
           <Image
             src={"/imgs/taking-care-2.png"}
             alt={cards[1].title}
-            width={648}
-            height={432}
-            className="object-cover"
+            width={432}
+            height={288}
+            className="object-cover rounded-2xl w-full md:w-auto md:max-w-[50%]"
             quality={100}
           />
-          <div className="flex flex-col w-[600px]">
-            <TypographyH3 className="text-[40px] tracking-tight">
+          <div className="flex flex-col max-w-full md:max-w-[500px]">
+            <TypographyH3 className="text-2xl sm:text-[32px] md:text-[40px] tracking-tight">
               {cards[1].title}
             </TypographyH3>
-            <TypographyP className="w-[500px]">
-              {cards[1].description}
-            </TypographyP>
+            <TypographyP>{cards[1].description}</TypographyP>
           </div>
         </div>
       </div>

@@ -43,5 +43,11 @@ export const routing = defineRouting({
     "/products/liners": {
       de: "/produkte/liner",
     },
+    "/products/[product]": {
+      de: "/produkte/[product]",
+    },
+    "/products/[product]/[variant]": {
+      de: "/produkte/[product]/[variant]",
+    },
   },
 });

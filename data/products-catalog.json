@@ -1,0 +1,178 @@
+{
+  "products": [
+    {
+      "slug": "rattan",
+      "href": "/products/rattan",
+      "headerLinkKey": "Header.productLinks.links.rattan",
+      "homeProductKey": "HomePage.ourProducts.products.rattan",
+      "translationKey": "ProductsPage.products.rattan",
+      "coverImage": "/imgs/products/rattan/cover.png",
+      "hasVariants": true,
+      "variants": [
+        {
+          "slug": "round",
+          "translationKey": "ProductsPage.products.rattan.variants.round",
+          "image": "/imgs/products/rattan/round.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "oblong",
+          "translationKey": "ProductsPage.products.rattan.variants.oblong",
+          "image": "/imgs/products/rattan/oblong.png",
+          "isBestseller": true
+        },
+        {
+          "slug": "oval",
+          "translationKey": "ProductsPage.products.rattan.variants.oval",
+          "image": "/imgs/products/rattan/oval.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "baguette",
+          "translationKey": "ProductsPage.products.rattan.variants.baguette",
+          "image": "/imgs/products/rattan/baguette.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "mini-round",
+          "translationKey": "ProductsPage.products.rattan.variants.miniRound",
+          "image": "/imgs/products/rattan/mini-round.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "square",
+          "translationKey": "ProductsPage.products.rattan.variants.square",
+          "image": "/imgs/products/rattan/square.png",
+          "isBestseller": true
+        },
+        {
+          "slug": "big-sliced-bread",
+          "translationKey": "ProductsPage.products.rattan.variants.bigSlicedBread",
+          "image": "/imgs/products/rattan/big-sliced-bread.png",
+          "isBestseller": false
+        }
+      ]
+    },
+    {
+      "slug": "cork",
+      "href": "/products/cork",
+      "headerLinkKey": "Header.productLinks.links.cork",
+      "homeProductKey": "HomePage.ourProducts.products.cork",
+      "translationKey": "ProductsPage.products.cork",
+      "coverImage": "/imgs/products/cork/cover.png",
+      "hasVariants": true,
+      "variants": [
+        {
+          "slug": "round",
+          "translationKey": "ProductsPage.products.cork.variants.round",
+          "image": "/imgs/products/cork/round.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "oblong",
+          "translationKey": "ProductsPage.products.cork.variants.oblong",
+          "image": "/imgs/products/cork/oblong.png",
+          "isBestseller": true
+        },
+        {
+          "slug": "oval",
+          "translationKey": "ProductsPage.products.cork.variants.oval",
+          "image": "/imgs/products/cork/oval.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "baguette",
+          "translationKey": "ProductsPage.products.cork.variants.baguette",
+          "image": "/imgs/products/cork/baguette.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "engraved-bottom",
+          "translationKey": "ProductsPage.products.cork.variants.engravedBottom",
+          "image": "/imgs/products/cork/engraved-bottom.png",
+          "isBestseller": false
+        }
+      ]
+    },
+    {
+      "slug": "bamboo",
+      "href": "/products/bamboo",
+      "headerLinkKey": "Header.productLinks.links.bamboo",
+      "homeProductKey": "HomePage.ourProducts.products.bamboo",
+      "translationKey": "ProductsPage.products.bamboo",
+      "coverImage": "/imgs/products/bamboo/cover.png",
+      "hasVariants": true,
+      "variants": [
+        {
+          "slug": "round",
+          "translationKey": "ProductsPage.products.bamboo.variants.round",
+          "image": "/imgs/products/bamboo/round.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "oblong",
+          "translationKey": "ProductsPage.products.bamboo.variants.oblong",
+          "image": "/imgs/products/bamboo/oblong.png",
+          "isBestseller": false
+        }
+      ]
+    },
+    {
+      "slug": "plastic",
+      "href": "/products/plastic",
+      "headerLinkKey": "Header.productLinks.links.plastic",
+      "homeProductKey": "HomePage.ourProducts.products.platic",
+      "translationKey": "ProductsPage.products.plastic",
+      "coverImage": "/imgs/products/plastic/cover.png",
+      "hasVariants": true,
+      "variants": [
+        {
+          "slug": "round",
+          "translationKey": "ProductsPage.products.plastic.variants.round",
+          "image": "/imgs/products/plastic/round.png",
+          "isBestseller": false
+        },
+        {
+          "slug": "oblong",
+          "translationKey": "ProductsPage.products.plastic.variants.oblong",
+          "image": "/imgs/products/plastic/oblong.png",
+          "isBestseller": false
+        }
+      ]
+    },
+    {
+      "slug": "engraved",
+      "href": "/products/engraved",
+      "headerLinkKey": "Header.productLinks.links.engraved",
+      "homeProductKey": "HomePage.ourProducts.products.engraved",
+      "translationKey": "ProductsPage.products.engraved",
+      "coverImage": "/imgs/products/engraved/cover.png",
+      "hasVariants": false,
+      "variants": [
+        {
+          "slug": "custom-engraving",
+          "translationKey": "ProductsPage.products.engraved.variants.customEngraving",
+          "image": "/imgs/products/engraved/custom-engraving.jpg",
+          "isBestseller": false
+        }
+      ]
+    },
+    {
+      "slug": "liners",
+      "href": "/products/liners",
+      "headerLinkKey": "Header.productLinks.links.liners",
+      "homeProductKey": "HomePage.ourProducts.products.liners",
+      "translationKey": "ProductsPage.products.liners",
+      "coverImage": "/imgs/products/liners/cover.png",
+      "hasVariants": false,
+      "variants": [
+        {
+          "slug": "universal-liners",
+          "translationKey": "ProductsPage.products.liners.variants.universalLiners",
+          "image": "/imgs/products/liners/universal-liners.png",
+          "isBestseller": false
+        }
+      ]
+    }
+  ]
+}
