@@ -1,3 +1,6 @@
+import { getOgImage, ogImages } from "@/lib/seo";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import BenefitsBannetons from "./components/BenefitsBannetons";
 import BestSellers from "./components/BestSellers";
 import CorkBaskets from "./components/CorkBaskets";
@@ -9,6 +12,20 @@ import Materials from "./components/Materials";
 import OurProducts from "./components/OurProducts";
 import UniqueBasket from "./components/UniqueBasket";
 import WeMakeBannetons from "./components/WeMakeBannetons";
+
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("home.title"),
+    description: t("home.description"),
+    alternates: { canonical: "/en" },
+    openGraph: { images: [getOgImage(ogImages.home)] },
+  };
+}
 
 export default async function Home() {
   return (

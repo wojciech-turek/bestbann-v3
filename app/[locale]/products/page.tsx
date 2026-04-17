@@ -1,7 +1,9 @@
 import { Link } from "@/i18n/navigation";
 import { productsCatalog } from "@/lib/products-catalog";
+import { getOgImage, ogImages } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Fragment } from "react";
@@ -13,6 +15,20 @@ import { Button } from "@/components/ui/button";
 type ProductsPageProps = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: ProductsPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("products.title"),
+    description: t("products.description"),
+    alternates: { canonical: "/en/products" },
+    openGraph: { images: [getOgImage(ogImages.products)] },
+  };
+}
 
 const VARIANT_COLUMN_CLASSES = [
   "sm:pr-3.5",

@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 sm:gap-0">
             <div>
               <div className="text-lg font-semibold">
-                {t("headings.shop")} asd
+                {t("headings.shop")}
               </div>
               <ul className="mt-4 space-y-3">
                 {shopLinks.map((link) => (
@@ -150,9 +150,6 @@ const Footer = () => {
             <p>{t("bottom.copyright")}</p>
             <Link href="/privacy-policy" className="hover:underline">
               {t("bottom.privacy.text")}
-            </Link>
-            <Link href="/legal-notice" className="hover:underline">
-              {t("bottom.legal.text")}
             </Link>
           </div>
         </div>

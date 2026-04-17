@@ -1,13 +1,13 @@
 "use client";
 
+import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import ReactCountryFlag from "react-country-flag";
 
-const locales = ["fr", "en", "es", "it", "pl"];
 const countryCodes: { [key: string]: string } = {
-  fr: "FR",
   en: "GB",
+  fr: "FR",
   es: "ES",
   it: "IT",
   pl: "PL",
@@ -16,17 +16,20 @@ const countryCodes: { [key: string]: string } = {
 export function LanguageSwitcher() {
   const pathname = usePathname();
   const router = useRouter();
+  const locales = routing.locales;
+
+  // Hide when only one locale is configured
+  if (locales.length <= 1) {
+    return null;
+  }
 
   const handleLocaleChange = (newLocale: string) => {
-    // Check if the pathname already has a locale
     const hasLocale = locales.some((loc) => pathname.startsWith(`/${loc}`));
     let newPath;
 
     if (hasLocale) {
-      // Replace the existing locale
       newPath = `/${newLocale}${pathname.substring(3)}`;
     } else {
-      // Prepend the new locale
       newPath = `/${newLocale}${pathname}`;
     }
 
@@ -40,7 +43,7 @@ export function LanguageSwitcher() {
       {locales.map((locale) => (
         <div key={locale} onClick={() => handleLocaleChange(locale)}>
           <ReactCountryFlag
-            countryCode={countryCodes[locale]}
+            countryCode={countryCodes[locale] ?? locale.toUpperCase()}
             svg
             style={{
               width: "32px",

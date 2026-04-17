@@ -1,13 +1,29 @@
 import DecoText from "@/components/shared/DecoText";
 import { TypographyH2 } from "@/components/shared/TypographyH2";
 import { Button } from "@/components/ui/button";
+import { getOgImage, ogImages } from "@/lib/seo";
 import { Mail, MapPin, Phone } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 type ContactPageProps = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: ContactPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("contact.title"),
+    description: t("contact.description"),
+    alternates: { canonical: "/en/contact" },
+    openGraph: { images: [getOgImage(ogImages.contact)] },
+  };
+}
 
 const ContactPage = async ({ params }: ContactPageProps) => {
   const { locale } = await params;

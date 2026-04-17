@@ -1,53 +1,23 @@
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
-  locales: ["en", "de"],
-
-  // Used when no locale matches
+  locales: ["en"],
   defaultLocale: "en",
   localePrefix: "always",
 
   pathnames: {
     "/": "/",
-    "/about": {
-      de: "/ueber-uns",
-    },
-    "/products": {
-      de: "/produkte",
-    },
-    "/contact": {
-      de: "/kontakt",
-    },
-    "/privacy-policy": {
-      de: "/datenschutz",
-    },
-    "/legal-notice": {
-      de: "/impressum",
-    },
-    "/products/rattan": {
-      de: "/produkte/rattan",
-    },
-    "/products/cork": {
-      de: "/produkte/kork",
-    },
-    "/products/bamboo": {
-      de: "/produkte/bambus",
-    },
-    "/products/plastic": {
-      de: "/produkte/plastik",
-    },
-    "/products/engraved": {
-      de: "/produkte/graviert",
-    },
-    "/products/liners": {
-      de: "/produkte/liner",
-    },
-    "/products/[product]": {
-      de: "/produkte/[product]",
-    },
-    "/products/[product]/[variant]": {
-      de: "/produkte/[product]/[variant]",
-    },
+    "/about": "/about",
+    "/products": "/products",
+    "/contact": "/contact",
+    "/privacy-policy": "/privacy-policy",
+    "/products/rattan": "/products/rattan",
+    "/products/cork": "/products/cork",
+    "/products/bamboo": "/products/bamboo",
+    "/products/plastic": "/products/plastic",
+    "/products/engraved": "/products/engraved",
+    "/products/liners": "/products/liners",
+    "/products/[product]": "/products/[product]",
+    "/products/[product]/[variant]": "/products/[product]/[variant]",
   },
 });

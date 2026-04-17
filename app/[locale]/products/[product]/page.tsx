@@ -1,8 +1,11 @@
 import DecoText from "@/components/shared/DecoText";
+import JsonLd from "@/components/JsonLd";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { getProductBySlug, productsCatalog } from "@/lib/products-catalog";
+import { BASE_URL } from "@/lib/seo";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -15,6 +18,29 @@ export function generateStaticParams() {
   return productsCatalog.products.map((product) => ({
     product: product.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
+  const { locale, product: productSlug } = await params;
+  const product = getProductBySlug(productSlug);
+  if (!product) return {};
+
+  const t = await getTranslations({ locale });
+  const productTitle = t(`${product.translationKey}.title`);
+  const productDescription = t(
+    `ProductDetailPage.products.${product.slug}.heroDescription`,
+  );
+
+  return {
+    title: productTitle,
+    description: productDescription,
+    alternates: { canonical: `/en/products/${product.slug}` },
+    openGraph: {
+      images: [{ url: product.coverImage, width: 1800, height: 960 }],
+    },
+  };
 }
 
 const ProductPage = async ({ params }: ProductPageProps) => {
@@ -45,8 +71,23 @@ const ProductPage = async ({ params }: ProductPageProps) => {
     },
   ];
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: productTitle,
+    description: productDescription,
+    image: `${BASE_URL}${product.coverImage}`,
+    brand: { "@type": "Brand", name: "BestBann" },
+    manufacturer: {
+      "@type": "Organization",
+      name: "BestBann",
+      url: BASE_URL,
+    },
+  };
+
   return (
     <div className="bg-beige-1 px-4 pb-16 pt-4 sm:px-9 sm:pb-24 sm:pt-6">
+      <JsonLd data={productJsonLd} />
       <div className="mx-auto w-full max-w-[1480px] space-y-8 sm:space-y-14">
         <section className="relative overflow-hidden rounded-[34px] border border-brown-10">
           <Image
