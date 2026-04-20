@@ -151,13 +151,26 @@ const ProductsPage = async ({ params }: ProductsPageProps) => {
                               {t(variant.translationKey)}
                             </h3>
                             <Link
-                              href={{
-                                pathname: "/products/[product]",
-                                params: { product: product.slug },
-                              }}
+                              href={
+                                variant.hasVariantPage
+                                  ? {
+                                      pathname:
+                                        "/products/[product]/[variant]",
+                                      params: {
+                                        product: product.slug,
+                                        variant: variant.slug,
+                                      },
+                                    }
+                                  : {
+                                      pathname: "/products/[product]",
+                                      params: { product: product.slug },
+                                    }
+                              }
                             >
                               <Button size="lg" className="mt-5 w-full">
-                                {t("Buttons.priceButton")}{" "}
+                                {variant.hasVariantPage
+                                  ? t("Buttons.viewDetails")
+                                  : t("Buttons.priceButton")}{" "}
                                 <ArrowRight className="h-4 w-4" />
                               </Button>
                             </Link>

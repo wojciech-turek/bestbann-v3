@@ -194,9 +194,23 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                     </div>
                   </div>
                   <div className="p-4">
-                    <Link href="/contact">
+                    <Link
+                      href={
+                        variant.hasVariantPage
+                          ? {
+                              pathname: "/products/[product]/[variant]",
+                              params: {
+                                product: product.slug,
+                                variant: variant.slug,
+                              },
+                            }
+                          : "/contact"
+                      }
+                    >
                       <Button size="lg" className="w-full">
-                        {t("Buttons.priceButton")}{" "}
+                        {variant.hasVariantPage
+                          ? t("Buttons.viewDetails")
+                          : t("Buttons.priceButton")}{" "}
                         <ArrowRight className="h-4 w-4" />
                       </Button>
                     </Link>

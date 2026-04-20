@@ -112,7 +112,9 @@
     "downloadCertificate": "Download Certificates",
     "viewMore": "View More",
     "viewLess": "View Less",
-    "moreAboutUs": "More About Us"
+    "moreAboutUs": "More About Us",
+    "viewDetails": "View details",
+    "addToQuote": "Add to Quote"
   },
   "Footer": {
     "headings": {
@@ -539,6 +541,105 @@
         },
         "noVariantsTitle": "Universal liner selection",
         "noVariantsDescription": "Liners are tailored to basket type and size. Share your basket dimensions and we will match the right option."
+      }
+    }
+  },
+  "VariantDetailPage": {
+    "properties": {
+      "title": "Properties",
+      "doughWeight": "Dough weight",
+      "dimensions": "External measures in cm / inches",
+      "catalogNumber": "Catalog number"
+    },
+    "sizes": {
+      "title": "Available sizes"
+    },
+    "recommendations": {
+      "title": "You may also like"
+    },
+    "accordion": {
+      "innovativeProduct": {
+        "title": "Innovative product",
+        "body": "Our bread proofing baskets are the result of years of research and development. We combine traditional craftsmanship with modern production techniques to deliver products that meet the highest standards of professional bakeries worldwide."
+      },
+      "safetyConfirmed": {
+        "title": "Safety confirmed",
+        "body": "All our products are certified food-safe according to European Parliament Regulation (EC) No 1935/2004 and German LFGB standards. SGS test reports and PZH certificates confirm that our baskets can safely have contact with food."
+      },
+      "internationalCooperation": {
+        "title": "International co-operation",
+        "body": "We work with bakeries, wholesalers and retailers in over 30 countries across Europe, North America, Asia and Australia. Our international experience helps us understand different baking traditions and adapt our products accordingly."
+      },
+      "versatility": {
+        "title": "Versatility",
+        "body": "Our baskets are designed for both artisan and industrial baking. Whether you run a small bakery or a large-scale production facility, our products adapt to your workflow and help you achieve consistent, beautiful results."
+      },
+      "environmentalFriendliness": {
+        "title": "Environmental friendliness",
+        "body": "We are committed to sustainability. Our rattan and cork baskets are made from renewable natural materials, and our production process minimizes waste. We believe in creating products that are good for bakers and good for the planet."
+      }
+    },
+    "products": {
+      "rattan": {
+        "variants": {
+          "round": {
+            "description": "Classic round rattan proofing baskets, handmade from natural rattan for traditional round loaves with beautiful spiral patterns."
+          },
+          "oblong": {
+            "description": "Oblong rattan proofing baskets ideal for elongated bread loaves, providing excellent airflow and a natural texture imprint."
+          },
+          "oval": {
+            "description": "Oval rattan proofing baskets offering a versatile shape for artisan bread, combining the best features of round and oblong forms."
+          },
+          "baguette": {
+            "description": "Elongated rattan baskets designed specifically for baguettes and long bread shapes, ensuring consistent proofing results."
+          },
+          "miniRound": {
+            "description": "Compact round rattan baskets perfect for individual bread rolls and small artisan loaves."
+          },
+          "square": {
+            "description": "Square rattan proofing baskets for distinctive square bread shapes, ideal for sandwich loaves and specialty breads."
+          },
+          "bigSlicedBread": {
+            "description": "Large rattan baskets designed for big sliced bread loaves, ideal for commercial bakeries producing standard sandwich bread."
+          }
+        }
+      },
+      "cork": {
+        "variants": {
+          "round": {
+            "description": "Round cork proofing baskets that are easy to clean and maintain, providing excellent dough support for traditional round loaves."
+          },
+          "oblong": {
+            "description": "Oblong cork baskets combining easy maintenance with excellent proofing performance for elongated bread shapes."
+          },
+          "oval": {
+            "description": "Oval cork proofing baskets offering a washable, durable option for versatile artisan bread production."
+          },
+          "baguette": {
+            "description": "Cork baguette baskets designed for long bread shapes with easy cleaning and consistent proofing support."
+          }
+        }
+      },
+      "bamboo": {
+        "variants": {
+          "round": {
+            "description": "Innovative round bamboo fiber baskets combining lightweight design with excellent ventilation for bread proofing."
+          },
+          "oblong": {
+            "description": "Oblong bamboo fiber baskets offering a lightweight, durable solution for elongated bread proofing in busy bakeries."
+          }
+        }
+      },
+      "plastic": {
+        "variants": {
+          "round": {
+            "description": "Professional round polypropylene baskets designed for high-volume bakeries requiring consistent, repeatable proofing results."
+          },
+          "oblong": {
+            "description": "Oblong polypropylene baskets built for durability and consistency in commercial bread production environments."
+          }
+        }
       }
     }
   },

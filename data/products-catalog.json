@@ -13,43 +13,50 @@
           "slug": "round",
           "translationKey": "ProductsPage.products.rattan.variants.round",
           "image": "/imgs/products/rattan/round.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "oblong",
           "translationKey": "ProductsPage.products.rattan.variants.oblong",
           "image": "/imgs/products/rattan/oblong.png",
-          "isBestseller": true
+          "isBestseller": true,
+          "hasVariantPage": true
         },
         {
           "slug": "oval",
           "translationKey": "ProductsPage.products.rattan.variants.oval",
           "image": "/imgs/products/rattan/oval.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "baguette",
           "translationKey": "ProductsPage.products.rattan.variants.baguette",
           "image": "/imgs/products/rattan/baguette.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "mini-round",
           "translationKey": "ProductsPage.products.rattan.variants.miniRound",
           "image": "/imgs/products/rattan/mini-round.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "square",
           "translationKey": "ProductsPage.products.rattan.variants.square",
           "image": "/imgs/products/rattan/square.png",
-          "isBestseller": true
+          "isBestseller": true,
+          "hasVariantPage": true
         },
         {
           "slug": "big-sliced-bread",
           "translationKey": "ProductsPage.products.rattan.variants.bigSlicedBread",
           "image": "/imgs/products/rattan/big-sliced-bread.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         }
       ]
     },
@@ -66,31 +73,36 @@
           "slug": "round",
           "translationKey": "ProductsPage.products.cork.variants.round",
           "image": "/imgs/products/cork/round.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "oblong",
           "translationKey": "ProductsPage.products.cork.variants.oblong",
           "image": "/imgs/products/cork/oblong.png",
-          "isBestseller": true
+          "isBestseller": true,
+          "hasVariantPage": true
         },
         {
           "slug": "oval",
           "translationKey": "ProductsPage.products.cork.variants.oval",
           "image": "/imgs/products/cork/oval.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "baguette",
           "translationKey": "ProductsPage.products.cork.variants.baguette",
           "image": "/imgs/products/cork/baguette.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "engraved-bottom",
           "translationKey": "ProductsPage.products.cork.variants.engravedBottom",
           "image": "/imgs/products/cork/engraved-bottom.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": false
         }
       ]
     },
@@ -107,13 +119,15 @@
           "slug": "round",
           "translationKey": "ProductsPage.products.bamboo.variants.round",
           "image": "/imgs/products/bamboo/round.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "oblong",
           "translationKey": "ProductsPage.products.bamboo.variants.oblong",
           "image": "/imgs/products/bamboo/oblong.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         }
       ]
     },
@@ -130,13 +144,15 @@
           "slug": "round",
           "translationKey": "ProductsPage.products.plastic.variants.round",
           "image": "/imgs/products/plastic/round.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         },
         {
           "slug": "oblong",
           "translationKey": "ProductsPage.products.plastic.variants.oblong",
           "image": "/imgs/products/plastic/oblong.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": true
         }
       ]
     },
@@ -153,7 +169,8 @@
           "slug": "custom-engraving",
           "translationKey": "ProductsPage.products.engraved.variants.customEngraving",
           "image": "/imgs/products/engraved/custom-engraving.jpg",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": false
         }
       ]
     },
@@ -170,7 +187,8 @@
           "slug": "universal-liners",
           "translationKey": "ProductsPage.products.liners.variants.universalLiners",
           "image": "/imgs/products/liners/universal-liners.png",
-          "isBestseller": false
+          "isBestseller": false,
+          "hasVariantPage": false
         }
       ]
     }

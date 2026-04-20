@@ -5,6 +5,7 @@ export type ProductVariant = {
   translationKey: string;
   image: string;
   isBestseller: boolean;
+  hasVariantPage: boolean;
 };
 
 export type ProductCategory = {
@@ -26,3 +27,14 @@ export const productsCatalog = productsCatalogJson as ProductsCatalog;
 
 export const getProductBySlug = (slug: string) =>
   productsCatalog.products.find((product) => product.slug === slug);
+
+export const getVariantBySlug = (
+  productSlug: string,
+  variantSlug: string,
+) => {
+  const product = getProductBySlug(productSlug);
+  if (!product) return null;
+  const variant = product.variants.find((v) => v.slug === variantSlug);
+  if (!variant) return null;
+  return { product, variant };
+};
