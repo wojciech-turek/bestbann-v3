@@ -64,6 +64,7 @@ const BenefitsBannetons = () => {
             src="/imgs/home/benefits-trimmed.png"
             alt={"benefits"}
             fill
+            sizes="(min-width: 768px) 33vw, 100vw"
             className="object-contain h-fit"
           />
         </div>

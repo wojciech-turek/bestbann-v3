@@ -209,7 +209,7 @@ const VariantPage = async ({ params }: VariantPageProps) => {
                 width={1200}
                 height={1200}
                 className="h-full w-full object-cover"
-                priority
+                preload
               />
               {variant.isBestseller && (
                 <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-medium text-orange-100">

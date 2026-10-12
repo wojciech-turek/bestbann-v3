@@ -20,28 +20,28 @@ const QuestionsBox = () => {
             src="/imgs/baskets/cork/cork-bio-single.png"
             alt="Rattan basket"
             width={104}
-            height={58}
-            className="absolute -top-2 left-2"
+            height={71}
+            className="absolute -top-2 left-2 aspect-[104/71] object-contain"
           />
           <Image
             src="/imgs/baskets/rattan/round-rattan-single.png"
             alt="Cork bio basket"
             width={104}
-            height={58}
+            height={100}
             className="absolute -top-4 right-2"
           />
           <Image
             src="/imgs/baskets/bamboo/bambo-single.png"
             alt="Cork basket"
             width={91}
-            height={64}
+            height={92}
             className="absolute -bottom-2 left-2"
           />
           <Image
             src="/imgs/baskets/cork/cork-single.png"
             alt="Bamboo basket"
             width={128}
-            height={128}
+            height={101}
             className="absolute -bottom-4 right-2"
           />
         </div>
@@ -52,14 +52,14 @@ const QuestionsBox = () => {
                 src="/imgs/baskets/cork/cork-bio-single.png"
                 alt="Cork bio basket"
                 width={208}
-                height={116}
+                height={143}
                 className="absolute right-8 -top-6"
               />
               <Image
                 src="/imgs/baskets/bamboo/bambo-single.png"
                 alt="Bamboo basket"
                 width={163}
-                height={160}
+                height={164}
                 className="absolute bottom-12 right-1/6"
               />
             </div>
@@ -83,14 +83,14 @@ const QuestionsBox = () => {
                 src="/imgs/baskets/rattan/round-rattan-single.png"
                 alt="Rattan basket"
                 width={171}
-                height={160}
+                height={165}
                 className="absolute -top-4 left-1/4"
               />
               <Image
                 src="/imgs/baskets/cork/cork-single.png"
                 alt="Cork basket"
                 width={183}
-                height={128}
+                height={144}
                 className="absolute -bottom-4 left-1/6"
               />
             </div>

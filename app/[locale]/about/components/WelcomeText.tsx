@@ -23,6 +23,7 @@ const WelcomeText = () => {
           src="/imgs/hero-image.jpg"
           alt="About us"
           fill
+          loading="eager"
           className="object-cover"
         />
       </div>

@@ -18,7 +18,7 @@ const FAQ = () => {
           src="/deco/star-orange.svg"
           alt="FAQ"
           width={138}
-          height={138}
+          height={139}
           className="block sm:absolute top-1/2 left-0 scale-75 sm:scale-100"
         />
       </div>

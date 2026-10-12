@@ -17,6 +17,7 @@ const UniqueBasket = () => {
           src="/imgs/baskets/engraved/engraved.jpg"
           alt="unique basket"
           fill
+          sizes="(min-width: 768px) 50vw, 100vw"
           className="object-cover object-right-bottom scale-150 sm:scale-100"
         />
       </div>

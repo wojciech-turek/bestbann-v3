@@ -84,7 +84,7 @@ const Header = () => {
                   src="/imgs/logo-black.png"
                   alt="BestBann"
                   width={143}
-                  height={32}
+                  height={33}
                   className="mx-auto object-contain"
                 />
                 <Separator />
@@ -137,11 +137,12 @@ const Header = () => {
           </Sheet>
 
           <div className="relative mx-auto h-[32px] w-[143px]">
-            <Link href="/">
+            <Link href="/" className="relative block size-full">
               <Image
                 src="/imgs/logo-black.png"
                 alt="BestBann"
                 fill
+                sizes="143px"
                 className="object-contain"
               />
             </Link>
@@ -221,11 +222,12 @@ const Header = () => {
           </NavigationMenu>
 
           <div className="relative h-[38px] w-[165px]">
-            <Link href="/">
+            <Link href="/" className="relative block size-full">
               <Image
                 src="/imgs/logo-black.png"
                 alt="BestBann"
                 fill
+                sizes="165px"
                 className="object-contain"
               />
             </Link>

@@ -28,7 +28,7 @@ const OurProducts = () => {
   return (
     <div className="flex flex-col gap-8 sm:gap-10">
       <div className="flex flex-col sm:flex-row container mx-auto items-center justify-between gap-5 px-4 sm:px-9">
-        <TypographyH2>{t("title")}</TypographyH2>
+        <TypographyH2>{t("HomePage.ourProducts.title")}</TypographyH2>
         <Button size="lg" className="w-full sm:w-fit">
           {tButtons("viewCatalog")} <ArrowRight className="w-4 h-4" />
         </Button>
@@ -52,7 +52,7 @@ const OurProducts = () => {
                 src={product.src}
                 alt={product.title}
                 width={384}
-                height={288}
+                height={256}
                 className="object-cover object-center mx-auto"
               />
               <TypographyH4>{product.title}</TypographyH4>

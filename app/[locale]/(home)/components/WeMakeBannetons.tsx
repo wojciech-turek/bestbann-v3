@@ -12,7 +12,7 @@ const WeMakeBannetons = () => {
         src="/deco/bean-orange.svg"
         alt="deco"
         width={185}
-        height={195}
+        height={196}
         className="absolute -top-16 -left-12 sm:left-8 -z-[1] rotate-90 sm:rotate-65 w-[110px] sm:w-[185px]"
       />
       <Image

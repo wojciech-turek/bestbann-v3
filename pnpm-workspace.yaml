@@ -1,0 +1,14 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  esbuild: true
+  sharp: false
+  unrs-resolver: true
+
+# Plugins bundled by eslint-config-next haven't declared ESLint 10 support yet,
+# but run fine with it. Remove once they publish an updated peer range.
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-import>eslint: '10'
+    eslint-plugin-jsx-a11y>eslint: '10'
+    eslint-plugin-react>eslint: '10'

@@ -106,6 +106,8 @@ const ContactPage = async ({ params }: ContactPageProps) => {
                 src="/imgs/home/weronika-and-michal.png"
                 alt={t("hero.imageAlt")}
                 fill
+                sizes="(min-width: 1024px) 608px, 100vw"
+                loading="eager"
                 className="object-cover"
               />
             </div>

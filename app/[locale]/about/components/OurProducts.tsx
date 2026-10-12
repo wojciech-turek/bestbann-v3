@@ -63,14 +63,14 @@ const OurProducts = () => {
         src="/deco/bean-gray-transparent.svg"
         alt=""
         width={100}
-        height={100}
+        height={115}
         className="absolute left-1/12 rotate-90 top-2 md:top-10"
       />
       <Image
         src="/deco/bean-orange.svg"
         alt=""
         width={280}
-        height={320}
+        height={296}
         className="absolute right-0 md:right-12 -top-20 md:-top-32 scale-x-[-1] w-[170px] md:w-[280px]"
       />
       <TypographyH2 className="relative text-center">

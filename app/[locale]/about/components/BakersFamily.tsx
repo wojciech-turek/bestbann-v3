@@ -15,6 +15,7 @@ const BakersFamily = () => {
           src="/imgs/bakers-family.png"
           alt="Bakers Family"
           fill
+          sizes="(min-width: 768px) 50vw, 100vw"
           className="object-cover object-center"
         />
       </div>

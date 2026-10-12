@@ -96,7 +96,7 @@ const ProductPage = async ({ params }: ProductPageProps) => {
             width={1800}
             height={960}
             className="h-[420px] w-full object-cover sm:h-[560px]"
-            priority
+            preload
           />
           <div className="absolute inset-0 bg-linear-to-r from-brown-100/55 via-brown-100/32 to-brown-100/8" />
           <div className="absolute left-4 right-4 top-4 text-sm text-white/90 sm:left-8 sm:right-8 sm:top-7">

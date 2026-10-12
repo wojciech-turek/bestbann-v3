@@ -29,7 +29,7 @@ const Materials = () => {
             src="/imgs/home/certificate.png"
             alt="SGS Certificate"
             width={500}
-            height={700}
+            height={342}
             className="rounded-lg shadow-lg"
           />
         </div>

@@ -15,6 +15,7 @@ const BestQualitySeparator = ({ className }: { className?: string }) => {
         alt="Best Quality"
         width={150}
         height={150}
+        className="aspect-square object-contain"
       />
       <div className="h-px flex-grow bg-brown-10"></div>
     </div>

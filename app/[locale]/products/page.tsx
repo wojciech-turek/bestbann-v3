@@ -68,7 +68,7 @@ const ProductsPage = async ({ params }: ProductsPageProps) => {
               src="/deco/bean-gray-bordered.svg"
               alt=""
               width={188}
-              height={138}
+              height={203}
               className="opacity-80 scale-x-[-1]"
             />
           </div>
@@ -83,8 +83,8 @@ const ProductsPage = async ({ params }: ProductsPageProps) => {
                 src="/deco/best-quality-half.png"
                 alt=""
                 width={60}
-                height={30}
-                className="opacity-90"
+                height={31}
+                className="aspect-[60/31] object-contain opacity-90"
               />
             </div>
 
